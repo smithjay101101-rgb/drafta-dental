@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="Drafta dental">
+  <!-- Marca: pătrat indigo cu colțurile de jos rotunjite complet (forma-zâmbet),
+       după prototip: border-radius 10px 10px 20px 20px.
+       TODO: de înlocuit cu SVG-ul oficial primit de la client. -->
+  <path fill="#434279" d="M10 0h20a10 10 0 0 1 10 10v10a20 20 0 0 1-20 20A20 20 0 0 1 0 20V10A10 10 0 0 1 10 0Z"/>
+  <!-- Zâmbetul bleu: 22x11, semicerc în jos, la 7px de bază -->
+  <path fill="#8DB7D2" d="M9 22h22a11 11 0 0 1-22 0Z"/>
+</svg>

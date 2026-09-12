@@ -20,7 +20,7 @@ const figtree = Figtree({
 
 export const metadata: Metadata = {
   metadataBase: new URL(practice.url),
-  title: "Drafta dental — Stomatologie în București",
+  title: "Drafta dental",
   description:
     "Stomatologie modernă în Dorobanți: aligneri, albire, implanturi și urgențe. Consultație de 45 de minute, plan de tratament scris, programare în aceeași zi.",
   alternates: { canonical: "/" },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ro_RO",
     siteName: practice.name,
-    title: "Drafta dental — Stomatologie în București",
+    title: "Drafta dental",
     description:
       "Cabinet stomatologic în Strada Justinian 10, București. Programare online sau telefonic, răspuns în aceeași zi lucrătoare.",
     // TODO: imagine OG reală (1200×630) după ce există fotografii.
