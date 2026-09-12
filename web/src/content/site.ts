@@ -155,7 +155,9 @@ export const team: { title: string; sub: string; members: TeamMember[] } = {
    * înainte de a scoate `noindex`. Aceleași date ajung și în JSON-LD
    * (`src/lib/jsonld.ts`, câmpul `employee`).
    *
-   * Fotografiile lipsesc din repo — vezi public/photos/CREDITE.md.
+   * Portretele sunt cele primite de la cabinet (originalele în foto-client/).
+   * Sunt însă mici — 447x447 și 200x200 — pentru un slot 4:5 afișat la ~440px,
+   * deci apar neclare pe ecrane retina. De cerut originalele.
    */
   members: [
     {
@@ -165,7 +167,7 @@ export const team: { title: string; sub: string; members: TeamMember[] } = {
       /** TODO_PLACEHOLDER — de confirmat */
       bio: "Fațete, coroane și reabilitări complete. Conduce cabinetul din Dorobanți de la deschidere, în 2016.",
       imageCaption: "portret: Dr. Andrei Drafta",
-      // image: "/photos/medic-andrei-drafta.jpg",
+      image: "/photos/medic-andrei-drafta.jpg",
       imageAlt: "Dr. Andrei Drafta, medic stomatolog la Drafta dental",
     },
     {
@@ -175,7 +177,7 @@ export const team: { title: string; sub: string; members: TeamMember[] } = {
       /** TODO_PLACEHOLDER — de confirmat */
       bio: "Implanturi, extracții și adiții osoase, cu chirurgie ghidată digital. Peste 900 de implanturi puse.",
       imageCaption: "portret: Dr. Sergiu Drafta",
-      // image: "/photos/medic-sergiu-drafta.jpg",
+      image: "/photos/medic-sergiu-drafta.jpg",
       imageAlt: "Dr. Sergiu Drafta, medic stomatolog la Drafta dental",
     },
   ],
