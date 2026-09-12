@@ -2,19 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogoMark, Wordmark } from "./Logo";
+
+/** Raportul artei originale: 733 x 177. */
+const RATIO = 733 / 177;
 
 /**
- * Marca duce la pagina de start. Când ești deja pe ea, `next/link` nu face
- * nimic, pentru că ruta nu se schimbă, așa că marca ar părea moartă. În
- * cazul acela urcăm noi în capul paginii.
+ * Lockup-ul de marcă, servit ca fișier SVG ca să nu intre 46KB de contururi
+ * în HTML-ul fiecărei pagini. Fiind vector, rămâne curat la orice densitate
+ * de ecran.
  *
- * Component separat de Logo.tsx ca LogoMark să rămână server component,
- * altfel ar trimite JavaScript și în cardurile de la „Alte servicii".
+ * Marca duce la pagina de start. Când ești deja pe ea, `next/link` nu ar face
+ * nimic, pentru că ruta nu se schimbă, așa că urcăm noi în capul paginii.
  */
 export function Lockup({
   href = "/",
   onIndigo = false,
+  /** Puțin mai mică sub 480px. */
   compact = false,
 }: {
   href?: string;
@@ -22,13 +25,13 @@ export function Lockup({
   compact?: boolean;
 }) {
   const pathname = usePathname();
+  const height = compact ? 38 : 44;
 
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (pathname !== href) return;
     event.preventDefault();
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
-    // Curăță ancora din bară, ca un click ulterior să nu sară înapoi la ea.
     if (window.location.hash) {
       window.history.replaceState(null, "", pathname);
     }
@@ -39,15 +42,17 @@ export function Lockup({
       href={href}
       onClick={onClick}
       aria-label="Drafta dental, mergi la pagina de start"
-      className="flex flex-none items-center gap-2 min-[480px]:gap-[11px]"
+      className="flex flex-none items-center"
     >
-      <span className="min-[480px]:hidden">
-        <LogoMark onIndigo={onIndigo} size={compact ? 34 : 40} />
-      </span>
-      <span className="hidden min-[480px]:block">
-        <LogoMark onIndigo={onIndigo} />
-      </span>
-      <Wordmark onIndigo={onIndigo} compact={compact} />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={onIndigo ? "/logo-alb.svg" : "/logo.svg"}
+        alt=""
+        width={Math.round(height * RATIO)}
+        height={height}
+        className="h-[38px] w-auto min-[480px]:h-11"
+        style={compact ? undefined : { height }}
+      />
     </Link>
   );
 }
