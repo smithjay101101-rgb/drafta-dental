@@ -56,6 +56,7 @@ export function ImagePlaceholder({
           fill
           sizes={sizes}
           priority={priority}
+          quality={90}
           className="object-cover"
           style={{ objectPosition }}
         />
