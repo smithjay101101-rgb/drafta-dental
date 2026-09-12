@@ -42,23 +42,23 @@ export type Doctor = {
 const sergiu: Doctor = {
   slug: "dr-sergiu-drafta",
   name: "Sergiu Drafta",
-  prefix: "Conf. Dr.",
+  prefix: "Dr.",
   jobTitle: "Medic stomatolog, conferențiar universitar",
   seniority: "senior",
   role: "Protetică dentară fixă și ocluzologie",
   short:
     "Conferențiar la UMF Carol Davila, disciplina de protetică dentară fixă și ocluzologie. Se ocupă de lucrările protetice complexe, de reabilitările pe implanturi și de cazurile în care ocluzia trebuie refăcută.",
-  title: "Cine este Conf. Dr. Sergiu Drafta?",
-  metaTitle: "Conf. Dr. Sergiu Drafta, protetică și ocluzologie",
+  title: "Cine este Dr. Sergiu Drafta?",
+  metaTitle: "Dr. Sergiu Drafta, protetică și ocluzologie",
   metaDescription:
     "Medicul senior al cabinetului Drafta dental, conferențiar la UMF Carol Davila, disciplina de protetică dentară fixă și ocluzologie.",
   answer:
-    "Conf. Dr. Sergiu Drafta este medicul senior al cabinetului Drafta dental și conferențiar universitar la Universitatea de Medicină și Farmacie Carol Davila din București, unde predă la disciplina de protetică dentară fixă și ocluzologie. A absolvit Facultatea de Medicină Dentară a aceleiași universități. Se ocupă de lucrările protetice complexe, de reabilitările pe implanturi și de cazurile în care ocluzia trebuie reconstruită.",
+    "Dr. Sergiu Drafta este medicul senior al cabinetului Drafta dental și conferențiar universitar la Universitatea de Medicină și Farmacie Carol Davila din București, unde predă la disciplina de protetică dentară fixă și ocluzologie. A absolvit Facultatea de Medicină Dentară a aceleiași universități. Se ocupă de lucrările protetice complexe, de reabilitările pe implanturi și de cazurile în care ocluzia trebuie reconstruită.",
   image: "/photos/medic-sergiu-drafta.jpg",
-  imageAlt: "Conf. Dr. Sergiu Drafta, medic stomatolog la Drafta dental",
-  imageCaption: "portret: Conf. Dr. Sergiu Drafta",
+  imageAlt: "Dr. Sergiu Drafta, medic stomatolog la Drafta dental",
+  imageCaption: "portret: Dr. Sergiu Drafta",
   keyTakeaways: [
-    "Conf. Dr. Sergiu Drafta este conferențiar universitar la UMF Carol Davila, Facultatea de Medicină Dentară, disciplina de protetică dentară fixă și ocluzologie.",
+    "Dr. Sergiu Drafta este conferențiar universitar la UMF Carol Davila, Facultatea de Medicină Dentară, disciplina de protetică dentară fixă și ocluzologie.",
     "A absolvit Facultatea de Medicină Dentară a UMF Carol Davila din București.",
     "Profilul său de cercetare listează 35 de lucrări publicate și 303 citări, conform ResearchGate, consultat în septembrie 2026.",
     "Teza de abilitare a fost programată pentru susținere la 9 ianuarie 2026, conform anunțului UMF Carol Davila.",
@@ -116,7 +116,7 @@ const sergiu: Doctor = {
       blocks: [
         {
           kind: "p",
-          text: "Conf. Dr. Sergiu Drafta este cadru didactic la UMF Carol Davila, la disciplina de protetică dentară fixă și ocluzologie, adică exact domeniul în care lucrează și în cabinet. Are și activitate de cercetare publicată, cu 35 de lucrări și 303 citări listate pe ResearchGate la data consultării, septembrie 2026.",
+          text: "Dr. Sergiu Drafta este cadru didactic la UMF Carol Davila, la disciplina de protetică dentară fixă și ocluzologie, adică exact domeniul în care lucrează și în cabinet. Are și activitate de cercetare publicată, cu 35 de lucrări și 303 citări listate pe ResearchGate la data consultării, septembrie 2026.",
         },
         {
           kind: "p",
@@ -128,7 +128,7 @@ const sergiu: Doctor = {
   faq: [
     {
       q: "Ce înseamnă conferențiar universitar în medicina dentară?",
-      a: "Este un grad didactic universitar, situat între lector și profesor. Presupune activitate de predare, activitate de cercetare publicată și susținerea unor evaluări academice. Conf. Dr. Sergiu Drafta predă la UMF Carol Davila, disciplina de protetică dentară fixă și ocluzologie.",
+      a: "Este un grad didactic universitar, situat între lector și profesor. Presupune activitate de predare, activitate de cercetare publicată și susținerea unor evaluări academice. Dr. Sergiu Drafta predă la UMF Carol Davila, disciplina de protetică dentară fixă și ocluzologie.",
     },
     {
       q: "Ce tratamente face Dr. Sergiu Drafta?",
@@ -201,7 +201,7 @@ const andrei: Doctor = {
     "Dr. Andrei Drafta este absolvent al Facultății de Medicină Dentară, UMF Carol Davila, București, aceeași facultate ca medicul senior al cabinetului.",
     "Aduce în cabinet metodele învățate în formarea recentă: scanare intraorală, planificare digitală și simulare înainte de tratament.",
     "Se ocupă de consultații, igienizare, controale și tratamente de rutină.",
-    "Lucrează în aceeași echipă cu Conf. Dr. Sergiu Drafta, ceea ce permite ca un caz complex să fie discutat între cei doi medici fără trimiteri în afara cabinetului.",
+    "Lucrează în aceeași echipă cu Dr. Sergiu Drafta, ceea ce permite ca un caz complex să fie discutat între cei doi medici fără trimiteri în afara cabinetului.",
     "Cabinetul folosește scanare intraorală în locul amprentei clasice pentru majoritatea lucrărilor.",
   ],
   credentials: [
@@ -258,9 +258,9 @@ const andrei: Doctor = {
             ["Prima consultație și plan de tratament", "Dr. Andrei Drafta"],
             ["Igienizare, controale, obturații", "Dr. Andrei Drafta"],
             ["Scanare intraorală și planificare digitală", "Dr. Andrei Drafta"],
-            ["Protetică fixă: coroane, punți, fațete", "Conf. Dr. Sergiu Drafta"],
-            ["Reabilitări pe implanturi", "Conf. Dr. Sergiu Drafta"],
-            ["Probleme de ocluzie", "Conf. Dr. Sergiu Drafta"],
+            ["Protetică fixă: coroane, punți, fațete", "Dr. Sergiu Drafta"],
+            ["Reabilitări pe implanturi", "Dr. Sergiu Drafta"],
+            ["Probleme de ocluzie", "Dr. Sergiu Drafta"],
           ],
         },
       ],
@@ -277,7 +277,7 @@ const andrei: Doctor = {
     },
     {
       q: "La care dintre medici este mai bine să mă programez?",
-      a: "Pentru prima vizită, la oricare. Consultația stabilește ce este necesar, iar dacă situația cere protetică sau implanturi, cazul este preluat împreună cu Conf. Dr. Sergiu Drafta, în același cabinet.",
+      a: "Pentru prima vizită, la oricare. Consultația stabilește ce este necesar, iar dacă situația cere protetică sau implanturi, cazul este preluat împreună cu Dr. Sergiu Drafta, în același cabinet.",
     },
   ],
   sources: [],

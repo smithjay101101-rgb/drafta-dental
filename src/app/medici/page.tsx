@@ -58,7 +58,7 @@ export default function MediciIndex() {
           <h1 className="h2 mt-6">Cine sunt medicii de la Drafta dental?</h1>
           <p className="mt-6 text-[19px]/[1.65]">
             Doi medici stomatologi, amândoi absolvenți ai Facultății de Medicină
-            Dentară din cadrul UMF Carol Davila. Conf. Dr. Sergiu Drafta este
+            Dentară din cadrul UMF Carol Davila. Dr. Sergiu Drafta este
             medicul senior și se ocupă de protetică și de reabilitările pe
             implanturi. Dr. Andrei Drafta se ocupă de consultații, tratamente de
             rutină și de fluxul digital al cabinetului.

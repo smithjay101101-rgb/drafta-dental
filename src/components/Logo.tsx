@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /**
  * Marcă aproximată după prototip (pătrat indigo cu „zâmbetul" bleu).
  * TODO: de înlocuit cu SVG-ul oficial primit de la client.
@@ -71,7 +73,9 @@ export function Wordmark({
 }
 
 export function Lockup({
-  href = "#top",
+  /** Pe orice pagină, marca duce acasă. „#top" ar fi doar o ancoră locală,
+   *  inexistentă pe subpagini. */
+  href = "/",
   onIndigo = false,
   compact = false,
 }: {
@@ -80,7 +84,11 @@ export function Lockup({
   compact?: boolean;
 }) {
   return (
-    <a href={href} className="flex flex-none items-center gap-2 min-[480px]:gap-[11px]">
+    <Link
+      href={href}
+      aria-label="Drafta dental, mergi la pagina de start"
+      className="flex flex-none items-center gap-2 min-[480px]:gap-[11px]"
+    >
       <span className="min-[480px]:hidden">
         <LogoMark onIndigo={onIndigo} size={compact ? 34 : 40} />
       </span>
@@ -88,7 +96,6 @@ export function Lockup({
         <LogoMark onIndigo={onIndigo} />
       </span>
       <Wordmark onIndigo={onIndigo} compact={compact} />
-      <span className="sr-only">Drafta dental, acasă</span>
-    </a>
+    </Link>
   );
 }
