@@ -49,10 +49,17 @@ Recomandat: **Vercel**, un proiect nou, legat de acest repo.
 
 1. Repo propriu pe GitHub — doar acest proiect, nimic altceva.
 2. Pe Vercel: *Add New → Project* → alege repo-ul.
-3. **Root Directory: `web`** (aplicația Next stă în `web/`, nu în rădăcina repo-ului).
-4. Rezultă o origine proprie: `drafta-dental.vercel.app`.
+3. **Root Directory: `./`** (implicit). Aplicația Next stă în rădăcina
+   repo-ului tocmai ca să nu fie nevoie de nicio setare.
+4. Rezultă o origine proprie: un subdomeniu `*.vercel.app`.
 5. La lansare, domeniul clientului (`draftadental.ro`) se leagă de acest proiect
    și devine originea finală.
+
+### Protecția implicită
+
+Vercel pune by default o autentificare peste deployment-uri: linkul cere cont
+Vercel, deci clientul nu poate deschide preview-ul. Se oprește din
+*Settings → Deployment Protection → Vercel Authentication → Disabled*.
 
 Fiecare proiect Vercel are propriul subdomeniu, deci `alice` și `toan` nu au cum
 să mai intre peste el: origini diferite, storage diferit, rădăcini `/` diferite.

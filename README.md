@@ -18,6 +18,8 @@ npm run lint
 
 ## Structură
 
+Aplicația stă în rădăcina repo-ului, ca Vercel să o preia fără nicio setare.
+
 | Cale | Ce e |
 |---|---|
 | `src/app/globals.css` | Token-ii de design (`@theme`) + clasele de bază (`.shell`, `.section`, `.h1`, `.pill`…) |
