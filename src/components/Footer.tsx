@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LogoMark, Wordmark } from "./Logo";
 import { footer, practice } from "@/content/site";
 
@@ -29,12 +30,12 @@ export function Footer() {
               <ul className="mt-4 flex list-none flex-col gap-2.5 p-0">
                 {column.links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-[15px] transition-colors duration-150 ease-out hover:text-bleu-text"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -55,9 +56,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#programare" className="text-[15px]">
+                <Link href="/#programare" className="text-[15px]">
                   Programare online
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -67,9 +68,9 @@ export function Footer() {
           <p className="m-0">{footer.copyright}</p>
           <p className="m-0 flex gap-5">
             {footer.legal.map((link) => (
-              <a key={link.href} href={link.href} className="text-text-label">
+              <Link key={link.href} href={link.href} className="text-text-label">
                 {link.label}
-              </a>
+              </Link>
             ))}
           </p>
         </div>

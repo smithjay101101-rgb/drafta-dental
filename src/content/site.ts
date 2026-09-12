@@ -39,18 +39,18 @@ export const practice = {
 } as const;
 
 export const nav = [
-  { label: "Despre noi", href: "#despre" },
-  { label: "Servicii", href: "#servicii" },
-  { label: "Locație", href: "#locatie" },
-  { label: "Echipa", href: "#echipa" },
-  { label: "Întrebări", href: "#faq" },
+  { label: "Despre noi", href: "/despre-noi" },
+  { label: "Servicii", href: "/#servicii" },
+  { label: "Locație", href: "/#locatie" },
+  { label: "Blog", href: "/blog" },
+  { label: "Întrebări", href: "/#faq" },
 ] as const;
 
 export const hero = {
   titleBefore: "O experiență dentară ",
   titleAccent: "mai bună",
   titleAfter: ", prin grijă și claritate.",
-  sub: "Stomatologie modernă, fără reproșuri și fără grabă, în Dorobanți. Aligneri, albire, implanturi și urgențe — programare în aceeași zi.",
+  sub: "Stomatologie modernă, fără reproșuri și fără grabă, în Dorobanți. Aligneri, albire, implanturi și urgențe, cu programare în aceeași zi.",
   ctaPrimary: "Programare online",
   /** TODO_PLACEHOLDER — cifră inventată */
   rating: "Peste 600 de recenzii de 5 stele",
@@ -280,20 +280,20 @@ export const footer = {
     {
       label: "Servicii",
       links: [
-        { label: "Igienizare", href: "#servicii" },
-        { label: "Albire și fațete", href: "#servicii" },
-        { label: "Aligneri", href: "#servicii" },
-        { label: "Implanturi", href: "#servicii" },
-        { label: "Urgențe", href: "#servicii" },
+        { label: "Igienizare", href: "/#servicii" },
+        { label: "Albire și fațete", href: "/#servicii" },
+        { label: "Aligneri", href: "/#servicii" },
+        { label: "Implanturi", href: "/#servicii" },
+        { label: "Urgențe", href: "/#servicii" },
       ],
     },
     {
       label: "Cabinet",
       links: [
-        { label: "Despre noi", href: "#despre" },
-        { label: "Echipa", href: "#echipa" },
-        { label: "Întrebări frecvente", href: "#faq" },
-        { label: "Locație și program", href: "#locatie" },
+        { label: "Despre noi", href: "/despre-noi" },
+        { label: "Blog", href: "/blog" },
+        { label: "Întrebări frecvente", href: "/#faq" },
+        { label: "Locație și program", href: "/#locatie" },
       ],
     },
   ],

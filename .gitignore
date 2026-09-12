@@ -37,3 +37,6 @@ yarn-error.log*
 
 # Originale cu date de pacient — NU se urcă nicăieri
 .foto-private/
+
+# Note interne de pre-publicare, nu se urcă
+.private-notes/

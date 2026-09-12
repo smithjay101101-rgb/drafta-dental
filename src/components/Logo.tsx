@@ -88,7 +88,7 @@ export function Lockup({
         <LogoMark onIndigo={onIndigo} />
       </span>
       <Wordmark onIndigo={onIndigo} compact={compact} />
-      <span className="sr-only">Drafta dental — acasă</span>
+      <span className="sr-only">Drafta dental, acasă</span>
     </a>
   );
 }

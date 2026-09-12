@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Lockup } from "./Logo";
 import { nav, practice } from "@/content/site";
@@ -88,23 +90,23 @@ export function Header() {
           style={{ flexWrap: "nowrap" }}
         >
           {nav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="flex-none rounded-full px-3 py-2.5 text-[15px] font-medium whitespace-nowrap transition-colors duration-150 ease-out hover:bg-white min-[1200px]:px-[18px]"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="flex flex-1 items-center justify-end gap-2 min-[480px]:gap-2.5">
-          <a
-            href="#programare"
+          <Link
+            href="/#programare"
             className="pill pill-primary px-3.5 py-[13px] text-sm min-[480px]:px-6 min-[480px]:text-[15px]"
           >
             Programează-te
-          </a>
+          </Link>
 
           <a
             href={practice.phoneHref}
@@ -134,14 +136,14 @@ export function Header() {
         >
           <nav aria-label="Principal (mobil)" className="flex flex-col">
             {nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={close}
                 className="flex min-h-12 items-center rounded-xl px-2 text-[17px] font-medium transition-colors duration-150 ease-out hover:bg-surface-2"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <a
               href={practice.phoneHref}

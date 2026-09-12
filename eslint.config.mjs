@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Prototipul de design nu este cod de producție.
+    "design_handoff_drafta_homepage/**",
+    "foto-client/**",
   ]),
 ]);
 
