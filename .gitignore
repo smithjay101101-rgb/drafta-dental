@@ -34,3 +34,6 @@ yarn-error.log*
 
 # bundle-ul de design este păstrat despachetat în design_handoff_drafta_homepage/
 *.zip
+
+# Originale cu date de pacient — NU se urcă nicăieri
+.foto-private/
