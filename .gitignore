@@ -40,3 +40,6 @@ yarn-error.log*
 
 # Note interne de pre-publicare, nu se urcă
 .private-notes/
+
+# artefact de build TypeScript
+*.tsbuildinfo
