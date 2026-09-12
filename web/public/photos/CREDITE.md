@@ -1,10 +1,34 @@
-# Fotografii interimare (stock)
+# Fotografii
+
+## Reale, de la cabinet
+
+Originalele stau în `foto-client/`, în rădăcina repo-ului.
+
+| Fișier | Slot | Sursa |
+|---|---|---|
+| `cabinet-principal.jpg` | Hero, 21:9 | `image principal.JPG`, redimensionat la 2400px |
+| `despre-radiografie.webp` | Despre noi, 1:1 | `guidance image.webp` |
+| `cabinet.webp` | Locație, 4:3 | `poza cabinet.webp` |
+
+⚠️ **`despre-radiografie.webp` este modificat intenționat.** Pe folia de
+radiografie din fotografie se citeau numele unei paciente, data examinării și
+data nașterii. Banda de antet a fost **pixelată ireversibil** înainte de a ajunge
+în `public/`: sunt date medicale identificabile (GDPR art. 9) și nu au ce căuta
+pe un site public. Originalul nemodificat a rămas în `foto-client/`. Dacă se
+înlocuiește fotografia, verificați din nou folia, ecranele și documentele din
+cadru.
+
+Încadrarea se face din CSS (`object-cover` + `objectPosition`), nu prin decupare
+distructivă — hero-ul folosește `center 38%` ca să nu taie capul medicului.
+
+## Interimare (stock)
 
 ⚠️ **Toate fotografiile din acest folder sunt STOCK, puse doar ca să se vadă
 cum arată pagina.** Handoff-ul cere fotografii reale ale cabinetului înainte de
 lansare („Replace with real photography of the practice (stock dental photos as
 interim)").
 
+Cele cinci fotografii de pe cardurile de servicii sunt încă stock.
 Sursa: [Unsplash](https://unsplash.com), sub [licenţa Unsplash](https://unsplash.com/license)
 (utilizare gratuită, comercială inclusă, fără atribuire obligatorie). Niciuna nu
 este Unsplash+ / premium.

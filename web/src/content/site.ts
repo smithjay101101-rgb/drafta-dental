@@ -55,8 +55,8 @@ export const hero = {
   /** TODO_PLACEHOLDER — cifră inventată */
   rating: "Peste 600 de recenzii de 5 stele",
   imageCaption: "foto stock lată: interiorul cabinetului",
-  image: "/photos/hero.jpg",
-  imageAlt: "Sala de tratament a cabinetului Drafta dental",
+  image: "/photos/cabinet-principal.jpg",
+  imageAlt: "Medic stomatolog stând de vorbă cu o pacientă în cabinetul Drafta dental",
 } as const;
 
 export const about = {
@@ -69,8 +69,8 @@ export const about = {
     "Plată în rate, fără dobândă, până în 12 luni.",
   ],
   imageCaption: "foto: pacientă și medic, discuție",
-  image: "/photos/despre.jpg",
-  imageAlt: "Medic stomatolog discutând cu o pacientă în cabinet",
+  image: "/photos/despre-radiografie.webp",
+  imageAlt: "Medic arătând unei paciente radiografiile dentare",
 } as const;
 
 export const services = {
@@ -127,8 +127,8 @@ export const location = {
   body: "La cinci minute de Piața Victoriei. Intrare din curte, parcare pentru pacienți, acces pentru cărucior.",
   cta: "Vino la noi",
   imageCaption: "foto / hartă: intrarea din Strada Justinian",
-  image: "/photos/locatie.jpg",
-  imageAlt: "Zona de aşteptare a cabinetului",
+  image: "/photos/cabinet.webp",
+  imageAlt: "Cabinetul de tratament din Strada Justinian 10",
 } as const;
 
 /** Un medic din secțiunea Echipa. `image` lipsește cât timp nu avem portretul. */

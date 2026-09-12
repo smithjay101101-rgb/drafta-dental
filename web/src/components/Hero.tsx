@@ -44,6 +44,7 @@ export function Hero() {
           alt={hero.imageAlt}
           priority
           sizes="(max-width: 1320px) 100vw, 1320px"
+          objectPosition="center 38%"
           aspect="21 / 9"
           radius="28px"
         />

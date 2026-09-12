@@ -15,6 +15,7 @@ export function ImagePlaceholder({
   alt,
   priority = false,
   sizes = "100vw",
+  objectPosition,
   className = "",
   style,
   aspect,
@@ -27,6 +28,8 @@ export function ImagePlaceholder({
   alt?: string;
   priority?: boolean;
   sizes?: string;
+  /** Ce parte a fotografiei rămâne la vedere după decupare, ex. "center 30%". */
+  objectPosition?: string;
   className?: string;
   style?: React.CSSProperties;
   /** ex. "21 / 9" */
@@ -54,6 +57,7 @@ export function ImagePlaceholder({
           sizes={sizes}
           priority={priority}
           className="object-cover"
+          style={{ objectPosition }}
         />
       </div>
     );
