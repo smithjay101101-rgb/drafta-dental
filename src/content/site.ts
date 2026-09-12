@@ -1,3 +1,5 @@
+import { doctors } from "./doctors";
+
 /**
  * Toate textele paginii, într-un singur loc.
  *
@@ -41,6 +43,7 @@ export const practice = {
 export const nav = [
   { label: "Despre noi", href: "/despre-noi" },
   { label: "Servicii", href: "/#servicii" },
+  { label: "Medici", href: "/medici" },
   { label: "Locație", href: "/#locatie" },
   { label: "Blog", href: "/blog" },
   { label: "Întrebări", href: "/#faq" },
@@ -131,56 +134,28 @@ export const location = {
   imageAlt: "Cabinetul de tratament din Strada Justinian 10",
 } as const;
 
-/** Un medic din secțiunea Echipa. `image` lipsește cât timp nu avem portretul. */
-export type TeamMember = {
-  name: string;
-  specialty: string;
-  bio: string;
-  /** Ce fotografie trebuie pusă aici, afișat în placeholder. */
-  imageCaption: string;
-  image?: string;
-  imageAlt: string;
-};
-
-export const team: { title: string; sub: string; members: TeamMember[] } = {
+/**
+ * Secțiunea Echipa de pe pagina de acasă.
+ *
+ * Datele medicilor NU se mai scriu aici. Sursa unică este
+ * src/content/doctors.ts, ca pagina de acasă, /medici și paginile
+ * individuale să nu se contrazică. Ordinea urmează vechimea: medicul senior
+ * primul.
+ */
+export const team = {
   title: "Medicii dumneavoastră",
   sub: "Doi medici, o echipă. Îi cunoașteți pe amândoi de la prima vizită.",
-  /**
-   * Numele sunt REALE (date de client).
-   *
-   * ⚠️ `specialty` și `bio` sunt însă în continuare textele inventate din
-   * prototip, iar acum stau lângă numele unor persoane reale — inclusiv cifre
-   * („Peste 900 de implanturi puse") și afirmații („fondator", „din 2016") pe
-   * care nu le-a confirmat nimeni. De cerut varianta corectă de la cabinet
-   * înainte de a scoate `noindex`. Aceleași date ajung și în JSON-LD
-   * (`src/lib/jsonld.ts`, câmpul `employee`).
-   *
-   * Portretele sunt cele primite de la cabinet (originalele în foto-client/).
-   * Sunt însă mici — 447x447 și 200x200 — pentru un slot 4:5 afișat la ~440px,
-   * deci apar neclare pe ecrane retina. De cerut originalele.
-   */
-  members: [
-    {
-      name: "Dr. Andrei Drafta",
-      /** TODO_PLACEHOLDER — de confirmat */
-      specialty: "Protetică și estetică dentară · fondator",
-      /** TODO_PLACEHOLDER — de confirmat */
-      bio: "Fațete, coroane și reabilitări complete. Conduce cabinetul din Dorobanți de la deschidere, în 2016.",
-      imageCaption: "portret: Dr. Andrei Drafta",
-      image: "/photos/medic-andrei-drafta.jpg",
-      imageAlt: "Dr. Andrei Drafta, medic stomatolog la Drafta dental",
-    },
-    {
-      name: "Dr. Sergiu Drafta",
-      /** TODO_PLACEHOLDER — de confirmat */
-      specialty: "Implantologie și chirurgie orală",
-      /** TODO_PLACEHOLDER — de confirmat */
-      bio: "Implanturi, extracții și adiții osoase, cu chirurgie ghidată digital. Peste 900 de implanturi puse.",
-      imageCaption: "portret: Dr. Sergiu Drafta",
-      image: "/photos/medic-sergiu-drafta.jpg",
-      imageAlt: "Dr. Sergiu Drafta, medic stomatolog la Drafta dental",
-    },
-  ],
+  members: [...doctors]
+    .sort((a, b) => (a.seniority === "senior" ? -1 : b.seniority === "senior" ? 1 : 0))
+    .map((d) => ({
+      slug: d.slug,
+      name: `${d.prefix} ${d.name}`,
+      specialty: d.role,
+      bio: d.short,
+      imageCaption: d.imageCaption,
+      image: d.image,
+      imageAlt: d.imageAlt,
+    })),
 };
 
 export const reviews = {
@@ -291,6 +266,7 @@ export const footer = {
       label: "Cabinet",
       links: [
         { label: "Despre noi", href: "/despre-noi" },
+        { label: "Medici", href: "/medici" },
         { label: "Blog", href: "/blog" },
         { label: "Întrebări frecvente", href: "/#faq" },
         { label: "Locație și program", href: "/#locatie" },

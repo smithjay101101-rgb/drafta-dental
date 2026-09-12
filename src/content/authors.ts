@@ -1,10 +1,14 @@
+import { doctors } from "./doctors";
+
 /**
- * Entitatea canonică de autor. Aceleași valori pe fiecare pagină și în
- * fiecare JSON-LD, fără variații: nume, rol și descriere identice sitewide.
+ * Entitatea canonică de autor, derivată din src/content/doctors.ts.
  *
- * [VERIFY] `credentials` și `experience` sunt necompletate intenționat.
- * Nu inventăm calificări pentru un medic real. Se completează cu datele
- * furnizate de cabinet (facultate, an, competențe, număr CMDR).
+ * Nu se scriu aici nume, titluri sau descrieri separate. Regula din brief
+ * este ca obiectul de autor să fie identic pe tot site-ul, iar singurul fel
+ * de a garanta asta este o singură sursă.
+ *
+ * [VERIFY] `credentials` rămâne gol pentru medicii fără date publice
+ * confirmate. Nu se inventează calificări.
  */
 export type Author = {
   id: string;
@@ -12,29 +16,19 @@ export type Author = {
   jobTitle: string;
   description: string;
   url: string;
-  credentials: string[];
   sameAs: string[];
 };
 
-export const authors: Record<string, Author> = {
-  "andrei-drafta": {
-    id: "andrei-drafta",
-    name: "Dr. Andrei Drafta",
-    jobTitle: "Medic stomatolog",
-    description:
-      "Medic stomatolog la Drafta dental, cabinet din Strada Justinian 10, București.",
-    url: "/despre-noi#andrei-drafta",
-    credentials: [], // [VERIFY]
-    sameAs: [],
-  },
-  "sergiu-drafta": {
-    id: "sergiu-drafta",
-    name: "Dr. Sergiu Drafta",
-    jobTitle: "Medic stomatolog",
-    description:
-      "Medic stomatolog la Drafta dental, cabinet din Strada Justinian 10, București.",
-    url: "/despre-noi#sergiu-drafta",
-    credentials: [], // [VERIFY]
-    sameAs: [],
-  },
-};
+export const authors: Record<string, Author> = Object.fromEntries(
+  doctors.map((d) => [
+    d.slug.replace(/^dr-/, ""),
+    {
+      id: d.slug,
+      name: `${d.prefix} ${d.name}`,
+      jobTitle: d.jobTitle,
+      description: d.metaDescription,
+      url: `/medici/${d.slug}`,
+      sameAs: d.sameAs,
+    } satisfies Author,
+  ]),
+);

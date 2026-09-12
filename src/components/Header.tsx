@@ -93,7 +93,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="flex-none rounded-full px-3 py-2.5 text-[15px] font-medium whitespace-nowrap transition-colors duration-150 ease-out hover:bg-white min-[1200px]:px-[18px]"
+              className="flex-none rounded-full px-2.5 py-2.5 text-[14px] font-medium whitespace-nowrap transition-colors duration-150 ease-out hover:bg-white min-[1060px]:px-3.5 min-[1060px]:text-[15px] min-[1280px]:px-[18px]"
             >
               {item.label}
             </Link>

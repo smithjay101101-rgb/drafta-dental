@@ -8,14 +8,18 @@
 @theme {
   --color-indigo: #434279;
   --color-bleu: #8db7d2;
+  /* Accentul italic din H1. Text mare, 3.34:1, trece AA pentru >=24px. */
   --color-bleu-text: #6e8fb8;
+  /* Pentru link-uri si text de marime normala: 5.25:1 pe alb. */
+  --color-link: #4f6e96;
   --color-surface: #f7f9fc;
   --color-surface-2: #f4f6fa;
   --color-line: #ebeaf1;
   --color-line-input: #dddce6;
   --color-line-button: #cbc7d8;
   --color-text-muted: #5a5f75;
-  --color-text-label: #6e7386;
+  /* 4.69:1 pe #F4F6FA, cel mai deschis fundal tintat. Vechiul #6E7386 pica AA acolo. */
+  --color-text-label: #696e80;
   /* Not in the handoff: needed for form errors. ~5.9:1 on white. */
   --color-danger: #b3261e;
 
@@ -50,6 +54,10 @@
   a {
     color: var(--color-indigo);
     text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-link);
   }
 
   ::selection {
@@ -178,6 +186,36 @@
   .pill-white:hover {
     background: var(--color-bleu);
     color: #fff;
+  }
+}
+
+@layer components {
+  /* Ținte de atingere de minimum 44px pentru link-urile din liste de navigare. */
+  .nav-list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* Indiciu că tabelul se derulează lateral, altfel ultima coloană trece neobservată. */
+  .table-scroll {
+    position: relative;
+  }
+  .table-scroll::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    width: 34px;
+    border-radius: 0 17px 17px 0;
+    background: linear-gradient(to right, rgb(255 255 255 / 0), rgb(255 255 255 / 0.95));
+    pointer-events: none;
+  }
+  @media (min-width: 760px) {
+    .table-scroll::after {
+      display: none;
+    }
   }
 }
 

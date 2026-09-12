@@ -46,7 +46,7 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
 
         return (
           <figure key={i} className="m-0 mt-7">
-            <div className="overflow-x-auto rounded-[18px] border border-line">
+            <div className="table-scroll overflow-x-auto rounded-[18px] border border-line">
               <table className="w-full border-collapse text-left text-[15px]">
                 <caption className="sr-only">{b.caption}</caption>
                 <thead>

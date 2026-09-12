@@ -27,7 +27,7 @@ export function Footer() {
           {footer.columns.map((column) => (
             <nav key={column.label} aria-label={column.label}>
               <p className="label-meta m-0">{column.label}</p>
-              <ul className="mt-4 flex list-none flex-col gap-2.5 p-0">
+              <ul className="nav-list mt-2 flex list-none flex-col p-0">
                 {column.links.map((link) => (
                   <li key={link.label}>
                     <Link
@@ -44,7 +44,7 @@ export function Footer() {
 
           <div>
             <p className="label-meta m-0">Contact</p>
-            <ul className="mt-4 flex list-none flex-col gap-2.5 p-0">
+            <ul className="nav-list mt-2 flex list-none flex-col p-0">
               <li>
                 <a href={practice.phoneHref} className="text-[15px]">
                   {practice.phone}

@@ -1,4 +1,5 @@
-import { faq, practice, team } from "@/content/site";
+import { faq, practice } from "@/content/site";
+import { doctors } from "@/content/doctors";
 
 /**
  * Date structurate. Valorile vin din src/content/site.ts — cât timp acolo sunt
@@ -39,10 +40,12 @@ export const dentistJsonLd = {
       closes: "15:00",
     },
   ],
-  employee: team.members.map((member) => ({
+  employee: doctors.map((d) => ({
     "@type": "Person",
-    name: member.name,
-    jobTitle: member.specialty,
+    "@id": `${practice.url}/medici/${d.slug}`,
+    name: `${d.prefix} ${d.name}`,
+    jobTitle: d.jobTitle,
+    url: `${practice.url}/medici/${d.slug}`,
   })),
   areaServed: "București",
   // TODO: adăugați `geo`, `image`, `priceRange` și `aggregateRating` doar cu

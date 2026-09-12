@@ -29,9 +29,17 @@ Aplicația stă în rădăcina repo-ului, ca Vercel să o preia fără nicio set
 | `src/lib/jsonld.ts` | Date structurate `Dentist` + `FAQPage` |
 | `src/app/api/programare/route.ts` | Endpoint-ul formularului (încă nu trimite nicăieri) |
 
-Token-ii sunt cei din handoff, unul la unu. Singura culoare adăugată este
-`--color-danger` (`#B3261E`, ~5.9:1 pe alb) — handoff-ul cerea erori de formular
-într-o „danger color" fără să o definească.
+Token-ii sunt cei din handoff, cu trei abateri, toate din motive de contrast
+măsurat:
+
+- `--color-danger` `#B3261E`, adăugat. Handoff-ul cerea o „danger color" pentru
+  erorile de formular fără să o definească.
+- `--color-text-label` mutat de la `#6E7386` la `#696E80`. Valoarea din handoff
+  dădea 4.35:1 pe `#F4F6FA`, sub pragul AA. Acum 4.69:1. Handoff-ul o declara
+  la 5.3:1 pe alb, măsurat însă 4.71:1.
+- `--color-link` `#4F6E96`, adăugat pentru link-uri și text de mărime normală.
+  `--color-bleu-text` `#6E8FB8` are 3.34:1 pe alb, suficient pentru accentul
+  italic din H1, care e text mare, dar nu pentru text obișnuit.
 
 ## Abateri conştiente de la prototip
 

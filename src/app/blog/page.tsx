@@ -55,7 +55,7 @@ export default function BlogIndex() {
       <main id="main" className="shell pt-10">
         <div className="mx-auto max-w-[760px]">
           <nav aria-label="Firimituri" className="text-[13px] text-text-label">
-            <ol className="m-0 flex list-none gap-2 p-0">
+            <ol className="nav-list m-0 flex list-none items-center gap-x-2 p-0">
               <li>
                 <Link href="/" className="text-text-label">
                   Acasă

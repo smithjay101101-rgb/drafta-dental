@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { team } from "@/content/site";
 
@@ -31,7 +32,11 @@ export function Team() {
                 aspect="4 / 5"
               />
               <div className="p-[26px]">
-                <h3 className="h3 text-[23px]">{member.name}</h3>
+                <h3 className="h3 text-[23px]">
+                  <Link href={`/medici/${member.slug}`}>
+                    {member.name}
+                  </Link>
+                </h3>
                 <p className="mt-1.5 text-[15px] text-text-label">
                   {member.specialty}
                 </p>

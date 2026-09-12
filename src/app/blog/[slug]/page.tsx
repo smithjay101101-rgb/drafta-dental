@@ -114,7 +114,7 @@ export default async function PostPage({
       <main id="main" className="shell pt-10 pb-0">
         <article className="mx-auto max-w-[760px]">
           <nav aria-label="Firimituri" className="text-[13px] text-text-label">
-            <ol className="m-0 flex list-none flex-wrap gap-2 p-0">
+            <ol className="nav-list m-0 flex list-none flex-wrap items-center gap-x-2 p-0">
               <li>
                 <Link href="/" className="text-text-label">
                   Acasă
@@ -180,7 +180,7 @@ export default async function PostPage({
             <h2 id="toc" className="label-meta m-0">
               Pe această pagină
             </h2>
-            <ol className="mt-3 flex list-none flex-col gap-2 p-0 text-[16px]">
+            <ol className="nav-list mt-3 flex list-none flex-col p-0 text-[16px]">
               {post.sections.map((s, i) => (
                 <li key={s.id}>
                   <span className="text-text-label">{i + 1}. </span>
@@ -246,7 +246,7 @@ export default async function PostPage({
 
           <section className="mt-12">
             <h2 className="h3 text-[20px]">De citit mai departe</h2>
-            <ul className="mt-4 flex list-none flex-col gap-2.5 p-0 text-[16px]">
+            <ul className="nav-list mt-4 flex list-none flex-col p-0 text-[16px]">
               {post.related.map((r) => (
                 <li key={r.href}>
                   <Link href={r.href}>{r.label}</Link>
