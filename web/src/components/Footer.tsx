@@ -1,0 +1,79 @@
+import { LogoMark, Wordmark } from "./Logo";
+import { footer, practice } from "@/content/site";
+
+export function Footer() {
+  return (
+    <footer className="border-t border-line pt-14 pb-10">
+      <div className="shell">
+        <div
+          className="grid gap-10"
+          style={{
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          }}
+        >
+          <div>
+            <div className="flex items-center gap-[11px]">
+              <LogoMark />
+              <Wordmark />
+            </div>
+            <address className="mt-5 text-[15px]/[1.7] text-text-muted not-italic">
+              {practice.address.street}
+              <br />
+              {practice.address.locality}
+            </address>
+          </div>
+
+          {footer.columns.map((column) => (
+            <nav key={column.label} aria-label={column.label}>
+              <p className="label-meta m-0">{column.label}</p>
+              <ul className="mt-4 flex list-none flex-col gap-2.5 p-0">
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-[15px] transition-colors duration-150 ease-out hover:text-bleu-text"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
+
+          <div>
+            <p className="label-meta m-0">Contact</p>
+            <ul className="mt-4 flex list-none flex-col gap-2.5 p-0">
+              <li>
+                <a href={practice.phoneHref} className="text-[15px]">
+                  {practice.phone}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${practice.email}`} className="text-[15px]">
+                  {practice.email}
+                </a>
+              </li>
+              <li>
+                <a href="#programare" className="text-[15px]">
+                  Programare online
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-14 flex flex-wrap items-center justify-between gap-4 text-sm text-text-label">
+          <p className="m-0">{footer.copyright}</p>
+          <p className="m-0 flex gap-5">
+            {footer.legal.map((link) => (
+              <a key={link.href} href={link.href} className="text-text-label">
+                {link.label}
+              </a>
+            ))}
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

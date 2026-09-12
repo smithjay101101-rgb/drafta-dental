@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drafta dental — handoff</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600;800;900&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #fff; }
+  * { box-sizing: border-box; }
+  a { color: #434279; }
+  a:hover { color: #6E8FB8; }
+</style>
+</helmet>
+
+<div style="font-family: Figtree, system-ui, sans-serif; color: #434279; max-width: 900px; margin: 0 auto; padding: 56px 24px 96px">
+
+  <div style="display: flex; align-items: center; gap: 11px">
+    <span style="width: 40px; height: 40px; background: #434279; border-radius: 10px 10px 20px 20px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 7px; flex: none">
+      <span style="width: 22px; height: 11px; background: #8DB7D2; border-radius: 0 0 11px 11px; display: block"></span>
+    </span>
+    <span style="display: flex; flex-direction: column; line-height: 1">
+      <span style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 23px">Drafta</span>
+      <span style="font-size: 10px; letter-spacing: 0.4em; margin-top: 3px">dental</span>
+    </span>
+  </div>
+
+  <h1 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(34px, 5vw, 50px); letter-spacing: -0.03em; line-height: 1.05; margin: 28px 0 0">Handoff: schema de culoare şi planul site-ului</h1>
+  <p style="font-size: 18px; line-height: 1.6; max-width: 38em; margin: 16px 0 0">Document de referinţă pentru implementare. Cabinet unic, Bucureşti. Limba site-ului: română.</p>
+
+  <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 29px; letter-spacing: -0.025em; margin: 56px 0 10px">1. Schema aleasă: indigo &amp; bleu pe alb</h2>
+  <p style="font-size: 17px; line-height: 1.6; max-width: 38em; margin: 0 0 26px">Culorile din logo, exact în raportul din marcă: indigo pentru text şi suprafeţe pline, bleu pentru accent, alb ca fundal dominant. Roz-ul din manualul de brand nu se foloseşte pe site — rămâne pentru print şi social.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 14px">
+    <div style="background: #434279; color: #fff; border-radius: 16px; padding: 18px; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 18px">Indigo</div>
+      <div style="font-family: ui-monospace, monospace; font-size: 14px; opacity: 0.9">#434279</div>
+      <div style="font-size: 13px; margin-top: 6px; opacity: 0.85">text, butoane, secţiunea-citat</div>
+    </div>
+    <div style="background: #8DB7D2; color: #fff; border-radius: 16px; padding: 18px; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 18px">Bleu</div>
+      <div style="font-family: ui-monospace, monospace; font-size: 14px">#8DB7D2</div>
+      <div style="font-size: 13px; margin-top: 6px">accent, hover, numerotări, linii</div>
+    </div>
+    <div style="background: #F7F9FC; border: 1.5px solid #EBEAF1; border-radius: 16px; padding: 18px; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 18px">Alb-rece</div>
+      <div style="font-family: ui-monospace, monospace; font-size: 14px">#F7F9FC</div>
+      <div style="font-size: 13px; margin-top: 6px">secţiuni alternate</div>
+    </div>
+    <div style="background: #fff; border: 1.5px solid #EBEAF1; border-radius: 16px; padding: 18px; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 18px">Linii</div>
+      <div style="font-family: ui-monospace, monospace; font-size: 14px">#EBEAF1</div>
+      <div style="font-size: 13px; margin-top: 6px">borduri de 1 px, grila de carduri</div>
+    </div>
+    <div style="background: #fff; border: 1.5px solid #EBEAF1; border-radius: 16px; padding: 18px; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 18px; color: #6E7386">Text secundar</div>
+      <div style="font-family: ui-monospace, monospace; font-size: 14px; color: #6E7386">#6E7386</div>
+      <div style="font-size: 13px; margin-top: 6px; color: #6E7386">etichete, specialităţi, notiţe</div>
+    </div>
+  </div>
+
+  <div style="background: #F7F9FC; border-radius: 18px; padding: 26px; margin-top: 22px">
+    <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 12px">Reguli de aplicare</h3>
+    <ul style="font-size: 16px; line-height: 1.7; margin: 0; padding-left: 20px">
+      <li>Alb pe cel puţin 80% din pagină. O singură secţiune indigo plină, folosită pentru citatul pacientului.</li>
+      <li>Bleu-ul nu poartă text: e accent, hover şi cifră. Text alb pe bleu doar la dimensiuni mari.</li>
+      <li>Butonul principal: indigo, hover bleu. Butonul secundar: contur <span style="font-family: ui-monospace, monospace; font-size: 15px">#CBC7D8</span>, hover contur indigo.</li>
+      <li>Separăm secţiunile cu linii de 1 px sau cu fundal <span style="font-family: ui-monospace, monospace; font-size: 15px">#F7F9FC</span>, nu cu umbre.</li>
+      <li>Fără gradienţi. Fără carduri colorate în afara grilei de servicii.</li>
+    </ul>
+  </div>
+
+  <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 29px; letter-spacing: -0.025em; margin: 56px 0 10px">2. Tipografie şi forme</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 26px">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 30px; letter-spacing: -0.025em">Urbanist Black</div>
+      <p style="font-size: 16px; line-height: 1.6; margin: 10px 0 0">Titluri, cifre, numele brandului. Tracking −0,025em. Nu se foloseşte pentru text curent.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 26px">
+      <div style="font-family: Figtree, sans-serif; font-weight: 400; font-size: 30px">Figtree Regular</div>
+      <p style="font-size: 16px; line-height: 1.6; margin: 10px 0 0">Text curent de la 16 px, line-height 1,6. Medium şi Semibold pentru etichete şi butoane.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 26px">
+      <div style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 21px">Forma din logo</div>
+      <p style="font-size: 16px; line-height: 1.6; margin: 10px 0 0">Zâmbetul devine rază: colţuri sus 28 px, jos rotunjite complet. Folosit la imaginea din hero şi la portrete.</p>
+    </div>
+  </div>
+
+  <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 29px; letter-spacing: -0.025em; margin: 56px 0 10px">3. Structura paginii principale</h2>
+  <p style="font-size: 17px; line-height: 1.6; max-width: 38em; margin: 0 0 20px">Şapte blocuri, un singur mesaj fiecare. Detaliile lungi trec în subpagini, nu pe homepage.</p>
+  <ol style="font-size: 17px; line-height: 1.85; margin: 0; padding-left: 22px; max-width: 42em">
+    <li>Hero: titlu, o propoziţie, două butoane, o fotografie.</li>
+    <li>Bandă subţire cu patru dovezi scurte.</li>
+    <li>Servicii: patru carduri de câte o linie, plus link spre lista completă.</li>
+    <li>Cum lucrăm: trei paşi, pe fundal alb-rece.</li>
+    <li>Echipa: doi medici, portret şi două linii fiecare.</li>
+    <li>Un citat de pacient, pe indigo plin.</li>
+    <li>Contact: adresă, program, formular de trei câmpuri.</li>
+  </ol>
+
+  <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 29px; letter-spacing: -0.025em; margin: 56px 0 10px">4. Restul site-ului</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px">
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 24px">
+      <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 8px">Pagină per serviciu</h3>
+      <p style="font-size: 16px; line-height: 1.6; margin: 0">Patru pagini: ce rezolvă, cum se desfăşoară vizita, cât durează, de la ce preţ, întrebări frecvente.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 24px">
+      <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 8px">Listă de preţuri</h3>
+      <p style="font-size: 16px; line-height: 1.6; margin: 0">Tabel complet, grupat pe categorii, cu notă despre ce include preţul. Aici mută tot ce ar aglomera homepage-ul.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 24px">
+      <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 8px">Programare online</h3>
+      <p style="font-size: 16px; line-height: 1.6; margin: 0">Trei paşi: serviciu, medic, interval. Confirmare pe SMS şi reamintire cu 24 de ore înainte.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 24px">
+      <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 8px">Înainte şi după</h3>
+      <p style="font-size: 16px; line-height: 1.6; margin: 0">Cazuri reale, cu acordul pacientului: ce s-a făcut, în câte şedinţe, la ce preţ.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 24px">
+      <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 8px">Urgenţe</h3>
+      <p style="font-size: 16px; line-height: 1.6; margin: 0">Pagină scurtă: ce faceţi până ajungeţi la cabinet, ce intervale ţinem libere, buton de apel fix pe mobil.</p>
+    </div>
+    <div style="border: 1px solid #EBEAF1; border-radius: 18px; padding: 24px">
+      <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 20px; margin: 0 0 8px">Despre cabinet</h3>
+      <p style="font-size: 16px; line-height: 1.6; margin: 0">Istoric, aparatură, sterilizare, echipa completă. Fotografii ale spaţiului real, nu stock.</p>
+    </div>
+  </div>
+
+  <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 29px; letter-spacing: -0.025em; margin: 56px 0 10px">5. De înlocuit înainte de lansare</h2>
+  <div style="background: #434279; color: #fff; border-radius: 18px; padding: 26px">
+    <ul style="font-size: 16px; line-height: 1.75; margin: 0; padding-left: 20px">
+      <li>Toate imaginile sunt substituenţi haşuraţi. Se înlocuiesc cu fotografii ale cabinetului din Dorobanţi.</li>
+      <li>Adresa, telefonul, e-mailul şi programul sunt exemple.</li>
+      <li>Numele celor doi medici, ratingul, preţurile şi citatul sunt inventate. Nu se publică date nereale.</li>
+      <li>Formularul nu trimite nimic — trebuie legat la backend, plus consimţământ GDPR.</li>
+      <li>De adăugat: hartă, date de firmă, politica de confidenţialitate.</li>
+    </ul>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

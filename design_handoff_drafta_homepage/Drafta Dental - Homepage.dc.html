@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drafta dental — Stomatologie în Bucureşti</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,600;0,800;0,900;1,800;1,900&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #fff; }
+  * { box-sizing: border-box; }
+  a { color: #434279; text-decoration: none; }
+  a:hover { color: #6E8FB8; }
+  ::selection { background: #8DB7D2; color: #fff; }
+</style>
+</helmet>
+
+<div style="font-family: Figtree, system-ui, sans-serif; color: #434279; background: #fff">
+
+  <header style="position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.94); backdrop-filter: blur(12px)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 16px 28px; display: flex; align-items: center; gap: 20px">
+      <a href="#top" style="display: flex; align-items: center; gap: 11px; flex: none">
+        <span style="width: 40px; height: 40px; background: #434279; border-radius: 10px 10px 20px 20px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 7px; flex: none">
+          <span style="width: 22px; height: 11px; background: #8DB7D2; border-radius: 0 0 11px 11px; display: block"></span>
+        </span>
+        <span style="display: flex; flex-direction: column; line-height: 1">
+          <span style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 24px; letter-spacing: -0.01em">Drafta</span>
+          <span style="font-size: 10px; letter-spacing: 0.42em; margin-top: 3px">dental</span>
+        </span>
+      </a>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav style="margin: 0 auto; display: flex; align-items: center; gap: 4px; background: #F4F6FA; border-radius: 999px; padding: 6px; flex-wrap: nowrap; overflow-x: auto; flex: 1 1 200px; min-width: 170px; scrollbar-width: none; justify-content: flex-start">
+        <a href="#despre" style="font-size: 15px; font-weight: 500; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none" style-hover="background: #fff; color: #434279">Despre noi</a>
+        <a href="#servicii" style="font-size: 15px; font-weight: 500; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none" style-hover="background: #fff; color: #434279">Servicii</a>
+        <a href="#locatie" style="font-size: 15px; font-weight: 500; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none" style-hover="background: #fff; color: #434279">Locaţie</a>
+        <a href="#echipa" style="font-size: 15px; font-weight: 500; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none" style-hover="background: #fff; color: #434279">Echipa</a>
+        <a href="#faq" style="font-size: 15px; font-weight: 500; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none" style-hover="background: #fff; color: #434279">Întrebări</a>
+      </nav>
+      </sc-if>
+      <div style="display: flex; align-items: center; gap: 10px; flex: none; margin-left: auto">
+        <a href="#programare" style="background: #434279; color: #fff; font-weight: 600; font-size: 15px; padding: 13px 24px; border-radius: 999px; white-space: nowrap" style-hover="background: #8DB7D2">{{ ctaLabel }}</a>
+        <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+          <a href="tel:+40721000128" style="border: 1.5px solid #CBC7D8; font-weight: 600; font-size: 15px; padding: 11.5px 22px; border-radius: 999px; white-space: nowrap" style-hover="border-color: #434279">Sună</a>
+        </sc-if>
+        <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+          <button type="button" onClick="{{ toggleMenu }}" aria-label="Meniu" style="font-family: Figtree, sans-serif; background: #F4F6FA; color: #434279; border: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 999px; cursor: pointer; min-height: 46px; white-space: nowrap">Meniu</button>
+        </sc-if>
+      </div>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <nav style="border-top: 1px solid #EBEAF1; background: #fff; padding: 12px 28px 20px; display: grid; gap: 4px">
+        <a href="#despre" onClick="{{ closeMenu }}" style="font-size: 17px; font-weight: 500; padding: 14px 6px; border-radius: 12px; min-height: 48px" style-hover="background: #F4F6FA">Despre noi</a>
+        <a href="#servicii" onClick="{{ closeMenu }}" style="font-size: 17px; font-weight: 500; padding: 14px 6px; border-radius: 12px; min-height: 48px" style-hover="background: #F4F6FA">Servicii</a>
+        <a href="#locatie" onClick="{{ closeMenu }}" style="font-size: 17px; font-weight: 500; padding: 14px 6px; border-radius: 12px; min-height: 48px" style-hover="background: #F4F6FA">Locaţie</a>
+        <a href="#echipa" onClick="{{ closeMenu }}" style="font-size: 17px; font-weight: 500; padding: 14px 6px; border-radius: 12px; min-height: 48px" style-hover="background: #F4F6FA">Echipa</a>
+        <a href="#faq" onClick="{{ closeMenu }}" style="font-size: 17px; font-weight: 500; padding: 14px 6px; border-radius: 12px; min-height: 48px" style-hover="background: #F4F6FA">Întrebări</a>
+        <a href="tel:+40721000128" style="font-size: 17px; font-weight: 600; padding: 14px 6px; border-radius: 12px; min-height: 48px" style-hover="background: #F4F6FA">Sună: 0721 000 128</a>
+      </nav>
+    </sc-if>
+  </header>
+
+  <section id="top" style="text-align: center; padding: 96px 24px 0">
+    <div style="max-width: 1000px; margin: 0 auto">
+      <h1 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(44px, 7vw, 88px); line-height: 1.02; letter-spacing: -0.035em; margin: 0; text-wrap: balance">O experienţă dentară <span style="font-style: italic; color: #6E8FB8">mai bună</span>, prin grijă şi claritate.</h1>
+      <p style="font-size: 20px; line-height: 1.6; max-width: 30em; margin: 28px auto 0; color: #5A5F75; text-wrap: pretty">Stomatologie modernă, fără reproşuri şi fără grabă, în Dorobanţi. Aligneri, albire, implanturi şi urgenţe — programare în aceeaşi zi.</p>
+      <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 36px">
+        <a href="#programare" style="background: #434279; color: #fff; font-weight: 600; font-size: 17px; padding: 17px 34px; border-radius: 999px" style-hover="background: #8DB7D2">Programare online</a>
+        <a href="tel:+40721000128" style="border: 1.5px solid #CBC7D8; font-weight: 600; font-size: 17px; padding: 16px 30px; border-radius: 999px" style-hover="border-color: #434279">Sună: 0721 000 128</a>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 26px; font-size: 16px; color: #5A5F75">
+        <span style="color: #8DB7D2; font-size: 19px; letter-spacing: 2px">★★★★★</span>
+        <span>Peste 600 de recenzii de 5 stele</span>
+      </div>
+    </div>
+    <div style="max-width: 1320px; margin: 64px auto 0; padding: 0 28px">
+      <div style="aspect-ratio: 21/9; border-radius: 28px; background: repeating-linear-gradient(135deg, #E4EAF2 0 16px, #EFF3F8 16px 32px); display: flex; align-items: flex-end; justify-content: center; padding: 22px">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #4D5B72; background: #fff; padding: 8px 12px; border-radius: 7px">foto stock lată: interiorul cabinetului</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="despre" style="max-width: 1320px; margin: 0 auto; padding: 104px 28px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center">
+      <div>
+        <span style="display: inline-block; background: #F4F6FA; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 15px; border-radius: 999px">Despre noi</span>
+        <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 22px 0 0">Cabinetul în care nimeni nu vă face morală.</h2>
+        <p style="font-size: 18px; line-height: 1.65; margin: 20px 0 0; color: #5A5F75">Dacă nu aţi mai fost la dentist de cinci ani, ne spuneţi şi mergem înainte. Vă arătăm radiografiile pe ecran, vă explicăm ce vedem şi vă dăm planul în scris, cu preţ fix, înainte să atingem un dinte.</p>
+        <div style="display: grid; gap: 14px; margin-top: 30px">
+          <div style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 8px; height: 8px; background: #8DB7D2; border-radius: 50%; margin-top: 9px; flex: none"></span><span style="font-size: 17px; line-height: 1.6">Consultaţie de 45 de minute, nu de zece.</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 8px; height: 8px; background: #8DB7D2; border-radius: 50%; margin-top: 9px; flex: none"></span><span style="font-size: 17px; line-height: 1.6">Acelaşi medic de la prima vizită la ultimul control.</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 8px; height: 8px; background: #8DB7D2; border-radius: 50%; margin-top: 9px; flex: none"></span><span style="font-size: 17px; line-height: 1.6">Plată în rate, fără dobândă, până în 12 luni.</span></div>
+        </div>
+      </div>
+      <div style="aspect-ratio: 1; border-radius: 28px 28px 200px 200px; background: repeating-linear-gradient(135deg, #E4EAF2 0 14px, #EFF3F8 14px 28px); display: flex; align-items: flex-end; justify-content: center; padding: 20px">
+        <span style="font-family: ui-monospace, monospace; font-size: 12px; color: #4D5B72; background: #fff; padding: 7px 11px; border-radius: 7px">foto: pacientă şi medic, discuţie</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicii" style="background: #F7F9FC">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 104px 28px">
+      <div style="text-align: center; max-width: 30em; margin: 0 auto 52px">
+        <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 0">Ce facem</h2>
+        <p style="font-size: 18px; line-height: 1.65; margin: 18px 0 0; color: #5A5F75">Toate tratamentele într-un singur cabinet, cu aceeaşi echipă.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px">
+        <div style="background: #fff; border-radius: 22px; overflow: hidden" style-hover="background: #434279; color: #fff">
+          <div style="aspect-ratio: 16/11; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 14px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">foto: igienizare</span></div>
+          <div style="padding: 24px 26px 28px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 8px">Igienizare şi control</h3>
+            <p style="font-size: 16px; line-height: 1.55; margin: 0">Detartraj, air-flow şi periaj profesional. O şedinţă de 50 de minute, la şase luni.</p>
+          </div>
+        </div>
+        <div style="background: #fff; border-radius: 22px; overflow: hidden" style-hover="background: #434279; color: #fff">
+          <div style="aspect-ratio: 16/11; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 14px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">foto: albire</span></div>
+          <div style="padding: 24px 26px 28px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 8px">Albire şi faţete</h3>
+            <p style="font-size: 16px; line-height: 1.55; margin: 0">Albire în cabinet într-o singură vizită, faţete ceramice cu simulare digitală înainte.</p>
+          </div>
+        </div>
+        <div style="background: #fff; border-radius: 22px; overflow: hidden" style-hover="background: #434279; color: #fff">
+          <div style="aspect-ratio: 16/11; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 14px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">foto: aligneri</span></div>
+          <div style="padding: 24px 26px 28px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 8px">Aligneri şi aparate</h3>
+            <p style="font-size: 16px; line-height: 1.55; margin: 0">Scanare intraorală, fără amprentă clasică. Vedeţi rezultatul simulat de la prima vizită.</p>
+          </div>
+        </div>
+        <div style="background: #fff; border-radius: 22px; overflow: hidden" style-hover="background: #434279; color: #fff">
+          <div style="aspect-ratio: 16/11; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 14px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">foto: implant</span></div>
+          <div style="padding: 24px 26px 28px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 8px">Implanturi</h3>
+            <p style="font-size: 16px; line-height: 1.55; margin: 0">Planificare pe CT 3D, chirurgie ghidată şi coroana finală, tot aici. Garanţie 10 ani.</p>
+          </div>
+        </div>
+        <div style="background: #fff; border-radius: 22px; overflow: hidden" style-hover="background: #434279; color: #fff">
+          <div style="aspect-ratio: 16/11; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 14px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">foto: urgenţă</span></div>
+          <div style="padding: 24px 26px 28px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 8px">Urgenţe</h3>
+            <p style="font-size: 16px; line-height: 1.55; margin: 0">Ţinem două intervale libere zilnic. Sunaţi până la 17:00 şi vă vedem în aceeaşi zi.</p>
+          </div>
+        </div>
+        <div style="background: #434279; color: #fff; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+          <div>
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 8px">Nu ştiţi de ce aveţi nevoie?</h3>
+            <p style="font-size: 16px; line-height: 1.55; margin: 0; opacity: 0.9">Veniţi la consultaţie. Vă spunem ce e urgent, ce poate aştepta şi ce nu e nevoie să faceţi.</p>
+          </div>
+          <a href="#programare" style="background: #fff; color: #434279; font-weight: 600; padding: 14px 24px; border-radius: 999px; text-align: center" style-hover="background: #8DB7D2; color: #fff">Programează consultaţia</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="locatie" style="max-width: 1320px; margin: 0 auto; padding: 104px 28px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center">
+      <div style="aspect-ratio: 4/3; border-radius: 28px; background: repeating-linear-gradient(135deg, #E4EAF2 0 14px, #EFF3F8 14px 28px); display: flex; align-items: flex-end; justify-content: center; padding: 20px">
+        <span style="font-family: ui-monospace, monospace; font-size: 12px; color: #4D5B72; background: #fff; padding: 7px 11px; border-radius: 7px">foto / hartă: intrarea din Calea Dorobanţilor</span>
+      </div>
+      <div>
+        <span style="display: inline-block; background: #F4F6FA; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 15px; border-radius: 999px">Locaţie</span>
+        <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 22px 0 0">Un singur cabinet, în Dorobanţi.</h2>
+        <p style="font-size: 18px; line-height: 1.65; margin: 20px 0 30px; color: #5A5F75">La cinci minute de Piaţa Victoriei. Intrare din curte, parcare pentru pacienţi, acces pentru cărucior.</p>
+        <div style="display: grid; gap: 20px; font-size: 17px">
+          <div>
+            <div style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6E7386; margin-bottom: 5px">Adresă</div>
+            Calea Dorobanţilor 128, Sector 1, Bucureşti
+          </div>
+          <div>
+            <div style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6E7386; margin-bottom: 5px">Program</div>
+            Luni – vineri: 09:00 – 20:00 · Sâmbătă: 09:00 – 15:00
+          </div>
+        </div>
+        <a href="#programare" style="display: inline-block; margin-top: 30px; background: #434279; color: #fff; font-weight: 600; font-size: 17px; padding: 16px 30px; border-radius: 999px" style-hover="background: #8DB7D2">Vino la noi</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="echipa" style="background: #F7F9FC">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 104px 28px">
+      <div style="text-align: center; max-width: 30em; margin: 0 auto 52px">
+        <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 0">Medicii dumneavoastră</h2>
+        <p style="font-size: 18px; line-height: 1.65; margin: 18px 0 0; color: #5A5F75">Doi medici, o echipă. Îi cunoaşteţi pe amândoi de la prima vizită.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto">
+        <div style="background: #fff; border-radius: 22px; overflow: hidden">
+          <div style="aspect-ratio: 4/5; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 16px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">portret medic</span></div>
+          <div style="padding: 26px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 23px; margin: 0 0 4px">Dr. Andreea Drafta</h3>
+            <p style="font-size: 15px; margin: 0 0 14px; color: #6E7386">Protetică şi estetică dentară · fondator</p>
+            <p style="font-size: 16px; line-height: 1.6; margin: 0">Faţete, coroane şi reabilitări complete. Conduce cabinetul din Dorobanţi de la deschidere, în 2016.</p>
+          </div>
+        </div>
+        <div style="background: #fff; border-radius: 22px; overflow: hidden">
+          <div style="aspect-ratio: 4/5; background: repeating-linear-gradient(135deg, #E4EAF2 0 12px, #EFF3F8 12px 24px); display: flex; align-items: flex-end; padding: 16px"><span style="font-family: ui-monospace, monospace; font-size: 11px; color: #4D5B72; background: #fff; padding: 5px 8px; border-radius: 6px">portret medic</span></div>
+          <div style="padding: 26px">
+            <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 23px; margin: 0 0 4px">Dr. Mihai Pavel</h3>
+            <p style="font-size: 15px; margin: 0 0 14px; color: #6E7386">Implantologie şi chirurgie orală</p>
+            <p style="font-size: 16px; line-height: 1.6; margin: 0">Implanturi, extracţii şi adiţii osoase, cu chirurgie ghidată digital. Peste 900 de implanturi puse.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #434279; color: #fff">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 104px 28px">
+      <div style="text-align: center; margin-bottom: 52px">
+        <span style="color: #8DB7D2; font-size: 22px; letter-spacing: 3px">★★★★★</span>
+        <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(30px, 4vw, 46px); letter-spacing: -0.03em; margin: 18px 0 0">Ce spun pacienţii</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px">
+        <div style="border: 1px solid rgba(255,255,255,0.22); border-radius: 22px; padding: 30px">
+          <p style="font-size: 18px; line-height: 1.6; margin: 0 0 22px">„Mi s-a explicat fiecare pas înainte să fie făcut, iar tratamentul a costat exact cât scria pe hârtie."</p>
+          <div style="font-weight: 600">Cristina M.</div>
+          <div style="font-size: 14px; opacity: 0.8">pacientă din 2021</div>
+        </div>
+        <div style="border: 1px solid rgba(255,255,255,0.22); border-radius: 22px; padding: 30px">
+          <p style="font-size: 18px; line-height: 1.6; margin: 0 0 22px">„Am venit cu o urgenţă sâmbătă dimineaţă. M-au luat în 20 de minute şi am plecat cu problema rezolvată."</p>
+          <div style="font-weight: 600">Alexandru T.</div>
+          <div style="font-size: 14px; opacity: 0.8">pacient din 2023</div>
+        </div>
+        <div style="border: 1px solid rgba(255,255,255,0.22); border-radius: 22px; padding: 30px">
+          <p style="font-size: 18px; line-height: 1.6; margin: 0 0 22px">„Trei implanturi în opt luni, acelaşi medic de la prima radiografie până la coroane. Zero surprize la plată."</p>
+          <div style="font-weight: 600">Dan V.</div>
+          <div style="font-size: 14px; opacity: 0.8">pacient din 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alte-servicii" style="max-width: 1320px; margin: 0 auto; padding: 104px 28px">
+    <div style="text-align: center; max-width: 30em; margin: 0 auto 52px">
+      <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 0">Alte servicii dentare</h2>
+      <p style="font-size: 18px; line-height: 1.65; margin: 18px 0 0; color: #5A5F75">De la tratamente de restaurare la estetică, vă acoperim.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+      <div style="border: 1px solid #EBEAF1; border-radius: 22px; padding: 28px" style-hover="background: #F7F9FC">
+        <span style="width: 34px; height: 34px; background: #434279; border-radius: 9px 9px 17px 17px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px"><span style="width: 19px; height: 9px; background: #8DB7D2; border-radius: 0 0 10px 10px; display: block"></span></span>
+        <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 21px; margin: 22px 0 8px">Obturaţii</h3>
+        <p style="font-size: 16px; line-height: 1.55; margin: 0; color: #5A5F75">Plombe din compozit, potrivite pe culoarea dintelui. Fără amalgam.</p>
+      </div>
+      <div style="border: 1px solid #EBEAF1; border-radius: 22px; padding: 28px" style-hover="background: #F7F9FC">
+        <span style="width: 34px; height: 34px; background: #434279; border-radius: 9px 9px 17px 17px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px"><span style="width: 19px; height: 9px; background: #8DB7D2; border-radius: 0 0 10px 10px; display: block"></span></span>
+        <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 21px; margin: 22px 0 8px">Extracţii</h3>
+        <p style="font-size: 16px; line-height: 1.55; margin: 0; color: #5A5F75">Inclusiv molari de minte incluşi, cu anestezie şi indicaţii clare după.</p>
+      </div>
+      <div style="border: 1px solid #EBEAF1; border-radius: 22px; padding: 28px" style-hover="background: #F7F9FC">
+        <span style="width: 34px; height: 34px; background: #434279; border-radius: 9px 9px 17px 17px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px"><span style="width: 19px; height: 9px; background: #8DB7D2; border-radius: 0 0 10px 10px; display: block"></span></span>
+        <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 21px; margin: 22px 0 8px">Tratament de canal</h3>
+        <p style="font-size: 16px; line-height: 1.55; margin: 0; color: #5A5F75">Endodonţie sub microscop, de obicei într-o singură şedinţă.</p>
+      </div>
+      <div style="border: 1px solid #EBEAF1; border-radius: 22px; padding: 28px" style-hover="background: #F7F9FC">
+        <span style="width: 34px; height: 34px; background: #434279; border-radius: 9px 9px 17px 17px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px"><span style="width: 19px; height: 9px; background: #8DB7D2; border-radius: 0 0 10px 10px; display: block"></span></span>
+        <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 21px; margin: 22px 0 8px">Parodontologie</h3>
+        <p style="font-size: 16px; line-height: 1.55; margin: 0; color: #5A5F75">Detartraj subgingival şi tratarea gingiilor care sângerează.</p>
+      </div>
+      <div style="border: 1px solid #EBEAF1; border-radius: 22px; padding: 28px" style-hover="background: #F7F9FC">
+        <span style="width: 34px; height: 34px; background: #434279; border-radius: 9px 9px 17px 17px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px"><span style="width: 19px; height: 9px; background: #8DB7D2; border-radius: 0 0 10px 10px; display: block"></span></span>
+        <h3 style="font-family: Urbanist, sans-serif; font-weight: 800; font-size: 21px; margin: 22px 0 8px">Gutiere de bruxism</h3>
+        <p style="font-size: 16px; line-height: 1.55; margin: 0; color: #5A5F75">Pentru scrâşnitul din somn, făcute pe amprenta dumneavoastră.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="background: #F7F9FC">
+    <div style="max-width: 900px; margin: 0 auto; padding: 104px 28px">
+      <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 44px; text-align: center">Întrebări frecvente</h2>
+      <div style="display: grid; gap: 14px">
+        <details style="background: #fff; border: 1px solid #EBEAF1; border-radius: 18px; padding: 4px 8px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 22px 20px; font-family: Urbanist, sans-serif; font-weight: 800; font-size: 19px; min-height: 48px">Unde se află cabinetul Drafta dental?<span style="color: #8DB7D2; font-size: 22px; line-height: 1">⌄</span></summary>
+          <p style="font-size: 17px; line-height: 1.65; margin: 0; padding: 0 20px 24px; color: #5A5F75">Pe Calea Dorobanţilor 128, Sector 1, Bucureşti, la cinci minute de Piaţa Victoriei. Intrarea este din curte, iar pacienţii pot parca acolo.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid #EBEAF1; border-radius: 18px; padding: 4px 8px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 22px 20px; font-family: Urbanist, sans-serif; font-weight: 800; font-size: 19px; min-height: 48px">Ce servicii oferiţi?<span style="color: #8DB7D2; font-size: 22px; line-height: 1">⌄</span></summary>
+          <p style="font-size: 17px; line-height: 1.65; margin: 0; padding: 0 20px 24px; color: #5A5F75">Igienizare şi controale, albire şi faţete, aligneri şi aparate dentare, implanturi, obturaţii, tratamente de canal, extracţii, parodontologie şi urgenţe. Totul în acelaşi cabinet.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid #EBEAF1; border-radius: 18px; padding: 4px 8px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 22px 20px; font-family: Urbanist, sans-serif; font-weight: 800; font-size: 19px; min-height: 48px">Cât costă un tratament şi se poate plăti în rate?<span style="color: #8DB7D2; font-size: 22px; line-height: 1">⌄</span></summary>
+          <p style="font-size: 17px; line-height: 1.65; margin: 0; padding: 0 20px 24px; color: #5A5F75">Preţul total îl primiţi în scris după consultaţie, înainte de prima procedură. Tratamentele mari se pot plăti în rate fără dobândă, până în 12 luni.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid #EBEAF1; border-radius: 18px; padding: 4px 8px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 22px 20px; font-family: Urbanist, sans-serif; font-weight: 800; font-size: 19px; min-height: 48px">Primiţi pacienţi noi?<span style="color: #8DB7D2; font-size: 22px; line-height: 1">⌄</span></summary>
+          <p style="font-size: 17px; line-height: 1.65; margin: 0; padding: 0 20px 24px; color: #5A5F75">Da. Prima vizită este o consultaţie de 45 de minute, cu scanare şi radiografii. Sunaţi sau completaţi formularul şi vă răspundem în aceeaşi zi lucrătoare.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid #EBEAF1; border-radius: 18px; padding: 4px 8px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 22px 20px; font-family: Urbanist, sans-serif; font-weight: 800; font-size: 19px; min-height: 48px">Ce faceţi dacă am o urgenţă azi?<span style="color: #8DB7D2; font-size: 22px; line-height: 1">⌄</span></summary>
+          <p style="font-size: 17px; line-height: 1.65; margin: 0; padding: 0 20px 24px; color: #5A5F75">Ţinem două intervale libere în fiecare zi pentru urgenţe. Dacă sunaţi până la ora 17:00, vă vedem în aceeaşi zi.</p>
+        </details>
+        <details style="background: #fff; border: 1px solid #EBEAF1; border-radius: 18px; padding: 4px 8px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; padding: 22px 20px; font-family: Urbanist, sans-serif; font-weight: 800; font-size: 19px; min-height: 48px">Prin ce sunteţi diferiţi de alte cabinete?<span style="color: #8DB7D2; font-size: 22px; line-height: 1">⌄</span></summary>
+          <p style="font-size: 17px; line-height: 1.65; margin: 0; padding: 0 20px 24px; color: #5A5F75">Consultaţie de 45 de minute, plan de tratament scris cu preţ fix şi acelaşi medic de la prima vizită până la ultimul control. Nimeni nu vă face morală pentru cât timp a trecut de la ultima vizită.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="programare" style="max-width: 1320px; margin: 0 auto; padding: 0 28px 104px">
+    <div style="background: #F7F9FC; border-radius: 32px; padding: clamp(32px, 5vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center">
+      <div>
+        <h2 style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: clamp(32px, 4.4vw, 50px); line-height: 1.08; letter-spacing: -0.03em; margin: 0">Programaţi-vă în două minute.</h2>
+        <p style="font-size: 18px; line-height: 1.65; margin: 18px 0 0; color: #5A5F75">Lăsaţi numărul şi vă răspundem în aceeaşi zi lucrătoare cu două intervale libere. Sau sunaţi direct: <a href="tel:+40721000128" style="font-weight: 600">0721 000 128</a>.</p>
+      </div>
+      <div style="background: #fff; border-radius: 24px; padding: 30px">
+        <div style="display: grid; gap: 16px">
+          <label style="display: grid; gap: 6px; font-size: 14px; font-weight: 600">Nume
+            <input type="text" placeholder="Maria Ionescu" style="font-family: Figtree, sans-serif; font-size: 16px; padding: 13px 14px; border: 1.5px solid #DDDCE6; border-radius: 12px; color: #434279; min-height: 48px" style-focus="border-color: #434279; outline: none">
+          </label>
+          <label style="display: grid; gap: 6px; font-size: 14px; font-weight: 600">Telefon
+            <input type="tel" placeholder="07xx xxx xxx" style="font-family: Figtree, sans-serif; font-size: 16px; padding: 13px 14px; border: 1.5px solid #DDDCE6; border-radius: 12px; color: #434279; min-height: 48px" style-focus="border-color: #434279; outline: none">
+          </label>
+          <label style="display: grid; gap: 6px; font-size: 14px; font-weight: 600">Ce vă deranjează?
+            <textarea rows="3" placeholder="Ex. durere la un molar de jos, de trei zile" style="font-family: Figtree, sans-serif; font-size: 16px; padding: 13px 14px; border: 1.5px solid #DDDCE6; border-radius: 12px; color: #434279; resize: vertical" style-focus="border-color: #434279; outline: none"></textarea>
+          </label>
+          <button type="button" style="font-family: Figtree, sans-serif; background: #434279; color: #fff; font-size: 17px; font-weight: 600; padding: 16px; border: none; border-radius: 999px; cursor: pointer; min-height: 52px" style-hover="background: #8DB7D2">Trimite cererea</button>
+          <p style="font-size: 13px; line-height: 1.5; margin: 0; color: #6E7386">Folosim datele doar pentru a vă contacta în legătură cu programarea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid #EBEAF1">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 56px 28px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px">
+      <div>
+        <div style="display: flex; align-items: center; gap: 11px">
+          <span style="width: 36px; height: 36px; background: #434279; border-radius: 9px 9px 18px 18px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px; flex: none">
+            <span style="width: 20px; height: 10px; background: #8DB7D2; border-radius: 0 0 10px 10px; display: block"></span>
+          </span>
+          <span style="display: flex; flex-direction: column; line-height: 1">
+            <span style="font-family: Urbanist, sans-serif; font-weight: 900; font-size: 21px">Drafta</span>
+            <span style="font-size: 9px; letter-spacing: 0.4em; margin-top: 3px">dental</span>
+          </span>
+        </div>
+        <p style="font-size: 15px; line-height: 1.6; margin: 18px 0 0; color: #6E7386">Calea Dorobanţilor 128<br>Sector 1, Bucureşti</p>
+      </div>
+      <div>
+        <div style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6E7386; margin-bottom: 14px">Servicii</div>
+        <nav style="display: grid; gap: 10px; font-size: 15px">
+          <a href="#servicii">Igienizare</a>
+          <a href="#servicii">Albire şi faţete</a>
+          <a href="#servicii">Aligneri</a>
+          <a href="#servicii">Implanturi</a>
+          <a href="#servicii">Urgenţe</a>
+        </nav>
+      </div>
+      <div>
+        <div style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6E7386; margin-bottom: 14px">Cabinet</div>
+        <nav style="display: grid; gap: 10px; font-size: 15px">
+          <a href="#despre">Despre noi</a>
+          <a href="#echipa">Echipa</a>
+          <a href="#faq">Întrebări frecvente</a>
+          <a href="#locatie">Locaţie şi program</a>
+        </nav>
+      </div>
+      <div>
+        <div style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6E7386; margin-bottom: 14px">Contact</div>
+        <nav style="display: grid; gap: 10px; font-size: 15px">
+          <a href="tel:+40721000128">0721 000 128</a>
+          <a href="mailto:programari@draftadental.ro">programari@draftadental.ro</a>
+          <a href="#programare">Programare online</a>
+        </nav>
+      </div>
+    </div>
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 28px 40px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px; color: #6E7386">
+      <span>© 2026 Drafta dental · Bucureşti</span>
+      <nav style="display: flex; gap: 22px; flex-wrap: wrap">
+        <a href="#programare">Confidenţialitate</a>
+        <a href="#programare">Termeni</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ctaLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Programează-te&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Copy&quot;}}">
+class Component extends DCLogic {
+  state = { narrow: false, menuOpen: false };
+  componentDidMount() {
+    this._onResize = () => {
+      const narrow = window.innerWidth < 900;
+      if (narrow !== this.state.narrow) this.setState({ narrow, menuOpen: false });
+    };
+    this._onResize();
+    window.addEventListener("resize", this._onResize);
+  }
+  componentWillUnmount() { window.removeEventListener("resize", this._onResize); }
+  renderVals() {
+    return {
+      wide: !this.state.narrow,
+      narrow: this.state.narrow,
+      menuOpen: this.state.narrow && this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      ctaLabel: this.props.ctaLabel ?? "Programează-te"
+    };
+  }
+}
+</script>
+</body>
+</html>

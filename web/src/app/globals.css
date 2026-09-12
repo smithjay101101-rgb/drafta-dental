@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+/* ── Design tokens ──────────────────────────────────────────────────────────
+   Source: design_handoff_drafta_homepage/README.md ("Design tokens").
+   bleu (#8DB7D2) never carries small text — accent, hover, stars, chevrons only.
+   The rose family from the brand board is reserved for print/social.
+   -------------------------------------------------------------------------- */
+@theme {
+  --color-indigo: #434279;
+  --color-bleu: #8db7d2;
+  --color-bleu-text: #6e8fb8;
+  --color-surface: #f7f9fc;
+  --color-surface-2: #f4f6fa;
+  --color-line: #ebeaf1;
+  --color-line-input: #dddce6;
+  --color-line-button: #cbc7d8;
+  --color-text-muted: #5a5f75;
+  --color-text-label: #6e7386;
+  /* Not in the handoff: needed for form errors. ~5.9:1 on white. */
+  --color-danger: #b3261e;
+
+  /* Comutarea header-ului: pill nav ≥900px, buton „Meniu" sub. */
+  --breakpoint-wide: 900px;
+
+  --font-display: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+
+  /* Logo-derived radii */
+  --radius-smile: 28px 28px 200px 200px;
+  --radius-smile-sm: 18px 18px 84px 84px;
+  --radius-mark: 10px 10px 20px 20px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: #fff;
+    color: var(--color-indigo);
+    font-family: var(--font-sans);
+  }
+
+  /* Header-ul lipit are ~87px; țintele de ancoră stau sub el. */
+  section[id] {
+    scroll-margin-top: 100px;
+  }
+
+  a {
+    color: var(--color-indigo);
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: var(--color-bleu);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-indigo);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Page shell: 1320px cap, 28px gutter (24px on mobile). */
+  .shell {
+    width: 100%;
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+  @media (min-width: 640px) {
+    .shell {
+      padding-inline: 28px;
+    }
+  }
+
+  /* Vertical section rhythm: 104px desktop, 64px mobile. */
+  .section {
+    padding-block: 64px;
+  }
+  @media (min-width: 900px) {
+    .section {
+      padding-block: 104px;
+    }
+  }
+
+  .h1 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(32px, 4.4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  /* Interior text blocks cap at 30em. */
+  .prose-cap {
+    max-width: 30em;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    background: var(--color-surface-2);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 8px 15px;
+    border-radius: 999px;
+  }
+
+  .label-meta {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-label);
+  }
+
+  /* Pills — separation is colour only, never shadow or transform. */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 999px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition:
+      background-color 180ms ease-out,
+      border-color 180ms ease-out,
+      color 180ms ease-out;
+  }
+
+  .pill-primary {
+    background: var(--color-indigo);
+    color: #fff;
+  }
+  .pill-primary:hover {
+    background: var(--color-bleu);
+    color: #fff;
+  }
+
+  .pill-outline {
+    border: 1.5px solid var(--color-line-button);
+    color: var(--color-indigo);
+  }
+  .pill-outline:hover {
+    border-color: var(--color-indigo);
+    color: var(--color-indigo);
+  }
+
+  .pill-white {
+    background: #fff;
+    color: var(--color-indigo);
+  }
+  .pill-white:hover {
+    background: var(--color-bleu);
+    color: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
