@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LogoMark, Wordmark } from "./Logo";
+import { Lockup } from "./Lockup";
 import { footer, practice } from "@/content/site";
 
 export function Footer() {
@@ -13,10 +13,7 @@ export function Footer() {
           }}
         >
           <div>
-            <div className="flex items-center gap-[11px]">
-              <LogoMark />
-              <Wordmark />
-            </div>
+            <Lockup />
             <address className="mt-5 text-[15px]/[1.7] text-text-muted not-italic">
               {practice.address.street}
               <br />

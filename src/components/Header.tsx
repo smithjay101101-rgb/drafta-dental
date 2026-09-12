@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Lockup } from "./Logo";
+import { Lockup } from "./Lockup";
 import { nav, practice } from "@/content/site";
 
 /**
