@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-/** Raportul artei originale: 733 x 177. */
-const RATIO = 733 / 177;
+/** Raportul lockup-ului: 703 x 177. */
+const RATIO = 703 / 177;
 
 /**
  * Lockup-ul de marcă, servit ca fișier SVG ca să nu intre 46KB de contururi
