@@ -2,30 +2,29 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-/** Raportul lockup-ului: 703 x 177. */
-const RATIO = 703 / 177;
+import { LogoMark } from "./Logo";
 
 /**
- * Lockup-ul de marcă, servit ca fișier SVG ca să nu intre 46KB de contururi
- * în HTML-ul fiecărei pagini. Fiind vector, rămâne curat la orice densitate
- * de ecran.
+ * Lockup-ul de marcă, exact ca în handoff: marca plus numele scris cu text
+ * real, nu cu contururi. „Drafta" în Urbanist 900, „dental" în Figtree cu
+ * tracking larg. Fiind text, e randat nativ de browser, curat la orice
+ * densitate de ecran.
+ *
+ * Header: marcă 40, „Drafta" 24px, „dental" 10px / 0.42em (sub 480px puțin
+ * mai mic, ca rândul să încapă). Footer: marcă 36, 21px, 9px / 0.4em.
  *
  * Marca duce la pagina de start. Când ești deja pe ea, `next/link` nu ar face
  * nimic, pentru că ruta nu se schimbă, așa că urcăm noi în capul paginii.
  */
 export function Lockup({
   href = "/",
-  onIndigo = false,
-  /** Puțin mai mică sub 480px. */
-  compact = false,
+  variant = "footer",
 }: {
   href?: string;
-  onIndigo?: boolean;
-  compact?: boolean;
+  variant?: "header" | "footer";
 }) {
   const pathname = usePathname();
-  const height = compact ? 38 : 44;
+  const header = variant === "header";
 
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (pathname !== href) return;
@@ -42,17 +41,34 @@ export function Lockup({
       href={href}
       onClick={onClick}
       aria-label="Drafta dental, mergi la pagina de start"
-      className="flex flex-none items-center"
+      className="flex w-fit flex-none items-center gap-[11px] text-indigo"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={onIndigo ? "/logo-alb.svg" : "/logo.svg"}
-        alt=""
-        width={Math.round(height * RATIO)}
-        height={height}
-        className="h-[38px] w-auto min-[480px]:h-11"
-        style={compact ? undefined : { height }}
-      />
+      {header ? (
+        <>
+          <LogoMark size={34} className="min-[480px]:hidden" />
+          <LogoMark size={40} className="hidden min-[480px]:block" />
+        </>
+      ) : (
+        <LogoMark size={36} />
+      )}
+      <span aria-hidden="true" className="flex flex-col leading-none">
+        <span
+          className={`font-display font-black tracking-[-0.01em] ${
+            header ? "text-[21px] min-[480px]:text-[24px]" : "text-[21px]"
+          }`}
+        >
+          Drafta
+        </span>
+        <span
+          className={`mt-[3px] font-sans font-normal ${
+            header
+              ? "text-[9px] tracking-[0.4em] min-[480px]:text-[10px] min-[480px]:tracking-[0.42em]"
+              : "text-[9px] tracking-[0.4em]"
+          }`}
+        >
+          dental
+        </span>
+      </span>
     </Link>
   );
 }

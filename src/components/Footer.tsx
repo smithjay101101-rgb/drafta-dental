@@ -13,7 +13,7 @@ export function Footer() {
           }}
         >
           <div>
-            <Lockup />
+            <Lockup variant="footer" />
             <address className="mt-5 text-[15px]/[1.7] text-text-muted not-italic">
               {practice.address.street}
               <br />

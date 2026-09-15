@@ -81,7 +81,7 @@ export function Header() {
           baza 0 şi nu se contractă. */}
       <div className="shell flex items-center gap-2.5 py-4 min-[480px]:gap-5">
         <div className="flex flex-1 items-center justify-start">
-          <Lockup compact />
+          <Lockup variant="header" />
         </div>
 
         <nav
