@@ -179,7 +179,7 @@ export function BookingForm() {
             htmlFor={fieldId("mesaj")}
             className="mb-1.5 block text-sm font-semibold"
           >
-            Ce vă deranjează?
+            Ce te deranjează?
           </label>
           <textarea
             id={fieldId("mesaj")}

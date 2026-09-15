@@ -30,6 +30,7 @@ export function LogoMark({
       height={size}
       aria-hidden="true"
       focusable="false"
+      shapeRendering="geometricPrecision"
       className={`flex-none ${className}`}
       style={style}
     >

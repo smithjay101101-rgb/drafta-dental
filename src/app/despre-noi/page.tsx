@@ -8,7 +8,7 @@ import { about, practice } from "@/content/site";
 export const metadata: Metadata = {
   title: "Despre cabinet",
   description:
-    "Cum lucrează Drafta dental: consultație de 45 de minute, plan de tratament scris cu preț fix, același medic de la prima vizită la ultimul control.",
+    "Drafta dental este un cabinet stomatologic de familie din București, cu o poveste care începe în anul 2000: aparatură modernă și un ambient prietenos, unde nu ești tratat ca o simplă cifră.",
   alternates: { canonical: "/despre-noi" },
 };
 
@@ -52,13 +52,15 @@ export default function DespreNoi() {
             </ol>
           </nav>
 
-          <h1 className="h2 mt-4">Cum se lucrează la Drafta dental?</h1>
+          <h1 className="h2 mt-4">Povestea Drafta dental</h1>
 
           <p className="mt-6 text-[19px]/[1.65]">
-            Consultația durează 45 de minute, nu zece. Primiți planul de tratament
-            în scris, cu preț fix, înainte de prima procedură. Rămâneți cu același
-            medic de la prima vizită până la ultimul control, într-un singur
-            cabinet, în {practice.address.street}, {practice.address.locality}.
+            Un cabinet de familie, a cărui poveste datează din anul 2000, cu prima
+            locație. O dată cu trecerea timpului, cabinetul nostru a evoluat,
+            ajungând să fie dotat cu aparatură modernă, dar reușește (zicem noi) să
+            păstreze ambientul prietenos, unde nu ești tratat ca o simplă cifră.
+            Astăzi ne găsești în {practice.address.street},{" "}
+            {practice.address.locality}.
           </p>
 
           <div
@@ -71,10 +73,10 @@ export default function DespreNoi() {
             </h2>
             <ul className="mt-4 flex list-none flex-col gap-3 p-0">
               {[
-                "Consultația la Drafta dental durează 45 de minute și include scanare și radiografii.",
-                "Planul de tratament se primește în scris, cu preț fix, înainte de prima procedură.",
-                "Tratamentele mari se pot plăti în rate fără dobândă, până în 12 luni.",
-                "Cabinetul ține două intervale libere în fiecare zi pentru urgențe.",
+                "Drafta dental este un cabinet de familie, a cărui poveste începe în anul 2000.",
+                "Îmbinăm performanța cu empatia, într-o atmosferă prietenoasă, deschisă și fără stres.",
+                "Cabinetul este dotat cu aparatură modernă, de la lasere stomatologice la scanare 3D.",
+                "Aici nu ești tratat ca o simplă cifră.",
                 "Cei doi medici lucrează în același cabinet, deci un caz complex nu este trimis în altă parte.",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3">
@@ -89,7 +91,7 @@ export default function DespreNoi() {
           </div>
 
           <section className="mt-12">
-            <h2 className="h3 text-[24px]">Ce se întâmplă la prima vizită?</h2>
+            <h2 className="h3 text-[24px]">Cine suntem?</h2>
             <p className="mt-4 text-[17px]/[1.7] text-text-muted">{about.body}</p>
             <ul className="mt-5 flex list-none flex-col gap-3 p-0">
               {about.bullets.map((b) => (
@@ -135,7 +137,7 @@ export default function DespreNoi() {
               href="/#programare"
               className="pill pill-primary mt-6 px-7 py-[15px] text-base"
             >
-              Programare online
+              Programează-te
             </Link>
           </section>
         </div>

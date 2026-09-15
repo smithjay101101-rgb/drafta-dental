@@ -250,7 +250,7 @@ const implanturiBimaxilar: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/#servicii" },
+    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
     { label: "Medicii cabinetului", href: "/despre-noi" },
     { label: "Programare online", href: "/#programare" },
   ],

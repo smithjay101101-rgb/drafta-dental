@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(practice.url),
   title: "Drafta dental",
   description:
-    "Stomatologie modernă în Dorobanți: aligneri, albire, implanturi și urgențe. Consultație de 45 de minute, plan de tratament scris, programare în aceeași zi.",
+    "Drafta dental, cabinet stomatologic de familie din centrul Bucureștiului, din anul 2000. Stomatologia regândită: igienizare, albire, fațete, coroane, punți și implanturi.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: practice.name,
     title: "Drafta dental",
     description:
-      "Cabinet stomatologic în Strada Justinian 10, București. Programare online sau telefonic, răspuns în aceeași zi lucrătoare.",
+      "Cabinet stomatologic de familie în Strada Justinian 10, București. Programează-te online sau la telefon.",
     // TODO: imagine OG reală (1200×630) după ce există fotografii.
   },
   robots: {
@@ -49,7 +49,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ro" className={`${urbanist.variable} ${figtree.variable}`}>
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

@@ -4,45 +4,33 @@ import { doctors } from "./doctors";
  * Toate textele paginii, într-un singur loc.
  *
  * ⚠️ PLACEHOLDER — de înlocuit înainte de lansare (vezi README-ul de handoff):
- *   • adresă, telefon, e-mail, program
- *   • „Peste 600 de recenzii", „Peste 900 de implanturi", „din 2016", „Garanție 10 ani"
+ *   • e-mail (telefonul și programul sunt reale, preluate de pe site-ul Wix al cabinetului)
  *   • numele și biografiile medicilor
- *   • toate cele trei recenzii (de preluat din Google, cu acordul pacienților)
  * Câmpurile marcate cu TODO_PLACEHOLDER sunt inventate.
  */
 
 export const practice = {
   name: "Drafta dental",
-  /** TODO_PLACEHOLDER */
-  phone: "0721 000 128",
-  /** TODO_PLACEHOLDER */
-  phoneHref: "tel:+40721000128",
-  /** TODO_PLACEHOLDER */
-  email: "programari@draftadental.ro",
-  /**
-   * Adresă reală, dată de client.
-   *
-   * ⚠️ Restul textelor încă spun „Dorobanți" / „la cinci minute de Piața
-   * Victoriei" — au rămas din prototip, când adresa era Calea Dorobanților 128.
-   * Strada Justinian 10 este în Sector 2, lângă Piața Romană, deci aceste
-   * afirmații trebuie rescrise de cabinet: hero.sub, location.title,
-   * team.members[0].bio, faq (răspunsul despre locație) și `description` din
-   * src/app/layout.tsx.
-   */
+  /** Real, de pe site-ul Wix al cabinetului. */
+  phone: "0787 585 555",
+  phoneHref: "tel:+40787585555",
+  /** Real, de pe site-ul Wix al cabinetului. */
+  email: "draftaa@gmail.com",
+  /** Adresă reală, dată de client. */
   address: {
     street: "Strada Justinian 10",
     locality: "Sector 2, București",
     postalCode: "020102",
     country: "RO",
   },
-  /** TODO_PLACEHOLDER */
-  hours: "Luni – vineri: 09:00 – 20:00 · Sâmbătă: 09:00 – 15:00",
+  /** Real, de pe site-ul Wix al cabinetului. */
+  hours: "Luni – vineri: 10:00 – 19:00 · Sâmbătă: 10:00 – 14:00",
   url: "https://www.draftadental.ro",
 } as const;
 
 export const nav = [
   { label: "Despre noi", href: "/despre-noi" },
-  { label: "Servicii", href: "/#servicii" },
+  { label: "Servicii", href: "/servicii" },
   { label: "Medici", href: "/medici" },
   { label: "Locație", href: "/#locatie" },
   { label: "Blog", href: "/blog" },
@@ -50,13 +38,11 @@ export const nav = [
 ] as const;
 
 export const hero = {
-  titleBefore: "O experiență dentară ",
-  titleAccent: "mai bună",
-  titleAfter: ", prin grijă și claritate.",
-  sub: "Stomatologie modernă, fără reproșuri și fără grabă, în Dorobanți. Aligneri, albire, implanturi și urgențe, cu programare în aceeași zi.",
-  ctaPrimary: "Programare online",
-  /** TODO_PLACEHOLDER — cifră inventată */
-  rating: "Peste 600 de recenzii de 5 stele",
+  titleBefore: "Stomatologia ",
+  titleAccent: "regândită",
+  titleAfter: ".",
+  sub: "Reînnoim complet experiența de a merge la dentist și creăm o atmosferă prietenoasă, unde fiecare pacient este tratat după cele mai moderne standarde.",
+  ctaPrimary: "Programează-te",
   imageCaption: "foto stock lată: interiorul cabinetului",
   image: "/photos/cabinet-principal.jpg",
   imageAlt: "Medic stomatolog stând de vorbă cu o pacientă în cabinetul Drafta dental",
@@ -64,12 +50,12 @@ export const hero = {
 
 export const about = {
   eyebrow: "Despre noi",
-  title: "Cabinetul în care nimeni nu vă face morală.",
-  body: "Dacă nu ați mai fost la dentist de cinci ani, ne spuneți și mergem înainte. Vă arătăm radiografiile pe ecran, vă explicăm ce vedem și vă dăm planul în scris, cu preț fix, înainte să atingem un dinte.",
+  title: "Suntem o familie de perfecționiști.",
+  body: "Căutăm să îmbinăm performanța cu empatia, încercând să creăm o atmosferă prietenoasă, deschisă și fără stres, care să îți permită să fii proactiv în ceea ce privește sănătatea ta orală. Ne-am gândit la fiecare detaliu al vizitei tale, pentru ca tu să nu trebuiască să o faci. Vom munci din greu, dar vrem să pară fără efort.",
   bullets: [
-    "Consultație de 45 de minute, nu de zece.",
-    "Același medic de la prima vizită la ultimul control.",
-    "Plată în rate, fără dobândă, până în 12 luni.",
+    "Un cabinet de familie, cu o poveste care începe în anul 2000.",
+    "Aparatură modernă, de la lasere stomatologice la scanare 3D.",
+    "Un ambient prietenos, unde nu ești tratat ca o simplă cifră.",
   ],
   imageCaption: "foto: pacientă și medic, discuție",
   image: "/photos/despre-radiografie.webp",
@@ -77,58 +63,20 @@ export const about = {
 } as const;
 
 export const services = {
-  title: "Ce facem",
+  title: "Servicii",
   sub: "Toate tratamentele într-un singur cabinet, cu aceeași echipă.",
-  items: [
-    {
-      title: "Igienizare și control",
-      body: "Detartraj, air-flow și periaj profesional. O ședință de 50 de minute, la șase luni.",
-      imageCaption: "foto: igienizare",
-      image: "/photos/igienizare.jpg",
-      imageAlt: "Detartraj profesional în cabinet",
-    },
-    {
-      title: "Albire și fațete",
-      body: "Albire în cabinet într-o singură vizită, fațete ceramice cu simulare digitală înainte.",
-      imageCaption: "foto: albire",
-      image: "/photos/albire.jpg",
-      imageAlt: "Zâmbet după albire dentară",
-    },
-    {
-      title: "Aligneri și aparate",
-      body: "Scanare intraorală, fără amprentă clasică. Vedeți rezultatul simulat de la prima vizită.",
-      imageCaption: "foto: aligneri",
-      image: "/photos/aligneri.jpg",
-      imageAlt: "Aligneri transparenți ținuți în mână",
-    },
-    {
-      /** TODO_PLACEHOLDER — „Garanție 10 ani" nu este confirmată */
-      title: "Implanturi",
-      body: "Planificare pe CT 3D, chirurgie ghidată și coroana finală, tot aici. Garanție 10 ani.",
-      imageCaption: "foto: implant",
-      image: "/photos/implanturi.jpg",
-      imageAlt: "Model de implant dentar",
-    },
-    {
-      title: "Urgențe",
-      body: "Ținem două intervale libere zilnic. Sunați până la 17:00 și vă vedem în aceeași zi.",
-      imageCaption: "foto: urgență",
-      image: "/photos/urgente.jpg",
-      imageAlt: "Intervenție stomatologică de urgență",
-    },
-  ],
   cta: {
-    title: "Nu știți de ce aveți nevoie?",
-    body: "Veniți la consultație. Vă spunem ce e urgent, ce poate aștepta și ce nu e nevoie să faceți.",
-    label: "Programează consultația",
+    title: "Nu știi de ce ai nevoie?",
+    body: "Vino la o consultație. Îți spunem ce e urgent, ce poate aștepta și ce nu e nevoie să faci.",
+    label: "Programează-te",
   },
 } as const;
 
 export const location = {
-  eyebrow: "Locație",
-  title: "Un singur cabinet, în Dorobanți.",
-  body: "La cinci minute de Piața Victoriei. Intrare din curte, parcare pentru pacienți, acces pentru cărucior.",
-  cta: "Vino la noi",
+  eyebrow: "Locația noastră",
+  title: "Aflată în centrul Bucureștiului.",
+  body: "Cabinetul nostru poate fi accesat foarte ușor prin stația de metrou Ștefan cel Mare / Piața Romană sau cu alte forme de transport în comun.",
+  cta: "Programează-te",
   imageCaption: "foto / hartă: intrarea din Strada Justinian",
   image: "/photos/cabinet.webp",
   imageAlt: "Cabinetul de tratament din Strada Justinian 10",
@@ -143,8 +91,8 @@ export const location = {
  * primul.
  */
 export const team = {
-  title: "Medicii dumneavoastră",
-  sub: "Doi medici, o echipă. Îi cunoașteți pe amândoi de la prima vizită.",
+  title: "Echipa",
+  sub: "Un cabinet de familie: doi medici, o singură echipă.",
   members: [...doctors]
     .sort((a, b) => (a.seniority === "senior" ? -1 : b.seniority === "senior" ? 1 : 0))
     .map((d) => ({
@@ -158,56 +106,13 @@ export const team = {
     })),
 };
 
-export const reviews = {
-  title: "Ce spun pacienții",
-  /** TODO_PLACEHOLDER — toate cele trei recenzii sunt inventate */
-  items: [
-    {
-      quote:
-        "Mi s-a explicat fiecare pas înainte să fie făcut, iar tratamentul a costat exact cât scria pe hârtie.",
-      name: "Cristina M.",
-      meta: "pacientă din 2021",
-    },
-    {
-      quote:
-        "Am venit cu o urgență sâmbătă dimineață. M-au luat în 20 de minute și am plecat cu problema rezolvată.",
-      name: "Alexandru T.",
-      meta: "pacient din 2023",
-    },
-    {
-      quote:
-        "Trei implanturi în opt luni, același medic de la prima radiografie până la coroane. Zero surprize la plată.",
-      name: "Dan V.",
-      meta: "pacient din 2022",
-    },
-  ],
-} as const;
-
+/**
+ * Cele patru domenii de pe pagina de start Wix. Cardurile vin din
+ * `serviceCategories` (src/content/services.ts); aici e doar titlul secțiunii.
+ */
 export const otherServices = {
-  title: "Alte servicii dentare",
-  sub: "De la tratamente de restaurare la estetică, vă acoperim.",
-  items: [
-    {
-      title: "Obturații",
-      body: "Plombe din compozit, potrivite pe culoarea dintelui. Fără amalgam.",
-    },
-    {
-      title: "Extracții",
-      body: "Inclusiv molari de minte incluși, cu anestezie și indicații clare după.",
-    },
-    {
-      title: "Tratament de canal",
-      body: "Endodonție sub microscop, de obicei într-o singură ședință.",
-    },
-    {
-      title: "Parodontologie",
-      body: "Detartraj subgingival și tratarea gingiilor care sângerează.",
-    },
-    {
-      title: "Gutiere de bruxism",
-      body: "Pentru scrâșnitul din somn, făcute pe amprenta dumneavoastră.",
-    },
-  ],
+  title: "Domeniile noastre",
+  sub: "Patru direcții, într-un singur cabinet.",
 } as const;
 
 export const faq = {
@@ -215,39 +120,38 @@ export const faq = {
   items: [
     {
       q: "Unde se află cabinetul Drafta dental?",
-      a: "Pe Strada Justinian 10, 020102 București, la cinci minute de Piața Victoriei. Intrarea este din curte, iar pacienții pot parca acolo.",
+      a: "Pe Strada Justinian nr. 10, Sector 2, București. Aflat în centrul Bucureștiului, cabinetul nostru poate fi accesat foarte ușor prin stația de metrou Ștefan cel Mare / Piața Romană sau cu alte forme de transport în comun.",
     },
     {
       q: "Ce servicii oferiți?",
-      a: "Igienizare și controale, albire și fațete, aligneri și aparate dentare, implanturi, obturații, tratamente de canal, extracții, parodontologie și urgențe. Totul în același cabinet.",
+      a: "Consultație și igienizare, albire dentară, fațete de compozit și ceramice, coroane și punți dentare, inlay-uri și onlay-uri, tratamente de canal și implanturi dentare. Prețul de pornire al fiecărui tratament este pe pagina lui, în secțiunea Servicii.",
     },
     {
-      q: "Cât costă un tratament și se poate plăti în rate?",
-      a: "Prețul total îl primiți în scris după consultație, înainte de prima procedură. Tratamentele mari se pot plăti în rate fără dobândă, până în 12 luni.",
+      q: "Cât costă un tratament?",
+      a: "Fiecare serviciu are prețul de pornire afișat pe pagina lui: consultația și igienizarea costă de la 300 lei, iar albirea dentară de la 950 lei. Costul exact îl afli la consultație, în funcție de situația ta.",
     },
     {
       q: "Primiți pacienți noi?",
-      a: "Da. Prima vizită este o consultație de 45 de minute, cu scanare și radiografii. Sunați sau completați formularul și vă răspundem în aceeași zi lucrătoare.",
+      a: `Da. Ne poți suna la ${practice.phone} sau poți completa formularul de programare, iar noi te contactăm.`,
     },
     {
-      q: "Ce faceți dacă am o urgență azi?",
-      a: "Ținem două intervale libere în fiecare zi pentru urgențe. Dacă sunați până la ora 17:00, vă vedem în aceeași zi.",
+      q: "Care este programul cabinetului?",
+      a: "Luni până vineri între 10:00 și 19:00, iar sâmbăta între 10:00 și 14:00. Duminica cabinetul este închis.",
     },
     {
       q: "Prin ce sunteți diferiți de alte cabinete?",
-      a: "Consultație de 45 de minute, plan de tratament scris cu preț fix și același medic de la prima vizită până la ultimul control. Nimeni nu vă face morală pentru cât timp a trecut de la ultima vizită.",
+      a: "Suntem un cabinet de familie, iar povestea noastră datează din anul 2000, cu prima locație. De atunci, cabinetul a evoluat și este dotat cu aparatură modernă, dar reușește (zicem noi) să păstreze ambientul prietenos, unde nu ești tratat ca o simplă cifră.",
     },
   ],
-} as const;
+};
 
 export const booking = {
-  title: "Programați-vă în două minute.",
-  bodyBefore:
-    "Lăsați numărul și vă răspundem în aceeași zi lucrătoare cu două intervale libere. Sau sunați direct: ",
+  title: "Programează-te în două minute.",
+  bodyBefore: "Lasă-ne numărul de telefon și te sunăm noi. Sau sună direct: ",
   submit: "Trimite cererea",
-  gdpr: "Folosim datele doar pentru a vă contacta în legătură cu programarea.",
-  success: "Am primit cererea. Vă sunăm în aceeași zi lucrătoare.",
-  error: "Nu am putut trimite cererea. Încercați din nou sau sunați-ne.",
+  gdpr: "Folosim datele doar pentru a te contacta în legătură cu programarea.",
+  success: "Am primit cererea. Te sunăm în curând.",
+  error: "Nu am putut trimite cererea. Încearcă din nou sau sună-ne.",
 } as const;
 
 export const footer = {
@@ -255,11 +159,11 @@ export const footer = {
     {
       label: "Servicii",
       links: [
-        { label: "Igienizare", href: "/#servicii" },
-        { label: "Albire și fațete", href: "/#servicii" },
-        { label: "Aligneri", href: "/#servicii" },
-        { label: "Implanturi", href: "/#servicii" },
-        { label: "Urgențe", href: "/#servicii" },
+        { label: "Consultație și igienizare", href: "/servicii/consultatie-si-igienizare" },
+        { label: "Albire dentară", href: "/servicii/albire-dentara" },
+        { label: "Fațete ceramice", href: "/servicii/fatete-ceramice" },
+        { label: "Implanturi dentare", href: "/servicii/implanturi-dentare" },
+        { label: "Toate serviciile", href: "/servicii" },
       ],
     },
     {

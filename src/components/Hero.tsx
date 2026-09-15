@@ -1,5 +1,4 @@
 import { ImagePlaceholder } from "./ImagePlaceholder";
-import { Stars } from "./Stars";
 import { hero, practice } from "@/content/site";
 
 export function Hero() {
@@ -31,10 +30,6 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="mt-[26px] flex flex-wrap items-center justify-center gap-3">
-          <Stars size={19} />
-          <span className="text-base text-text-muted">{hero.rating}</span>
-        </div>
       </div>
 
       <div className="shell mt-16">

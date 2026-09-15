@@ -12,6 +12,7 @@ export const dentistJsonLd = {
   url: practice.url,
   telephone: practice.phone,
   email: practice.email,
+  foundingDate: "2000",
   address: {
     "@type": "PostalAddress",
     streetAddress: practice.address.street,
@@ -30,14 +31,14 @@ export const dentistJsonLd = {
         "Thursday",
         "Friday",
       ],
-      opens: "09:00",
-      closes: "20:00",
+      opens: "10:00",
+      closes: "19:00",
     },
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Saturday",
-      opens: "09:00",
-      closes: "15:00",
+      opens: "10:00",
+      closes: "14:00",
     },
   ],
   employee: doctors.map((d) => ({

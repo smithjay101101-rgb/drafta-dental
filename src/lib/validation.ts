@@ -22,12 +22,12 @@ export function validateBooking(input: BookingInput): FieldErrors {
   const errors: FieldErrors = {};
 
   if (input.nume.trim().length < 2) {
-    errors.nume = "Scrieți numele dumneavoastră (minimum 2 caractere).";
+    errors.nume = "Scrie-ți numele (minimum 2 caractere).";
   }
 
   const phone = normalisePhone(input.telefon);
   if (phone.length === 0) {
-    errors.telefon = "Avem nevoie de un număr de telefon ca să vă sunăm.";
+    errors.telefon = "Avem nevoie de un număr de telefon ca să te sunăm.";
   } else if (!PHONE_RE.test(phone)) {
     errors.telefon = "Numărul nu pare valid. Exemplu: 0721 000 128.";
   }
@@ -37,7 +37,7 @@ export function validateBooking(input: BookingInput): FieldErrors {
   }
 
   if (!input.acord) {
-    errors.acord = "Avem nevoie de acordul dumneavoastră ca să vă contactăm.";
+    errors.acord = "Avem nevoie de acordul tău ca să te contactăm.";
   }
 
   return errors;

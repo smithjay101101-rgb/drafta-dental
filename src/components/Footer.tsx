@@ -54,7 +54,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/#programare" className="text-[15px]">
-                  Programare online
+                  Programează-te
                 </Link>
               </li>
             </ul>

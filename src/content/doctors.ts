@@ -54,7 +54,7 @@ const sergiu: Doctor = {
     "Medicul senior al cabinetului Drafta dental, conferențiar la UMF Carol Davila, disciplina de protetică dentară fixă și ocluzologie.",
   answer:
     "Dr. Sergiu Drafta este medicul senior al cabinetului Drafta dental și conferențiar universitar la Universitatea de Medicină și Farmacie Carol Davila din București, unde predă la disciplina de protetică dentară fixă și ocluzologie. A absolvit Facultatea de Medicină Dentară a aceleiași universități. Se ocupă de lucrările protetice complexe, de reabilitările pe implanturi și de cazurile în care ocluzia trebuie reconstruită.",
-  image: "/photos/medic-sergiu-drafta.jpg",
+  image: "/photos/dr-sergiu-drafta.jpg",
   imageAlt: "Dr. Sergiu Drafta, medic stomatolog la Drafta dental",
   imageCaption: "portret: Dr. Sergiu Drafta",
   keyTakeaways: [
@@ -194,7 +194,7 @@ const andrei: Doctor = {
     "Medic stomatolog la Drafta dental, absolvent de Carol Davila, cu practică orientată spre fluxurile digitale de lucru.",
   answer:
     "Dr. Andrei Drafta este medic stomatolog la Drafta dental, absolvent al Facultății de Medicină Dentară din cadrul UMF Carol Davila, aceeași universitate ca medicul senior al cabinetului. Aduce în cabinet generația nouă de metode: scanare intraorală în locul amprentei clasice, planificare pe computer și simulare a rezultatului înainte de a începe tratamentul. Se ocupă de consultații, controale, igienizare și tratamente de rutină.",
-  image: "/photos/medic-andrei-drafta.jpg",
+  image: "/photos/dr-andrei-drafta.jpg",
   imageAlt: "Dr. Andrei Drafta, medic stomatolog la Drafta dental",
   imageCaption: "portret: Dr. Andrei Drafta",
   keyTakeaways: [
