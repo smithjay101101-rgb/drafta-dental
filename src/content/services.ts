@@ -108,7 +108,7 @@ export const serviceList: readonly Service[] = [
     faq: [
       {
         q: "Ce este albirea dentară?",
-        a: "Albirea dentară este o procedură destinată deschiderii nuanței dinților și îndepărtării petelor. De obicei, se realizează cu agenți de albire pe bază de peroxid.",
+        a: "Albirea dentară este o procedură destinată deschiderii nuanței dinților și îndepărtării petelor. De obicei, se realizează cu agenți de albire pe bază de peroxid de hidrogen.",
       },
       {
         q: "Este periculoasă albirea dentară?",
@@ -144,7 +144,7 @@ export const serviceList: readonly Service[] = [
       },
       {
         q: "Cât durează fațetele de compozit?",
-        a: "Fațetele de compozit sunt astăzi mai durabile decât în trecut, având o durată de viață medie de 5 până la 7 ani. După această perioadă, va fi necesară înlocuirea lor, spre deosebire de fațetele din porțelan, care pot dura cel puțin 10-15 ani.",
+        a: "Fațetele de compozit sunt astăzi mai durabile decât în trecut, având o durată de viață medie de 5 până la 7 ani. După această perioadă, va fi necesară înlocuirea lor, spre deosebire de fațetele ceramice, care pot dura cel puțin 10-15 ani.",
       },
     ],
     priceFrom: 650,
@@ -160,16 +160,16 @@ export const serviceList: readonly Service[] = [
       "Cele mai bune fațete sunt cele care imită perfect aspectul natural al dinților.",
     intro: [
       "Cele mai bune fațete sunt cele care imită perfect aspectul natural al dinților. Ne specializăm în zâmbete care atrag atenția fără a părea artificiale: perfect imperfecte, exact ca un zâmbet natural.",
-      "Dacă ai dinți prea mici, inegali, ciobiți sau cu pete închise la culoare, fațetele din porțelan pot fi o alegere excelentă pentru tine.",
+      "Dacă ai dinți prea mici, inegali, ciobiți sau cu pete închise la culoare, fațetele ceramice pot fi o alegere excelentă pentru tine.",
     ],
     faq: [
       {
         q: "Ce sunt fațetele ceramice?",
-        a: "Fațetele din porțelan sunt acoperiri subțiri, realizate la comandă, care se aplică pe dinți pentru a ascunde ciobiturile, petele, decolorările și alte imperfecțiuni. La Drafta dental ne asigurăm că vei primi fațete personalizate, adaptate perfect nevoilor tale.",
+        a: "Fațetele ceramice sunt acoperiri subțiri, realizate la comandă, care se aplică pe dinți pentru a ascunde ciobiturile, petele, decolorările și alte imperfecțiuni. La Drafta dental ne asigurăm că vei primi fațete personalizate, adaptate perfect nevoilor tale.",
       },
       {
         q: "Pentru cine sunt potrivite fațetele ceramice?",
-        a: "Cei mai buni candidați pentru fațetele din porțelan sunt cei care doresc să corecteze mai multe probleme estetice simultan, să elimine petele dentare, să evite obiceiuri care le pot deteriora (cum ar fi rosul unghiilor, bomboanelor tari sau obiectelor precum pixurile), au suficient smalț dentar, prezintă fisuri sau ciobituri minore, vor să acopere dinți cu formă inestetică și au o sănătate orală generală bună.",
+        a: "Cei mai buni candidați pentru fațetele ceramice sunt cei care doresc să corecteze mai multe probleme estetice simultan, să elimine petele dentare, să evite obiceiuri care le pot deteriora (cum ar fi rosul unghiilor, bomboanelor tari sau obiectelor precum pixurile), au suficient smalț dentar, prezintă fisuri sau ciobituri minore, vor să acopere dinți cu formă inestetică și au o sănătate orală generală bună.",
       },
       {
         q: "Ce avantaje au fațetele ceramice?",
@@ -241,8 +241,8 @@ export const serviceList: readonly Service[] = [
     short:
       "Un tratament simplu și eficient, în unele cazuri o alternativă excelentă la o coroană completă.",
     intro: [
-      "Dacă aveți o plombă mai mare sau poate o cuspidă fracturată, ar putea fi recomandat să luăm în considerare un inlay sau onlay din porțelan!",
-      "Aceste restaurări reprezintă un tratament simplu și eficient și, în unele cazuri, pot fi o alternativă excelentă la o coroană dentară completă din porțelan.",
+      "Dacă aveți o plombă mai mare sau poate o cuspidă fracturată, ar putea fi recomandat să luăm în considerare un inlay sau onlay ceramic!",
+      "Aceste restaurări reprezintă un tratament simplu și eficient și, în unele cazuri, pot fi o alternativă excelentă la o coroană dentară completă din ceramică.",
     ],
     faq: [
       {
@@ -251,7 +251,7 @@ export const serviceList: readonly Service[] = [
       },
       {
         q: "Din ce materiale sunt făcute și cât rezistă?",
-        a: "Inlay-urile și onlay-urile sunt fabricate, de obicei, din materiale de înaltă calitate, precum porțelan, rășină compozită sau aur. Aceste materiale nu sunt doar rezistente, ci și durabile, adesea având o durată de viață mai mare decât obturațiile tradiționale. Cu o îngrijire adecvată, inlay-urile și onlay-urile pot dura mulți ani, reducând necesitatea intervențiilor dentare viitoare.",
+        a: "Inlay-urile și onlay-urile sunt fabricate, de obicei, din materiale de înaltă calitate, precum ceramica, rășina compozită sau aurul. Aceste materiale nu sunt doar rezistente, ci și durabile, adesea având o durată de viață mai mare decât obturațiile tradiționale. Cu o îngrijire adecvată, inlay-urile și onlay-urile pot dura mulți ani, reducând necesitatea intervențiilor dentare viitoare.",
       },
       {
         q: "Ce avantaje au față de obturațiile tradiționale?",
@@ -291,15 +291,15 @@ export const serviceList: readonly Service[] = [
     title: "Implanturi dentare",
     category: "Implantologie",
     short:
-      "Pivoți inserați în osul maxilar, care oferă un suport stabil dinților artificiali.",
+      "Dispozitive din titan sau zirconiu, inserate chirurgical în os, care înlocuiesc rădăcina unui dinte pierdut.",
     intro: [
-      "Implanturile dentare sunt pivoți metalici inserați chirurgical în osul maxilar, sub gingie, pentru a oferi un suport stabil dinților artificiali. Persoanele care au pierdut os pot beneficia de implanturi, însă, în unele cazuri, este necesară o grefă osoasă înainte de procedură.",
+      "Implanturile dentare sunt dispozitive medicale din titan sau zirconiu, inserate chirurgical în osul maxilar sau mandibular, sub gingie, pentru a oferi un suport stabil dinților artificiali. Persoanele care au pierdut os pot beneficia de implanturi, însă, în unele cazuri, este necesară o grefă osoasă înainte de procedură.",
       "Protezele și punțile fixate pe implanturi nu alunecă și nu se deplasează în cavitatea orală, oferind mai mult confort și încredere la masticație și vorbire. După inserarea implanturilor, sunt esențiale vizitele regulate la dentist pentru monitorizare.",
     ],
     faq: [
       {
         q: "Ce este un implant dentar?",
-        a: "Un implant dentar este un șurub metalic utilizat pentru a înlocui rădăcina unui dinte pierdut. Acesta se fixează în osul maxilar, în locul unde se afla rădăcina dintelui lipsă, fiind de obicei realizat din titan. Implantul poate susține o punte, o coroană sau o proteză, iar în timp, osul crește în jurul acestuia, asigurând o fixare stabilă.",
+        a: "Un implant dentar este un dispozitiv medical din titan sau zirconiu care se inserează chirurgical în osul maxilar sau mandibular pentru a înlocui rădăcina unui dinte pierdut. Implantul poate susține o punte, o coroană sau o proteză, iar în timp, osul crește în jurul acestuia, asigurând o fixare stabilă.",
       },
       {
         q: "Pentru cine sunt potrivite implanturile dentare?",

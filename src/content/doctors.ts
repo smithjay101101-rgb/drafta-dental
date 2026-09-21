@@ -185,22 +185,22 @@ const andrei: Doctor = {
   prefix: "Dr.",
   jobTitle: "Medic stomatolog",
   seniority: "medic",
-  role: "Stomatologie generală și flux digital",
+  role: "Stomatologie restauratoare, implantologie digitală și estetică",
   short:
-    "Absolvent al aceleiași facultăți, Carol Davila. Aduce în cabinet metodele digitale: scanare intraorală, planificare pe computer și simulare înainte de tratament. Se ocupă de consultații, controale și tratamente de rutină.",
+    "Absolvent al aceleiași facultăți, Carol Davila. Aduce în cabinet metodele digitale: scanare intraorală, manopere restauratoare, implantologie digitală și estetică. Este un medic hotărât să ajungă la un bun rezultat, indiferent de timpul petrecut lucrând.",
   title: "Cine este Dr. Andrei Drafta?",
   metaTitle: "Dr. Andrei Drafta, medic stomatolog",
   metaDescription:
-    "Medic stomatolog la Drafta dental, absolvent de Carol Davila, cu practică orientată spre fluxurile digitale de lucru.",
+    "Medic stomatolog la Drafta dental, absolvent de Carol Davila, cu practică orientată spre manopere restauratoare, implantologie digitală și estetică.",
   answer:
-    "Dr. Andrei Drafta este medic stomatolog la Drafta dental, absolvent al Facultății de Medicină Dentară din cadrul UMF Carol Davila, aceeași universitate ca medicul senior al cabinetului. Aduce în cabinet generația nouă de metode: scanare intraorală în locul amprentei clasice, planificare pe computer și simulare a rezultatului înainte de a începe tratamentul. Se ocupă de consultații, controale, igienizare și tratamente de rutină.",
+    "Dr. Andrei Drafta este medic stomatolog la Drafta dental, absolvent al Facultății de Medicină Dentară din cadrul UMF Carol Davila, aceeași universitate ca medicul senior al cabinetului. Aduce în cabinet metodele digitale: scanare intraorală în locul amprentei clasice, planificare pe computer și simulare a rezultatului înainte de a începe tratamentul. Se ocupă de manopere restauratoare, implantologie digitală și estetică. Este un medic hotărât să ajungă la un bun rezultat, indiferent de timpul petrecut lucrând.",
   image: "/photos/dr-andrei-drafta.jpg",
   imageAlt: "Dr. Andrei Drafta, medic stomatolog la Drafta dental",
   imageCaption: "portret: Dr. Andrei Drafta",
   keyTakeaways: [
     "Dr. Andrei Drafta este absolvent al Facultății de Medicină Dentară, UMF Carol Davila, București, aceeași facultate ca medicul senior al cabinetului.",
     "Aduce în cabinet metodele învățate în formarea recentă: scanare intraorală, planificare digitală și simulare înainte de tratament.",
-    "Se ocupă de consultații, igienizare, controale și tratamente de rutină.",
+    "Se ocupă de manopere restauratoare, de implantologie digitală și de estetică dentară.",
     "Lucrează în aceeași echipă cu Dr. Sergiu Drafta, ceea ce permite ca un caz complex să fie discutat între cei doi medici fără trimiteri în afara cabinetului.",
     "Cabinetul folosește scanare intraorală în locul amprentei clasice pentru majoritatea lucrărilor.",
   ],
@@ -208,9 +208,9 @@ const andrei: Doctor = {
     { label: "Studii", value: "Facultatea de Medicină Dentară, UMF Carol Davila" },
   ],
   focus: [
-    "Consultații și planuri de tratament",
-    "Igienizare profesională și controale",
-    "Obturații și tratamente de rutină",
+    "Manopere restauratoare",
+    "Implantologie digitală",
+    "Estetică dentară",
     "Scanare intraorală și planificare digitală",
   ],
   sections: [
@@ -220,7 +220,7 @@ const andrei: Doctor = {
       blocks: [
         {
           kind: "p",
-          text: "Partea de stomatologie care se vede cel mai des: prima consultație, controalele periodice, igienizarea, obturațiile, urgențele simple. Adică tratamentele prin care trece orice pacient înainte să ajungă, dacă este cazul, la o lucrare complexă.",
+          text: "Manopere restauratoare, implantologie digitală și estetică dentară. Partea digitală înseamnă scanare intraorală în locul amprentei clasice și planificare pe computer, inclusiv pentru implanturi.",
         },
         {
           kind: "p",
@@ -256,10 +256,11 @@ const andrei: Doctor = {
           head: ["Situație", "Medic"],
           rows: [
             ["Prima consultație și plan de tratament", "Dr. Andrei Drafta"],
-            ["Igienizare, controale, obturații", "Dr. Andrei Drafta"],
+            ["Manopere restauratoare", "Dr. Andrei Drafta"],
+            ["Implantologie digitală și estetică", "Dr. Andrei Drafta"],
             ["Scanare intraorală și planificare digitală", "Dr. Andrei Drafta"],
             ["Protetică fixă: coroane, punți, fațete", "Dr. Sergiu Drafta"],
-            ["Reabilitări pe implanturi", "Dr. Sergiu Drafta"],
+            ["Reabilitări protetice pe implanturi", "Dr. Sergiu Drafta"],
             ["Probleme de ocluzie", "Dr. Sergiu Drafta"],
           ],
         },
