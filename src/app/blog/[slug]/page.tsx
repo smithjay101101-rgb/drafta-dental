@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { Blocks } from "@/components/blog/PostBody";
 import { getPost, posts, readingMinutes } from "@/content/blog";
 import { authors } from "@/content/authors";
@@ -30,6 +31,7 @@ export async function generateMetadata({
       description: post.metaDescription,
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
+      images: [{ url: post.image, alt: post.imageAlt }],
     },
   };
 }
@@ -64,6 +66,7 @@ export default async function PostPage({
     inLanguage: "ro-RO",
     datePublished: post.datePublished,
     dateModified: post.dateModified,
+    image: `${practice.url}${post.image}`,
     articleSection: post.categories,
     keywords: post.categories.join(", "),
     author: {
@@ -154,6 +157,18 @@ export default async function PostPage({
             <span aria-hidden="true">·</span>
             <span>{readingMinutes(post)} min de citit</span>
           </p>
+
+          <div className="mt-8">
+            <ImagePlaceholder
+              caption={post.imageCaption}
+              src={post.image}
+              alt={post.imageAlt}
+              priority
+              sizes="(max-width: 800px) 100vw, 760px"
+              aspect="16 / 9"
+              radius="28px"
+            />
+          </div>
 
           <div
             role="note"

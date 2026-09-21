@@ -23,6 +23,17 @@ export type Faq = { q: string; a: string };
 
 export type Post = {
   slug: string;
+  /**
+   * REGULĂ: fiecare articol are o fotografie. Câmpurile sunt obligatorii, deci
+   * un articol fără fotografie nu trece de compilare.
+   *
+   * Fotografia trebuie să fie liberă de drepturi (Unsplash, Pexels sau o
+   * fotografie a cabinetului). Se trece în public/photos/CREDITE.md, cu
+   * identificatorul sursei. Nu se iau imagini din căutarea Google.
+   */
+  image: string;
+  imageAlt: string;
+  imageCaption: string;
   /** Pista: „retrieval" pentru postările construite pentru citare de AI. */
   track: "retrieval" | "human";
   /** H1, formulat ca întrebare. */

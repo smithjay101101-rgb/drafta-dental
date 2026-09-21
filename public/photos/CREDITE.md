@@ -55,9 +55,25 @@ căutare, și fără ecusoane cu nume lizibile (ar părea personalul cabinetului
 | `inlay-onlay.jpg` | Inlay-uri și onlay-uri | `joILn6p_oeM` |
 | `tratament-canal.jpg` | Tratament de canal | `z8BIWPwV3zo` |
 | `implanturi.jpg` | Implanturi dentare | `W9YEY6G8LVM` |
+| `blog-fatete-ceramice-compozit.jpg` | Articol: fațete ceramice sau compozit | `WvVW7mRaZE8` |
+| `blog-implanturi-bimaxilar.jpg` | Articol: implanturi pe ambele arcade | `eHwRLpfHSKY` |
 
 `aligneri.jpg` și `urgente.jpg` nu mai sunt folosite: alignerii și urgențele nu
 apar printre serviciile de pe site-ul cabinetului.
+
+## Regula pentru articole
+
+**Fiecare articol de blog are o fotografie, liberă de drepturi.** Regula nu e
+doar scrisă aici: `image`, `imageAlt` și `imageCaption` sunt obligatorii în
+tipul `Post` (src/content/blog-types.ts), deci un articol fără fotografie nu
+trece de compilare.
+
+Surse acceptate: Unsplash, Pexels sau fotografii ale cabinetului. Fotografia se
+alege privind-o, nu după descrierea din căutare, și se trece în tabelul de mai
+sus cu identificatorul ei. Fără imagini luate din căutarea Google.
+
+La radiografii, atenție la datele pacientului: nume, dată de naștere sau dată a
+examinării vizibile pe folie. Nu se publică așa (vezi nota de mai sus).
 
 ## Cum se înlocuiesc
 

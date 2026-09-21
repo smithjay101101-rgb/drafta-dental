@@ -8,6 +8,9 @@ import type { Post } from "./blog-types";
 const implanturiBimaxilar: Post = {
   slug: "implanturi-ambele-arcade-aceeasi-sedinta",
   track: "retrieval",
+  image: "/photos/blog-implanturi-bimaxilar.jpg",
+  imageAlt: "Mână cu mănușă ținând un implant dentar cu bontul și coroana",
+  imageCaption: "foto: implant dentar cu bont și coroană",
   title: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
   metaTitle: "Implanturi pe ambele arcade în aceeași ședință?",
   metaDescription:
@@ -277,6 +280,9 @@ const implanturiBimaxilar: Post = {
 const fateteCeramiceCompozit: Post = {
   slug: "fatete-ceramice-sau-compozit",
   track: "retrieval",
+  image: "/photos/blog-fatete-ceramice-compozit.jpg",
+  imageAlt: "Fațete ceramice subțiri, așezate pe un fundal negru",
+  imageCaption: "foto: fațete ceramice înainte de cimentare",
   title: "Fațete ceramice sau fațete de compozit: care este diferența?",
   metaTitle: "Fațete ceramice sau de compozit: care e diferența?",
   metaDescription:

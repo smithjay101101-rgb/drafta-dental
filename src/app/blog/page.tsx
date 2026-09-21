@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { posts, readingMinutes } from "@/content/blog";
 import { authors } from "@/content/authors";
 import { practice } from "@/content/site";
@@ -33,6 +34,7 @@ export default function BlogIndex() {
         blogPost: posts.map((p) => ({
           "@type": "BlogPosting",
           headline: p.title,
+          image: `${practice.url}${p.image}`,
           url: `${practice.url}/blog/${p.slug}`,
           datePublished: p.datePublished,
           dateModified: p.dateModified,
@@ -77,8 +79,18 @@ export default function BlogIndex() {
               const a = authors[p.authorId];
               return (
                 <li key={p.slug}>
-                  <article className="rounded-[22px] border border-line p-7 transition-colors duration-150 ease-out hover:bg-surface">
-                    <p className="label-meta m-0">{p.categories.join(" · ")}</p>
+                  <article className="overflow-hidden rounded-[22px] border border-line transition-colors duration-150 ease-out hover:bg-surface sm:flex">
+                    <div className="sm:w-[38%] sm:flex-none">
+                      <ImagePlaceholder
+                        caption={p.imageCaption}
+                        src={p.image}
+                        alt={p.imageAlt}
+                        sizes="(max-width: 640px) 100vw, 320px"
+                        className="aspect-[16/9] h-full sm:aspect-auto sm:min-h-[210px]"
+                      />
+                    </div>
+                    <div className="flex-1 p-7">
+                      <p className="label-meta m-0">{p.categories.join(" · ")}</p>
                     <h2 className="h3 mt-3 text-[22px]">
                       <Link href={`/blog/${p.slug}`}>{p.title}</Link>
                     </h2>
@@ -88,7 +100,8 @@ export default function BlogIndex() {
                     <p className="mt-4 text-[14px] text-text-label">
                       {a.name} · <time dateTime={p.dateModified}>{dateRo(p.dateModified)}</time> ·{" "}
                       {readingMinutes(p)} min
-                    </p>
+                      </p>
+                    </div>
                   </article>
                 </li>
               );
