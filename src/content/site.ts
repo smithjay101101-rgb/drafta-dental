@@ -14,6 +14,8 @@ export const practice = {
   /** Real, de pe site-ul Wix al cabinetului. */
   phone: "0787 585 555",
   phoneHref: "tel:+40787585555",
+  /** Format internațional, doar cifre, pentru linkul wa.me. */
+  whatsapp: "40787585555",
   /** Real, de pe site-ul Wix al cabinetului. */
   email: "draftaa@gmail.com",
   /** Adresă reală, dată de client. */
@@ -132,7 +134,7 @@ export const faq = {
     },
     {
       q: "Primiți pacienți noi?",
-      a: `Da. Ne poți suna la ${practice.phone} sau poți completa formularul de programare, iar noi te contactăm.`,
+      a: `Da. Ne poți scrie pe WhatsApp, cu mesajul deja pregătit, sau ne poți suna la ${practice.phone}.`,
     },
     {
       q: "Care este programul cabinetului?",
@@ -146,12 +148,17 @@ export const faq = {
 };
 
 export const booking = {
-  title: "Programează-te în două minute.",
-  bodyBefore: "Lasă-ne numărul de telefon și te sunăm noi. Sau sună direct: ",
-  submit: "Trimite cererea",
-  gdpr: "Folosim datele doar pentru a te contacta în legătură cu programarea.",
-  success: "Am primit cererea. Te sunăm în curând.",
-  error: "Nu am putut trimite cererea. Încearcă din nou sau sună-ne.",
+  title: "Scrie-ne pe WhatsApp.",
+  body: "Cel mai simplu e pe WhatsApp: mesajul e deja scris, tu doar îl trimiți. Sau sună direct, în programul cabinetului.",
+  whatsapp: "Scrie pe WhatsApp",
+  /** Textul care apare deja scris în conversație. */
+  whatsappMessage:
+    "Bună ziua! Aș dori mai multe detalii pentru programarea unui consult în cabinet.",
+  call: "Sună",
+  numberLabel: "Numărul cabinetului",
+  copy: "Copiază numărul",
+  copied: "Număr copiat",
+  hoursLabel: "Program:",
 } as const;
 
 export const footer = {

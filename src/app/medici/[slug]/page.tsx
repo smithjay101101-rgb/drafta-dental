@@ -225,7 +225,7 @@ export default async function DoctorPage({
           <section className="mt-12 rounded-[22px] border border-line p-7">
             <h2 className="h3 m-0 text-[20px]">Cum vă programați?</h2>
             <p className="mt-3 text-[16px]/[1.6] text-text-muted">
-              Prin formularul de pe site sau telefonic, la {practice.phone}.
+              Pe WhatsApp, cu mesajul deja scris, sau telefonic, la {practice.phone}.
               Cabinetul este în {practice.address.street},{" "}
               {practice.address.locality}.
             </p>

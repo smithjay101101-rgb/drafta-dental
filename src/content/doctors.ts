@@ -140,7 +140,7 @@ const sergiu: Doctor = {
     },
     {
       q: "Cum se face o programare la Dr. Sergiu Drafta?",
-      a: "Prin formularul de programare de pe site sau telefonic. Prima vizită este o consultație în care se stabilește dacă situația cere o abordare protetică și ce investigații sunt necesare.",
+      a: "Pe WhatsApp sau telefonic. Prima vizită este o consultație în care se stabilește dacă situația cere o abordare protetică și ce investigații sunt necesare.",
     },
   ],
   sources: [
