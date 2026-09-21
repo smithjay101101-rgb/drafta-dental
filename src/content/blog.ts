@@ -251,6 +251,10 @@ const implanturiBimaxilar: Post = {
   ],
   related: [
     { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    {
+      label: "Fațete ceramice sau fațete de compozit: care este diferența?",
+      href: "/blog/fatete-ceramice-sau-compozit",
+    },
     { label: "Medicii cabinetului", href: "/despre-noi" },
     { label: "Programare online", href: "/#programare" },
   ],
@@ -261,11 +265,261 @@ const implanturiBimaxilar: Post = {
     "Rata de succes pe termen lung citată frecvent ca 98 pana la 99 la sută la 25 de ani apare doar pe site-uri de clinică, fără sursă primară. A fost lăsată în afara articolului.",
     "Aviz medical: articolul nu a fost revizuit de un medic. Conținut demo.",
     "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
-    "Mai sunt necesare 1 pana la 3 articole ca blocul de articole conexe să conțină legături interne către alte postări, nu doar către pagini ale site-ului.",
+    "Blocul de articole conexe are acum o legătură internă către al doilea articol. Mai sunt necesare încă 1 pana la 2 articole pentru o rețea internă completă.",
   ],
 };
 
-export const posts: Post[] = [implanturiBimaxilar];
+/**
+ * ⚠️ Nu a trecut prin avizul unui medic. Nu se publică fără revizuire medicală.
+ * Cifrele din articol sunt verificate în sursele primare, nu preluate din
+ * rezumate. Lista de [VERIFY] este în câmpul `verify`.
+ */
+const fateteCeramiceCompozit: Post = {
+  slug: "fatete-ceramice-sau-compozit",
+  track: "retrieval",
+  title: "Fațete ceramice sau fațete de compozit: care este diferența?",
+  metaTitle: "Fațete ceramice sau de compozit: care e diferența?",
+  metaDescription:
+    "Diferența dintre fațetele ceramice și cele de compozit: supraviețuire la 10 ani, cât smalț se șlefuiește, pete, reparații și prețul de pornire.",
+  answer:
+    "Fațetele de compozit se aplică direct pe dinte, într-o singură ședință, și costă mai puțin. Fațetele ceramice se realizează în laborator, cer două ședințe și rezistă mai bine în timp: la zece ani, rata de supraviețuire raportată este de 95,5 la sută pentru cele ceramice, față de 91 la sută pentru cele de compozit, la o urmărire medie între doi și opt ani. Diferența nu este doar de preț, ci și de cât smalț se șlefuiește, de cum se comportă la pete și de felul în care se repară.",
+  authorId: "andrei-drafta",
+  datePublished: "2026-09-21",
+  dateModified: "2026-09-21",
+  categories: ["Estetică dentară", "Fațete dentare", "Stomatologie restauratoare"],
+  keyTakeaways: [
+    "La zece ani, fațetele ceramice au o rată de supraviețuire de 95,5 la sută, calculată pe 25 de studii clinice și 6.500 de fațete (Journal of Clinical Medicine, 2021).",
+    "Fațetele de compozit aplicate direct pe dinte au o supraviețuire de 91 la sută, la o urmărire medie între 24 și 97 de luni (Journal of Evidence-Based Dental Practice, 2023).",
+    "La doi până la trei ani, studiile randomizate nu găsesc o diferență semnificativă de supraviețuire între cele două materiale. Diferența se vede pe termen lung (Frontiers in Dental Medicine, 2026).",
+    "Cea mai frecventă problemă a fațetelor ceramice este fractura, urmată de desprindere, iar ambele apar mai des în primii ani după cimentare (Journal of Clinical Medicine, 2021).",
+    "Fațeta ceramică lipită numai pe smalț supraviețuiește în 96,7 la sută din cazuri, față de 93,9 la sută atunci când peste 30 la sută din suprafață este dentină, adică un risc de eșec de aproape cinci ori mai mare (Journal of Esthetic and Restorative Dentistry, 2025).",
+    "Compozitul își pierde luciul și se colorează marginal mai repede decât ceramica, în schimb se poate repara direct în cabinet (Frontiers in Dental Medicine, 2026).",
+  ],
+  sections: [
+    {
+      id: "ce-sunt",
+      heading: "Ce sunt, de fapt, cele două tipuri de fațete?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Amândouă acoperă fața văzută a dintelui și schimbă forma, culoarea sau poziția aparentă a acestuia. Diferă prin material și prin locul în care sunt construite.",
+        },
+        {
+          kind: "p",
+          text: "Fațeta de compozit se construiește direct pe dinte, în cabinet. Medicul aplică rășina compozită în straturi, o modelează și o lustruiește în aceeași ședință. Rezultatul depinde aproape în întregime de mâna care lucrează, pentru că fațeta se sculptează pe loc.",
+        },
+        {
+          kind: "p",
+          text: "Fațeta ceramică se realizează în laborator, după o amprentă sau o scanare intraorală, apoi se cimentează pe dinte la a doua ședință. Între cele două vizite, dintele rămâne protejat de o lucrare provizorie.",
+        },
+      ],
+    },
+    {
+      id: "durabilitate",
+      heading: "Care dintre ele rezistă mai mult?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Ceramica, dar diferența apare târziu. O revizuire sistematică pe 25 de studii clinice și 6.500 de fațete ceramice a găsit o rată de supraviețuire de 95,5 la sută la zece ani (Journal of Clinical Medicine, 2021).",
+        },
+        {
+          kind: "p",
+          text: "Pentru compozit, o revizuire sistematică și meta-analiză a raportat 91 la sută supraviețuire pentru fațetele aplicate direct pe dinte, la o urmărire medie între 24 și 97 de luni. Varianta indirectă, realizată în laborator din compozit, a ieșit mai slab, cu 84 la sută (Journal of Evidence-Based Dental Practice, 2023).",
+        },
+        {
+          kind: "p",
+          text: "Important pentru cine compară în cabinet: la doi până la trei ani, studiile randomizate nu găsesc o diferență semnificativă între cele două materiale. Cu alte cuvinte, în primii ani fațeta de compozit arată și rezistă comparabil. Diferența se acumulează după (Frontiers in Dental Medicine, 2026).",
+        },
+        {
+          kind: "takeaway",
+          items: [
+            "Pe termen scurt, diferența de rezistență este mică.",
+            "Pe termen lung, ceramica pierde mai puține fațete.",
+            "Cea mai frecventă problemă la ceramică este fractura, urmată de desprindere, iar ambele apar mai des în primii ani după cimentare.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "smalt",
+      heading: "Cât din dinte se șlefuiește pentru fiecare?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Aceasta este întrebarea care contează cel mai mult pe termen lung, pentru că șlefuirea nu se poate da înapoi. Compozitul cere de regulă o pregătire minimă, uneori deloc. Ceramica are nevoie de un spațiu în care să încapă, deci de o șlefuire mai consistentă, care variază în funcție de caz și de material.",
+        },
+        {
+          kind: "p",
+          text: "Cât smalț rămâne după șlefuire schimbă direct prognosticul. Un studiu pe 672 de fațete ceramice la 189 de pacienți, urmărite între 1 și 15 ani, a împărțit cazurile după cât din suprafața pregătită era dentină expusă.",
+        },
+        {
+          kind: "table",
+          caption: "Supraviețuirea fațetelor ceramice, în funcție de suportul pe care sunt lipite",
+          head: ["Suportul de lipire", "Fațete urmărite", "Supraviețuire"],
+          rows: [
+            ["Doar smalț", "290", "96,7 la sută"],
+            ["Sub 30 la sută dentină", "306", "95,3 la sută"],
+            ["Peste 30 la sută dentină", "76", "93,9 la sută"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Diferența dintre prima și ultima grupă este semnificativă statistic, iar riscul de eșec la fațetele lipite pe mai mult de 30 la sută dentină este de aproape cinci ori mai mare. Faptul că dintele a avut sau nu tratament de canal nu a schimbat semnificativ rezultatul (Journal of Esthetic and Restorative Dentistry, 2025).",
+        },
+        {
+          kind: "p",
+          text: "Concluzia practică: o fațetă ceramică lipită pe smalț sănătos este o lucrare de durată. Una lipită pe un dinte șlefuit adânc sau refăcut anterior cu obturații mari pornește cu un handicap, indiferent de material.",
+        },
+      ],
+    },
+    {
+      id: "pete-reparatii",
+      heading: "Ce se întâmplă în timp cu aspectul și cu reparațiile?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Compozitul se modifică vizibil mai repede: își pierde luciul suprafeței și se colorează pe margini, mai ales la cafea, ceai, vin roșu și fumat. Ceramica este stabilă cromatic și își păstrează luciul mult mai mult timp (Frontiers in Dental Medicine, 2026).",
+        },
+        {
+          kind: "p",
+          text: "În schimb, compozitul are un avantaj real atunci când apare o problemă: o ciobitură se poate repara direct în cabinet, într-o ședință, adăugând material peste cel existent. O fațetă ceramică fracturată se înlocuiește de obicei, pentru că materialul nu se completează la fel de previzibil.",
+        },
+        {
+          kind: "p",
+          text: "Acesta este și motivul pentru care compozitul se recomandă frecvent la pacienți tineri sau în situații care se vor mai schimba: repararea și ajustarea sunt simple, iar costul unei corecturi este mic.",
+        },
+      ],
+    },
+    {
+      id: "comparatie",
+      heading: "Care este diferența, pe scurt?",
+      blocks: [
+        {
+          kind: "table",
+          caption: "Fațete ceramice față de fațete de compozit",
+          head: ["Criteriu", "Ceramice", "Compozit"],
+          rows: [
+            ["Unde se realizează", "În laborator, după amprentă sau scanare", "Direct pe dinte, în cabinet"],
+            ["Număr de ședințe", "Două", "Una"],
+            ["Supraviețuire raportată", "95,5 la sută la 10 ani", "91 la sută, la 2 până la 8 ani"],
+            ["Problema cea mai frecventă", "Fractura, apoi desprinderea", "Fractura, pierderea retenției, colorarea"],
+            ["Comportament la pete", "Stabil în timp", "Pierde luciul, se colorează marginal"],
+            ["Reparație", "De regulă se înlocuiește fațeta", "Se repară direct în cabinet"],
+            ["Preț de pornire la Drafta dental", "1700 lei pe dinte", "650 lei pe dinte"],
+          ],
+        },
+      ],
+    },
+    {
+      id: "cum-alegi",
+      heading: "Cum alegi între ele?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Alegerea se face la consultație, după ce medicul vede cât smalț există, cum se închide mușcătura și ce se dorește schimbat. Câteva repere care apar constant în discuție:",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Dacă dinții sunt în mare parte intacți și se corectează detalii de formă sau culoare, compozitul rezolvă într-o ședință, cu un cost mai mic.",
+            "Dacă se schimbă aspectul mai multor dinți și se dorește un rezultat care ține mulți ani, ceramica are datele mai bune la zece ani.",
+            "Dacă smalțul este subțire sau există obturații întinse pe fața văzută, prognosticul scade pentru ambele, iar planul se discută separat.",
+            "Dacă se scrâșnesc dinții noaptea, riscul de fractură crește, iar o gutieră de protecție intră în discuție indiferent de material.",
+            "Dacă bugetul contează acum, compozitul poate fi o etapă, nu neapărat o alegere definitivă.",
+          ],
+        },
+        {
+          kind: "p",
+          text: "Ambele variante sunt disponibile la Drafta dental, iar prețurile de pornire sunt afișate pe paginile fiecărui tratament. Costul exact se stabilește după consultație, în funcție de numărul de dinți și de starea lor.",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Care fațete rezistă mai mult, cele ceramice sau cele de compozit?",
+      a: "Cele ceramice. La zece ani, rata de supraviețuire raportată este de 95,5 la sută pentru ceramică. Pentru compozitul aplicat direct pe dinte, supraviețuirea este de 91 la sută, la o urmărire medie între 24 și 97 de luni. În primii doi până la trei ani, diferența nu este semnificativă.",
+    },
+    {
+      q: "Care este diferența de preț?",
+      a: "La Drafta dental, fațetele de compozit pornesc de la 650 lei pe dinte, iar cele ceramice de la 1700 lei pe dinte. Prețul exact se stabilește după consultație, în funcție de numărul de dinți și de situația clinică.",
+    },
+    {
+      q: "Se șlefuiește dintele în ambele cazuri?",
+      a: "Compozitul cere de regulă o pregătire minimă, uneori deloc. Ceramica are nevoie de spațiu pentru grosimea ei, deci de o șlefuire mai consistentă. Cât smalț rămâne contează: fațetele ceramice lipite numai pe smalț supraviețuiesc în 96,7 la sută din cazuri, față de 93,9 la sută când peste 30 la sută din suprafață este dentină.",
+    },
+    {
+      q: "Se pot repara fațetele?",
+      a: "Fațeta de compozit se repară direct în cabinet, într-o singură ședință. O fațetă ceramică fracturată se înlocuiește de obicei, pentru că materialul nu se completează la fel de previzibil.",
+    },
+    {
+      q: "Se pătează fațetele în timp?",
+      a: "Compozitul își pierde luciul și se colorează pe margini mai repede, mai ales la cafea, ceai, vin roșu și fumat. Ceramica își păstrează culoarea și luciul mult mai mult timp.",
+    },
+    {
+      q: "Câte ședințe durează fiecare?",
+      a: "Fațetele de compozit se fac într-o singură ședință, pentru că se construiesc direct pe dinte. Cele ceramice cer două: una pentru pregătire și amprentă sau scanare, alta pentru cimentare, după ce lucrarea vine din laborator.",
+    },
+    {
+      q: "Pot trece de la compozit la ceramică mai târziu?",
+      a: "Da, iar acesta este unul dintre motivele pentru care compozitul se alege uneori ca etapă. Trecerea presupune o nouă pregătire a dintelui, deci decizia se discută la consultație, ținând cont de cât smalț a rămas.",
+    },
+    {
+      q: "Ce se întâmplă dacă scrâșnesc dinții noaptea?",
+      a: "Crește riscul de fractură, care este deja cea mai frecventă problemă a fațetelor ceramice. În astfel de cazuri se discută o gutieră de protecție purtată noaptea, indiferent de materialul ales.",
+    },
+  ],
+  sources: [
+    {
+      id: "jcm-2021",
+      label: "Supraviețuirea pe termen lung și complicațiile fațetelor ceramice: revizuire sistematică pe 25 de studii și 6.500 de fațete",
+      publisher: "Journal of Clinical Medicine",
+      year: "2021",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7961608/",
+    },
+    {
+      id: "jebdp-2023",
+      label: "Ratele de supraviețuire și complicațiile fațetelor din rășină compozită: revizuire sistematică și meta-analiză",
+      publisher: "Journal of Evidence-Based Dental Practice",
+      year: "2023",
+      url: "https://www.sciencedirect.com/science/article/abs/pii/S1532338223001033",
+    },
+    {
+      id: "jerd-2025",
+      label: "Supraviețuirea fațetelor ceramice în funcție de expunerea dentinei și de vitalitatea dintelui, la 1 până la 15 ani",
+      publisher: "Journal of Esthetic and Restorative Dentistry",
+      year: "2025",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12618969/",
+    },
+    {
+      id: "fdm-2026",
+      label: "Longevitatea clinică a fațetelor directe din rășină compozită pe dinții frontali",
+      publisher: "Frontiers in Dental Medicine",
+      year: "2026",
+      url: "https://www.frontiersin.org/journals/dental-medicine/articles/10.3389/fdmed.2026.1915125/full",
+    },
+  ],
+  related: [
+    { label: "Fațete ceramice la Drafta dental", href: "/servicii/fatete-ceramice" },
+    { label: "Fațete de compozit la Drafta dental", href: "/servicii/fatete-de-compozit" },
+    {
+      label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
+      href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
+    },
+    { label: "Programare", href: "/#programare" },
+  ],
+  verify: [
+    "Ce sisteme ceramice folosește cabinetul. Studiul din 2021 arată diferențe semnificative între ceramicile feldspatice și celelalte, iar articolul nu numește niciun material anume.",
+    "Dacă se fac fațete fără șlefuire la Drafta dental și în ce situații.",
+    "Dacă prețurile de pornire includ proba, simularea digitală și lucrarea provizorie.",
+    "Numărul real de ședințe pentru fiecare variantă, în cabinet.",
+    "Intervalele de viață citate pe paginile de servicii (5 până la 7 ani pentru compozit, 10 până la 15 ani pentru ceramică) provin din textele cabinetului. În articol s-au folosit ratele de supraviețuire din studii, nu aceste intervale.",
+    "Aviz medical: articolul nu a fost revizuit de un medic.",
+    "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
+  ],
+};
+
+export const posts: Post[] = [fateteCeramiceCompozit, implanturiBimaxilar];
 
 export function getPost(slug: string) {
   return posts.find((p) => p.slug === slug);
