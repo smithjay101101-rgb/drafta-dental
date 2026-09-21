@@ -14,7 +14,7 @@ const implanturiBimaxilar: Post = {
     "Când se rezolvă ambele arcade într-o singură intervenție, când se etapizează și ce diferență apare la ocluzie, durată și cost.",
   answer:
     "Da, în majoritatea cazurilor de edentație totală pe ambele arcade, intervenția simultană este varianta preferată. Pacientul trece printr-o singură vindecare, iar cele două lucrări provizorii se construiesc una în raport cu cealaltă, deci ocluzia iese corectă din prima zi. Se etapizează atunci când starea generală de sănătate nu permite o intervenție lungă, când o arcadă are nevoie de reconstrucție osoasă, sau când pacientul preferă două intervenții scurte.",
-  authorId: "sergiu-drafta",
+  authorId: "andrei-drafta",
   datePublished: "2026-09-12",
   dateModified: "2026-09-12",
   categories: ["Implant dentar", "Chirurgie dentară", "Protetică dentară"],
