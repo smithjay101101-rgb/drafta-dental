@@ -66,7 +66,12 @@ export default async function PostPage({
     inLanguage: "ro-RO",
     datePublished: post.datePublished,
     dateModified: post.dateModified,
-    image: `${practice.url}${post.image}`,
+    image: [
+      post.image,
+      ...post.sections.flatMap((s) =>
+        s.blocks.flatMap((b) => (b.kind === "figure" ? [b.src] : [])),
+      ),
+    ].map((src) => `${practice.url}${src}`),
     articleSection: post.categories,
     keywords: post.categories.join(", "),
     author: {

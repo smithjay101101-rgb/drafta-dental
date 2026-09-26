@@ -10,7 +10,9 @@ export type Block =
   | { kind: "p"; text: string }
   | { kind: "ul"; items: string[] }
   | { kind: "table"; caption: string; head: string[]; rows: string[][] }
-  | { kind: "takeaway"; items: string[] };
+  | { kind: "takeaway"; items: string[] }
+  /** A doua fotografie a articolului, în corpul textului. Aceleași reguli ca `image`. */
+  | { kind: "figure"; src: string; alt: string; caption: string };
 
 export type Section = {
   id: string;

@@ -1,3 +1,4 @@
+import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import type { Block } from "@/content/blog-types";
 
 export function Blocks({ blocks }: { blocks: Block[] }) {
@@ -42,6 +43,23 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
                 ))}
               </ul>
             </div>
+          );
+
+        if (b.kind === "figure")
+          return (
+            <figure key={i} className="m-0 mt-7">
+              <ImagePlaceholder
+                caption={b.caption}
+                src={b.src}
+                alt={b.alt}
+                sizes="(max-width: 800px) 100vw, 760px"
+                aspect="3 / 2"
+                radius="22px"
+              />
+              <figcaption className="mt-2.5 text-[13px] text-text-label">
+                {b.caption}
+              </figcaption>
+            </figure>
           );
 
         return (

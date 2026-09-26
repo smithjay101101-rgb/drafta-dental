@@ -58,12 +58,28 @@ căutare, și fără ecusoane cu nume lizibile (ar părea personalul cabinetului
 | `blog-fatete-ceramice-compozit.jpg` | Articol: fațete ceramice sau compozit | `WvVW7mRaZE8` |
 | `blog-implanturi-bimaxilar.jpg` | Articol: implanturi pe ambele arcade | `eHwRLpfHSKY` |
 
+Sursa: [Pexels](https://www.pexels.com), sub [licența Pexels](https://www.pexels.com/license/)
+(utilizare gratuită, comercială inclusă, fără atribuire obligatorie). Aceleași
+criterii de alegere ca mai sus. Adresa fotografiei: `pexels.com/photo/<id>`.
+
+| Fișier | Folosit în | Pexels |
+|---|---|---|
+| `blog-implant-imediat.jpg` | Articol: implant imediat sau după vindecare (principală) | `6502305` |
+| `blog-implant-imediat-cbct.jpg` | Articol: implant imediat sau după vindecare (în text) | `4297519` |
+| `blog-durata-implant.jpg` | Articol: cât durează un implant (principală) | `4687905` |
+| `blog-durata-implant-interventie.jpg` | Articol: cât durează un implant (în text) | `3952008` |
+
+`blog-implant-imediat-cbct.jpg` arată foi de tomografie pe negatoscop. Au fost
+verificate la rezoluție mare: se văd doar etichetele secțiunilor și numerele
+dinților, fără nume, dată de naștere sau dată a examinării.
+
 `aligneri.jpg` și `urgente.jpg` nu mai sunt folosite: alignerii și urgențele nu
 apar printre serviciile de pe site-ul cabinetului.
 
 ## Regula pentru articole
 
-**Fiecare articol de blog are o fotografie, liberă de drepturi.** Regula nu e
+**Fiecare articol de blog are o fotografie, liberă de drepturi.** Articolele noi
+au două: cea principală și una în text, ca bloc `figure`. Regula nu e
 doar scrisă aici: `image`, `imageAlt` și `imageCaption` sunt obligatorii în
 tipul `Post` (src/content/blog-types.ts), deci un articol fără fotografie nu
 trece de compilare.
