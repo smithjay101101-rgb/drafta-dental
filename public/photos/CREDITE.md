@@ -68,10 +68,16 @@ criterii de alegere ca mai sus. Adresa fotografiei: `pexels.com/photo/<id>`.
 | `blog-implant-imediat-cbct.jpg` | Articol: implant imediat sau după vindecare (în text) | `4297519` |
 | `blog-durata-implant.jpg` | Articol: cât durează un implant (principală) | `4687905` |
 | `blog-durata-implant-interventie.jpg` | Articol: cât durează un implant (în text) | `3952008` |
+| `blog-os-insuficient.jpg` | Articol: implant când osul este insuficient (principală, decupată) | `6502041` |
+| `blog-os-insuficient-interventie.jpg` | Articol: implant când osul este insuficient (în text) | `12745979` |
+| `blog-implant-fara-aditie.jpg` | Articol: implant fără adiție de os (principală) | `6627715` |
+| `blog-implant-fara-aditie-radiografie.jpg` | Articol: implant fără adiție de os (în text) | `4269204` |
 
 `blog-implant-imediat-cbct.jpg` arată foi de tomografie pe negatoscop. Au fost
 verificate la rezoluție mare: se văd doar etichetele secțiunilor și numerele
-dinților, fără nume, dată de naștere sau dată a examinării.
+dinților, fără nume, dată de naștere sau dată a examinării. La fel
+`blog-os-insuficient.jpg` (interfața programului, fără date de pacient) și
+`blog-implant-fara-aditie-radiografie.jpg` (doar radiografia, pe tabletă).
 
 `aligneri.jpg` și `urgente.jpg` nu mai sunt folosite: alignerii și urgențele nu
 apar printre serviciile de pe site-ul cabinetului.

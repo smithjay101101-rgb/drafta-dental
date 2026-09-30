@@ -808,6 +808,10 @@ const implantImediat: Post = {
       href: "/blog/cat-dureaza-un-implant-dentar",
     },
     {
+      label: "Implant dentar fără adiție de os: când este posibil?",
+      href: "/blog/implant-dentar-fara-aditie-de-os",
+    },
+    {
       label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
       href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
     },
@@ -1067,8 +1071,8 @@ const durataImplant: Post = {
       href: "/blog/implant-dentar-imediat-sau-dupa-vindecare",
     },
     {
-      label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
-      href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
+      label: "Se poate pune implant dacă nu mai este suficient os?",
+      href: "/blog/implant-dentar-fara-os-suficient",
     },
     { label: "Programare", href: "/#programare" },
   ],
@@ -1084,7 +1088,533 @@ const durataImplant: Post = {
   ],
 };
 
+/**
+ * ⚠️ Nu a trecut prin avizul unui medic. Nu se publică fără revizuire medicală.
+ * Pornește de la ciorna primită. Citările au fost verificate în rezumatele
+ * surselor primare și corectate unde ciorna le atribuia altceva (vezi `verify`).
+ */
+const osInsuficient: Post = {
+  slug: "implant-dentar-fara-os-suficient",
+  track: "retrieval",
+  image: "/photos/blog-os-insuficient.jpg",
+  imageAlt: "Monitor cu o tomografie dentară: reconstrucție 3D a maxilarelor și secțiuni prin os",
+  imageCaption: "foto: pe tomografie se măsoară lățimea și înălțimea osului, în milimetri",
+  title: "Se poate pune implant dacă nu mai este suficient os?",
+  metaTitle: "Implant dentar când osul este insuficient: opțiuni și durată",
+  metaDescription:
+    "Implant și cu os insuficient: cum se măsoară osul pe CBCT, când se recomandă adiția osoasă sau sinus liftul, ce alternative există și cât durează.",
+  answer:
+    "Da, în cele mai multe cazuri. Soluția depinde de cât os lipsește și unde. Un deficit mic se completează cu adiție de os în aceeași ședință cu implantul. Un deficit mare se reconstruiește întâi, iar implantul vine după câteva luni. La maxilarul superior, în zona laterală, lipsa de înălțime se compensează prin sinus lift, iar în unele situații un implant scurt sau îngust evită complet adiția.",
+  authorId: "andrei-drafta",
+  datePublished: "2026-09-30",
+  dateModified: "2026-09-30",
+  categories: ["Implant dentar", "Chirurgie dentară"],
+  keyTakeaways: [
+    "După extracție, creasta pierde în medie 3,8 mm în lățime și 1,2 mm în înălțime în 6 luni, cel mai repede în primele 3 până la 6 luni (Clinical Oral Implants Research, 2012).",
+    "Când peretele de os dinspre obraz rămâne de cel puțin 1,8 până la 2 mm după pregătirea locului, pierderea de os scade semnificativ (Annals of Periodontology, 2000).",
+    "La 5 ani, implanturile de 6 mm au avut o supraviețuire de 98,5 la sută, față de 100 la sută pentru implanturile lungi cu sinus lift, fără diferență semnificativă și fără diferență de complicații (Journal of Clinical Periodontology, 2018).",
+    "Cu os rezidual de cel mult 6 mm sub sinus, sinus liftul intern și cel lateral nu au diferit semnificativ ca supraviețuire a implantului sau ca perforare a membranei (Clinical Oral Implants Research, 2023).",
+    "Implanturile înguste de 3 până la 3,5 mm nu au avut o supraviețuire diferită de cele standard. Cele sub 3 mm au avut o supraviețuire semnificativ mai mică (Clinical Oral Implants Research, 2018).",
+    "La 5 ani, implanturile puse în os augmentat au pierdut în medie 1,9 mm de os în jurul lor, față de 0,8 mm în osul propriu (Journal of Dentistry, 2025).",
+  ],
+  sections: [
+    {
+      id: "evaluare",
+      heading: "Cum se evaluează volumul osos?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Evaluarea pornește de la examenul clinic, iar decizia se ia pe tomografia computerizată cu fascicul conic (CBCT). Imaginea 3D arată lățimea crestei și înălțimea disponibilă până la structurile care trebuie ocolite: nervul alveolar inferior la mandibulă și sinusul maxilar la maxilar. O radiografie panoramică nu oferă aceste măsurători în secțiune.",
+        },
+        {
+          kind: "p",
+          text: "Implantul are nevoie de os pe toate părțile. Reperul de lucru este un perete de aproximativ 1,5 până la 2 mm în jurul implantului, mai ales pe partea dinspre obraz. Un studiu pe peste 3.000 de implanturi a arătat că, atunci când peretele dinspre obraz rămâne de 1,8 până la 2 mm după pregătirea locului, pierderea de os scade semnificativ și apare chiar câștig de os (Annals of Periodontology, 2000). Pentru un implant cu diametrul de 4 mm, asta înseamnă o creastă lată de aproximativ 7 până la 8 mm.",
+        },
+        {
+          kind: "p",
+          text: "Contează și cât timp a trecut de la extracție. Pe studiile făcute la om, creasta a pierdut în medie 3,8 mm în lățime și 1,2 mm în înălțime în primele 6 luni, cel mai repede în primele 3 până la 6 luni (Clinical Oral Implants Research, 2012). Un dinte extras acum câțiva ani lasă de regulă o creastă mai îngustă.",
+        },
+      ],
+    },
+    {
+      id: "aditie",
+      heading: "Ce este adiția osoasă?",
+      blocks: [
+        {
+          kind: "p",
+          text: "La adiția osoasă, numită și regenerare osoasă ghidată, zona deficitară se umple cu material de adiție și se acoperă cu o membrană. Materialul poate fi os propriu, recoltat din altă zonă a gurii, sau os de origine animală prelucrat, de regulă bovin. Pe acest suport, corpul formează os nou în câteva luni.",
+        },
+        {
+          kind: "table",
+          caption: "Adiția osoasă simultană față de adiția în etape",
+          head: ["Protocol", "Când se alege", "Ce urmează"],
+          rows: [
+            ["Adiție simultană", "Implantul are stabilitate, iar defectul este mic, de exemplu o porțiune de perete lipsă", "Osul se reface în timpul integrării implantului"],
+            ["Adiție în etape", "Implantul nu ar avea stabilitate sau defectul este mare", "Implantul vine după vindecarea adiției, orientativ după 4 până la 6 luni"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Adiția funcționează, dar are un cost pe termen lung. O meta-analiză pe studii cu urmărire de cel puțin 5 ani a găsit o pierdere medie de os în jurul implantului de 1,9 mm în osul augmentat, față de 0,8 mm în osul propriu (Journal of Dentistry, 2025). Acesta este unul dintre motivele pentru care, acolo unde se poate, se caută o soluție fără adiție.",
+        },
+      ],
+    },
+    {
+      id: "sinus-lift",
+      heading: "Când este necesar sinus liftul?",
+      blocks: [
+        {
+          kind: "p",
+          text: "La maxilarul superior, în zona premolarilor și a molarilor, sinusul maxilar stă deasupra rădăcinilor. După extracție, osul se retrage dinspre gură, iar sinusul coboară spre creastă. Între cele două rămân uneori doar câțiva milimetri de os.",
+        },
+        {
+          kind: "p",
+          text: "La sinus lift, chirurgul ridică membrana care căptușește sinusul și pune material de adiție dedesubt. Există două variante:",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Sinus lift intern, sau crestal: se lucrează prin locul implantului, iar implantul intră de regulă în aceeași ședință. Se alege, orientativ, când rămân cel puțin 5 mm de os.",
+            "Sinus lift extern, sau lateral: se deschide o fereastră în peretele lateral al sinusului. Se alege, orientativ, când osul rămas scade sub 4 până la 5 mm. Implantul intră simultan sau după vindecarea grefei.",
+          ],
+        },
+        {
+          kind: "figure",
+          src: "/photos/blog-os-insuficient-interventie.jpg",
+          alt: "Chirurg dentar cu lupe și mască, în timpul unei intervenții la un pacient",
+          caption: "foto: adiția osoasă și sinus liftul se fac sub anestezie locală",
+        },
+        {
+          kind: "p",
+          text: "Pragurile nu sunt fixe. O meta-analiză pe zone cu cel mult 6 mm de os rămas nu a găsit o diferență semnificativă între cele două tehnici ca supraviețuire a implantului, perforare a membranei sau pierdere de os. Tehnica internă a avut o supraviețuire de 96,5 la sută la cel puțin un an și o rată de perforare a membranei de 5,4 la sută (Clinical Oral Implants Research, 2023).",
+        },
+        {
+          kind: "p",
+          text: "Grefa din sinus are nevoie de timp. Într-o meta-analiză pe 136 de studii, grefele lăsate să se vindece peste 4,5 luni au format semnificativ mai mult os nou decât cele mai scurte (Journal of Periodontal Research, 2017). După intervenție, se evită o perioadă suflatul nasului și zborul cu avionul.",
+        },
+      ],
+    },
+    {
+      id: "alternative",
+      heading: "Ce alternative există la adiția osoasă?",
+      blocks: [
+        {
+          kind: "ul",
+          items: [
+            "Implanturi scurte, de 6 mm. La pacienți cu 5 până la 7 mm de os sub sinus, un studiu randomizat multicentric a găsit la 5 ani o supraviețuire de 98,5 la sută pentru implanturile scurte și de 100 la sută pentru cele lungi cu sinus lift, fără diferențe semnificative de pierdere de os sau de complicații (Journal of Clinical Periodontology, 2018).",
+            "Implanturi înguste. Cele de 3 până la 3,5 mm nu au avut o supraviețuire diferită de cele standard, iar cele sub 3 mm au avut o supraviețuire semnificativ mai mică (Clinical Oral Implants Research, 2018). Se folosesc pe creste subțiri și în spații mici, de exemplu la incisivii laterali superiori sau la incisivii inferiori.",
+            "Implanturi înclinate. Pe arcadele fără dinți, protocolul All-on-4 ocolește sinusul și nervul prin înclinarea implanturilor din spate.",
+            "Implanturi zigomatice, ancorate în osul pomețului, la atrofia severă a maxilarului. Supraviețuirea raportată este între 95,9 și 98,5 la sută, dar dovezile vin mai ales din studii nerandomizate, iar intervenția cere experiență specializată (Journal of Oral Implantology, 2022).",
+          ],
+        },
+        {
+          kind: "p",
+          text: "Dacă pacientul preferă să evite o intervenție de adiție, o punte sau o proteză rămân opțiuni valide. Când se poate pune implant fără adiție este explicat separat, în articolul dedicat.",
+        },
+      ],
+    },
+    {
+      id: "durata",
+      heading: "Cum influențează osul durata tratamentului?",
+      blocks: [
+        {
+          kind: "table",
+          caption: "Durata orientativă până la coroana definitivă, în funcție de os. Estimări clinice, nu rezultate de studiu",
+          head: ["Situația", "Ce se face", "Durată orientativă"],
+          rows: [
+            ["Os suficient", "Implant, apoi integrare în os", "3 până la 6 luni"],
+            ["Deficit mic de lățime", "Adiție simultană cu implantul", "5 până la 8 luni"],
+            ["Deficit mare", "Adiție în etape, implant după 4 până la 6 luni", "9 până la 12 luni"],
+            ["Peste 5 mm de os sub sinus", "Sinus lift intern, cu implant simultan", "5 până la 8 luni"],
+            ["Sub 4 până la 5 mm de os sub sinus", "Sinus lift extern, implant după 6 până la 9 luni", "10 până la 15 luni"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Durata reală se stabilește după tomografie. Fumatul și diabetul necontrolat încetinesc vindecarea osului și cresc riscul ca adiția să nu reușească. Toate etapele, de la extracție la coroană, sunt explicate în articolul despre cât durează un implant dentar.",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Este obligatorie adiția de os?",
+      a: "Nu. Se recomandă atunci când implantul nu ar avea suficient os în jur pentru stabilitate și pentru susținerea gingiei. Uneori, o altă poziție a implantului, un implant scurt sau unul îngust rezolvă situația fără adiție.",
+    },
+    {
+      q: "Cât durează vindecarea?",
+      a: "După o adiție simultană, osul se vindecă odată cu implantul. La adiția în etape, implantul vine orientativ după 4 până la 6 luni, apoi urmează integrarea lui. După sinus lift, grefele lăsate peste 4,5 luni au format semnificativ mai mult os nou.",
+    },
+    {
+      q: "CBCT-ul este necesar?",
+      a: "La un deficit osos, da. Ghidurile Asociației Europene de Osteointegrare cer ca tomografia să fie justificată, adică să aducă informații pe care alte investigații nu le dau, iar doza să fie cât mai mică. Măsurarea osului în secțiune, lângă nerv sau sinus, este tocmai o astfel de situație.",
+    },
+    {
+      q: "Implanturile scurte sunt la fel de bune ca sinus liftul?",
+      a: "La pacienți cu 5 până la 7 mm de os sub sinus, un studiu randomizat nu a găsit la 5 ani diferențe semnificative: supraviețuire de 98,5 la sută pentru implanturile de 6 mm și de 100 la sută pentru cele lungi cu sinus lift.",
+    },
+    {
+      q: "Ce se întâmplă dacă aștept mulți ani după extracție?",
+      a: "Creasta continuă să se retragă, cel mai repede în primele luni. După câțiva ani, osul este de regulă mai îngust și mai jos, iar probabilitatea de a avea nevoie de adiție crește.",
+    },
+    {
+      q: "Ce restricții am după sinus lift?",
+      a: "O perioadă după intervenție se evită suflatul nasului, strănutul cu gura închisă și zborul cu avionul, pentru a nu pune presiune pe membrana sinusului. Durata exactă se stabilește la control.",
+    },
+  ],
+  sources: [
+    {
+      id: "coir-2012",
+      label: "Modificările dimensionale ale osului și gingiei după extracție la om: revizuire sistematică",
+      publisher: "Clinical Oral Implants Research",
+      year: "2012",
+      url: "https://doi.org/10.1111/j.1600-0501.2011.02375.x",
+    },
+    {
+      id: "ap-2000",
+      label: "Influența grosimii osului asupra răspunsului osos vestibular, de la inserare la descoperirea implantului",
+      publisher: "Annals of Periodontology",
+      year: "2000",
+      url: "https://doi.org/10.1902/annals.2000.5.1.119",
+    },
+    {
+      id: "eao-2012",
+      label: "Ghidurile EAO pentru imagistica de diagnostic în implantologie",
+      publisher: "Clinical Oral Implants Research",
+      year: "2012",
+      url: "https://doi.org/10.1111/j.1600-0501.2012.02441.x",
+    },
+    {
+      id: "jcp-2018",
+      label: "Implanturi scurte de 6 mm față de implanturi lungi cu sinus lift: studiu randomizat multicentric, date la 5 ani",
+      publisher: "Journal of Clinical Periodontology",
+      year: "2018",
+      url: "https://doi.org/10.1111/jcpe.13025",
+    },
+    {
+      id: "coir-2023",
+      label: "Sinus lift transcrestal față de lateral la os rezidual de cel mult 6 mm: revizuire sistematică și meta-analiză",
+      publisher: "Clinical Oral Implants Research",
+      year: "2023",
+      url: "https://doi.org/10.1111/clr.14155",
+    },
+    {
+      id: "jpr-2017",
+      label: "Materiale de grefă și timpul de vindecare după ridicarea de sinus: revizuire sistematică și meta-analiză histomorfometrică",
+      publisher: "Journal of Periodontal Research",
+      year: "2017",
+      url: "https://doi.org/10.1111/jre.12402",
+    },
+    {
+      id: "coir-2018",
+      label: "Implanturi cu diametru redus: revizuire sistematică și meta-analiză",
+      publisher: "Clinical Oral Implants Research",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13272",
+    },
+    {
+      id: "jdent-2025",
+      label: "Pierderea de os în jurul implanturilor din os augmentat față de os propriu, la cel puțin 5 ani: revizuire sistematică și meta-analiză",
+      publisher: "Journal of Dentistry",
+      year: "2025",
+      url: "https://doi.org/10.1016/j.jdent.2025.105808",
+    },
+    {
+      id: "joi-2022",
+      label: "Supraviețuirea și complicațiile implanturilor zigomatice: revizuire sistematică",
+      publisher: "Journal of Oral Implantology",
+      year: "2022",
+      url: "https://doi.org/10.1563/aaid-joi-d-22-00008",
+    },
+  ],
+  related: [
+    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    {
+      label: "Implant dentar fără adiție de os: când este posibil?",
+      href: "/blog/implant-dentar-fara-aditie-de-os",
+    },
+    {
+      label: "Cât durează un implant dentar de la extracție până la coroana definitivă?",
+      href: "/blog/cat-dureaza-un-implant-dentar",
+    },
+    {
+      label: "Implant dentar imediat sau după vindecarea extracției: care este diferența?",
+      href: "/blog/implant-dentar-imediat-sau-dupa-vindecare",
+    },
+    { label: "Programare", href: "/#programare" },
+  ],
+  verify: [
+    "Tabelul de durate este preluat din ciornă. Sunt estimări clinice, fără sursă, și trebuie confirmate de medic.",
+    "Pragurile pentru sinus lift intern și extern (5 mm, 4 până la 5 mm) și intervalul de 4 până la 6 luni la adiția în etape sunt repere din ciornă, fără sursă. Meta-analiza din 2023 arată că pragurile nu sunt stricte.",
+    "Corectat față de ciornă: studiul Thoma din 2018 nu a găsit mai puține complicații la implanturile scurte, ci complicații biologice și tehnice fără diferență semnificativă.",
+    "Recomandarea EAO a fost formulată după rezumat (principiul justificării și al dozei minime). Textul integral al ghidului nu a fost citit.",
+    "Legăturile din ciornă către articolele #7, #12, #14 și #15 nu au fost puse: articolele nu există încă. De adăugat când apar.",
+    "Dacă Drafta dental face sinus lift, adiție osoasă și implanturi zigomatice, și cu ce materiale de adiție.",
+    "Aviz medical: articolul nu a fost revizuit de un medic. Autorul din ciornă era un loc gol, „Dr. Nume Prenume”. Articolul a fost atribuit lui Dr. Andrei Drafta.",
+  ],
+};
+
+/**
+ * ⚠️ Nu a trecut prin avizul unui medic. Nu se publică fără revizuire medicală.
+ * Pornește de la ciorna primită. Citările au fost verificate în rezumatele
+ * surselor primare și corectate unde ciorna le atribuia altceva (vezi `verify`).
+ */
+const faraAditie: Post = {
+  slug: "implant-dentar-fara-aditie-de-os",
+  track: "retrieval",
+  image: "/photos/blog-implant-fara-aditie.jpg",
+  imageAlt: "Modele din ghips ale arcadelor dentare, pe o masă de lucru cu instrumente stomatologice",
+  imageCaption: "foto: modelele de studiu ajută la planificarea poziției implantului",
+  title: "Implant dentar fără adiție de os: când este posibil?",
+  metaTitle: "Implant dentar fără adiție de os: când este posibil",
+  metaDescription:
+    "De cât os e nevoie pentru un implant fără adiție, când ajută implanturile scurte sau înguste și cum se stabilește poziția implantului pe CBCT.",
+  answer:
+    "Un implant se poate pune fără adiție atunci când osul existent îl acoperă pe toate părțile, cu un perete de aproximativ 1,5 până la 2 mm, și permite o poziție corectă pentru coroana viitoare. Când creasta este mai subțire sau mai joasă, un implant scurt, unul îngust sau o altă poziție pot evita adiția. Decizia se ia pe tomografie și pe planificarea digitală.",
+  authorId: "andrei-drafta",
+  datePublished: "2026-09-30",
+  dateModified: "2026-09-30",
+  categories: ["Implant dentar", "Chirurgie dentară"],
+  keyTakeaways: [
+    "Pierderea de os din jurul implantului scade semnificativ când peretele de os dinspre obraz rămâne de 1,8 până la 2 mm după pregătirea locului (Annals of Periodontology, 2000).",
+    "Între două implanturi, osul s-a retras în medie 0,45 mm la distanțe de peste 3 mm, față de 1,04 mm la distanțe de 3 mm sau mai puțin (Journal of Periodontology, 2000).",
+    "Poziția implantului în toate cele trei direcții contează la fel de mult ca volumul osului, mai ales în zona frontală (International Journal of Oral & Maxillofacial Implants, 2004).",
+    "Implanturile de 6 mm au avut la 5 ani aceeași supraviețuire ca implanturile lungi cu sinus lift, fără diferență semnificativă (Journal of Clinical Periodontology, 2018).",
+    "Implanturile înguste de 3 până la 3,5 mm nu au avut o supraviețuire diferită de cele standard. Cele sub 3 mm au avut o supraviețuire semnificativ mai mică (Clinical Oral Implants Research, 2018).",
+    "În zona frontală, implantul imediat a dus la retragerea gingiei cu peste 1 mm într-o mediană de 26 la sută din cazuri, mai ales acolo unde peretele osos din față lipsea (International Journal of Oral & Maxillofacial Implants, 2014).",
+  ],
+  sections: [
+    {
+      id: "volum",
+      heading: "Ce volum osos este necesar?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Implantul are nevoie de os în jurul lui ca să se integreze și ca să susțină gingia pe termen lung. Chirurgii lucrează cu câteva repere:",
+        },
+        {
+          kind: "table",
+          caption: "Repere orientative pentru volumul osos din jurul unui implant",
+          head: ["Dimensiune", "Reper orientativ"],
+          rows: [
+            ["Lățimea crestei", "Diametrul implantului plus 1,5 până la 2 mm pe fiecare parte"],
+            ["Înălțimea la mandibulă", "Lungimea implantului plus o marjă de siguranță de aproximativ 2 mm până la nervul alveolar inferior"],
+            ["Distanța față de dintele vecin", "Cel puțin 1,5 mm"],
+            ["Distanța între două implanturi", "Cel puțin 3 mm"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Două dintre repere au studii în spate. Pe peste 3.000 de implanturi, pierderea de os de pe partea dinspre obraz a scăzut semnificativ când peretele a rămas de 1,8 până la 2 mm după pregătirea locului (Annals of Periodontology, 2000). Între două implanturi aflate la peste 3 mm, osul s-a retras în medie 0,45 mm, față de 1,04 mm când distanța a fost de 3 mm sau mai mică, iar de acest os depinde papila dintre ele (Journal of Periodontology, 2000).",
+        },
+        {
+          kind: "p",
+          text: "Un implant standard are 3,5 până la 4,5 mm în diametru și 8 până la 13 mm în lungime. Dacă osul permite aceste dimensiuni, adiția nu este necesară.",
+        },
+        {
+          kind: "p",
+          text: "Contează și momentul. La om, creasta pierde 29 până la 63 la sută din lățime în primele 6 luni după extracție, cel mai repede în primele 3 până la 6 luni (Clinical Oral Implants Research, 2012). Studiile pe animale arată de ce: peretele dinspre obraz este format dintr-un os care se resoarbe odată cu dispariția dintelui, deci pierde înălțime mai mult decât cel dinspre limbă (Journal of Clinical Periodontology, 2005, studiu la câini). Un implant pus la câteva săptămâni după extracție găsește de regulă mai mult os decât unul pus după câțiva ani.",
+        },
+      ],
+    },
+    {
+      id: "pozitie",
+      heading: "Ce înseamnă poziția tridimensională a implantului?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Chirurgul planifică implantul în trei direcții, iar în zona frontală fiecare are o „zonă de confort” și o „zonă de pericol” (International Journal of Oral & Maxillofacial Implants, 2004):",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Față-spate, adică mezio-distal: implantul păstrează distanța față de dinții vecini și față de alt implant, ca osul dintre ele și papila să rămână.",
+            "Obraz-limbă, adică vestibulo-oral: în zona frontală, implantul se mută ușor spre palat, ca să lase os pe partea dinspre buză.",
+            "Adâncime, adică apico-coronar: umărul implantului se așază față de marginea gingiei și de dinții vecini, nici prea sus, ca să nu se vadă metalul, nici prea adânc.",
+          ],
+        },
+        {
+          kind: "p",
+          text: "Uneori, implantul se înclină câteva grade ca să folosească osul disponibil, iar adiția se evită. Limita apare când înclinarea ar strica poziția coroanei. Un implant bine integrat, dar pus greșit, produce o coroană greu de curățat sau inestetică.",
+        },
+      ],
+    },
+    {
+      id: "scurte-inguste",
+      heading: "Implanturile scurte sau înguste pot evita adiția?",
+      blocks: [
+        {
+          kind: "table",
+          caption: "Tipuri de implant, după dimensiuni",
+          head: ["Tip", "Dimensiuni", "Unde se folosește", "Limită"],
+          rows: [
+            ["Standard", "3,5 până la 4,5 mm diametru, 8 până la 13 mm lungime", "Majoritatea situațiilor cu os suficient", "Cere volum osos complet"],
+            ["Scurt", "6 mm lungime sau mai puțin", "Zona din spate, deasupra nervului sau sub sinus", "Coroana iese mai înaltă decât implantul"],
+            ["Îngust", "Sub 3,5 mm diametru", "Incisivi laterali superiori, incisivi inferiori, creste subțiri", "Rezistă mai puțin la forțe mari de masticație"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Pentru implanturile scurte există un studiu randomizat multicentric cu 5 ani de urmărire, la pacienți cu 5 până la 7 mm de os sub sinus. Supraviețuirea a fost de 98,5 la sută pentru implanturile de 6 mm și de 100 la sută pentru cele lungi cu sinus lift, fără diferențe semnificative de pierdere de os, de complicații sau de calitate a vieții raportată de pacienți (Journal of Clinical Periodontology, 2018).",
+        },
+        {
+          kind: "p",
+          text: "Pentru implanturile înguste, o meta-analiză a împărțit implanturile după diametru. Cele de 3 până la 3,25 mm și cele de 3,3 până la 3,5 mm nu au avut o supraviețuire diferită de implanturile standard, cu 97,3 și 97,7 la sută. Cele sub 3 mm, numite și mini-implanturi, au avut o supraviețuire semnificativ mai mică, de 94,7 la sută. Datele pe termen lung despre complicații lipsesc încă (Clinical Oral Implants Research, 2018).",
+        },
+        {
+          kind: "figure",
+          src: "/photos/blog-implant-fara-aditie-radiografie.jpg",
+          alt: "Asistentă medicală care îi arată unei paciente o radiografie panoramică pe o tabletă",
+          caption: "foto: planul se discută pe imagini, înainte de intervenție",
+        },
+      ],
+    },
+    {
+      id: "limite",
+      heading: "Care sunt limitele evitării adiției?",
+      blocks: [
+        {
+          kind: "p",
+          text: "În zona frontală, limita o stabilește estetica. Dacă peretele osos dinspre buză este prea subțire, gingia se poate retrage în timp, iar metalul implantului poate deveni vizibil ca o umbră gri. La implanturile imediate din zona frontală, retragerea gingiei cu peste 1 mm a apărut într-o mediană de 26 la sută din cazuri, iar peretele osos din față, nevizibil pe tomografie, a fost asociat cu mai multă retragere (International Journal of Oral & Maxillofacial Implants, 2014). În aceste cazuri se recomandă de obicei adiția, chiar dacă implantul ar fi stabil fără ea.",
+        },
+        {
+          kind: "p",
+          text: "În zona molarilor contează forțele de masticație. Scrâșnitul dinților pune presiune mare pe un implant scurt sau îngust, iar atunci pot fi preferate două implanturi sau un implant mai lat, după adiție.",
+        },
+        {
+          kind: "p",
+          text: "Dacă lipsesc mulți milimetri de os, nicio variantă de implant nu compensează. Opțiunile pentru deficitele mari sunt explicate în articolul despre implantul dentar când osul este insuficient.",
+        },
+      ],
+    },
+    {
+      id: "planificare",
+      heading: "Cum ajută planificarea digitală?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Tomografia se combină cu o scanare intraorală, iar în program se proiectează întâi coroana, apoi implantul sub ea. Pe ecran se vede cât os rămâne în jurul fiecărui milimetru de implant și se pot încerca mai multe dimensiuni și unghiuri înainte de intervenție. Planul se transferă în gură printr-un ghid chirurgical imprimat 3D.",
+        },
+        {
+          kind: "takeaway",
+          items: [
+            "Planificarea digitală nu creează os, dar arată dacă osul existent ajunge.",
+            "Decizia de a evita adiția se ia pe măsurători, nu pe preferință.",
+          ],
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Există implant fără os?",
+      a: "Nu. Orice implant are nevoie de os ca să se integreze. La atrofia severă a maxilarului se pot folosi implanturi zigomatice, ancorate în osul pomețului, care rămâne tot un suport osos.",
+    },
+    {
+      q: "Implanturile scurte sunt o alternativă?",
+      a: "Da, în zona din spate, când osul este suficient de lat, dar prea jos. Pot evita un sinus lift sau o adiție pe verticală. La 5 ani, implanturile de 6 mm au avut o supraviețuire de 98,5 la sută, comparabilă cu a implanturilor lungi cu sinus lift. Înainte de alegere se verifică forțele de masticație și raportul dintre coroană și implant.",
+    },
+    {
+      q: "Cum se stabilește dacă am suficient os?",
+      a: "Prin examen clinic și tomografie CBCT. Pe imaginea 3D se măsoară lățimea și înălțimea crestei și distanța până la nerv sau sinus, apoi valorile se compară cu dimensiunea implantului planificat pentru coroana respectivă.",
+    },
+    {
+      q: "Implanturile înguste sunt la fel de rezistente?",
+      a: "Cele de 3 până la 3,5 mm au avut o supraviețuire comparabilă cu a implanturilor standard. Cele sub 3 mm au avut o supraviețuire semnificativ mai mică și se folosesc mai ales în situații speciale. Implanturile înguste nu sunt potrivite pentru forțe mari de masticație.",
+    },
+    {
+      q: "De ce contează când pun implantul după extracție?",
+      a: "Pentru că osul se retrage cel mai repede în primele 3 până la 6 luni. Cu cât trece mai mult timp, cu atât crește probabilitatea ca implantul să ceară adiție.",
+    },
+  ],
+  sources: [
+    {
+      id: "ap-2000",
+      label: "Influența grosimii osului asupra răspunsului osos vestibular, de la inserare la descoperirea implantului",
+      publisher: "Annals of Periodontology",
+      year: "2000",
+      url: "https://doi.org/10.1902/annals.2000.5.1.119",
+    },
+    {
+      id: "jop-2000",
+      label: "Efectul distanței dintre implanturi asupra înălțimii osului dintre ele",
+      publisher: "Journal of Periodontology",
+      year: "2000",
+      url: "https://doi.org/10.1902/jop.2000.71.4.546",
+    },
+    {
+      id: "jomi-2004",
+      label: "Optimizarea esteticii implanturilor în zona frontală superioară: considerente anatomice și chirurgicale",
+      publisher: "International Journal of Oral & Maxillofacial Implants",
+      year: "2004",
+      url: "https://pubmed.ncbi.nlm.nih.gov/15635945/",
+    },
+    {
+      id: "coir-2012",
+      label: "Modificările dimensionale ale osului și gingiei după extracție la om: revizuire sistematică",
+      publisher: "Clinical Oral Implants Research",
+      year: "2012",
+      url: "https://doi.org/10.1111/j.1600-0501.2011.02375.x",
+    },
+    {
+      id: "jcp-2005",
+      label: "Modificările dimensionale ale crestei după extracție: studiu experimental la câini",
+      publisher: "Journal of Clinical Periodontology",
+      year: "2005",
+      url: "https://doi.org/10.1111/j.1600-051X.2005.00642.x",
+    },
+    {
+      id: "jcp-2018",
+      label: "Implanturi scurte de 6 mm față de implanturi lungi cu sinus lift: studiu randomizat multicentric, date la 5 ani",
+      publisher: "Journal of Clinical Periodontology",
+      year: "2018",
+      url: "https://doi.org/10.1111/jcpe.13025",
+    },
+    {
+      id: "coir-2018",
+      label: "Implanturi cu diametru redus: revizuire sistematică și meta-analiză",
+      publisher: "Clinical Oral Implants Research",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13272",
+    },
+    {
+      id: "jomi-2014",
+      label: "Rezultatele estetice ale implantului imediat și ale celui precoce în zona frontală superioară: revizuire sistematică",
+      publisher: "International Journal of Oral & Maxillofacial Implants",
+      year: "2014",
+      url: "https://doi.org/10.11607/jomi.2014suppl.g3.3",
+    },
+  ],
+  related: [
+    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    {
+      label: "Se poate pune implant dacă nu mai este suficient os?",
+      href: "/blog/implant-dentar-fara-os-suficient",
+    },
+    {
+      label: "Implant dentar imediat sau după vindecarea extracției: care este diferența?",
+      href: "/blog/implant-dentar-imediat-sau-dupa-vindecare",
+    },
+    {
+      label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
+      href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
+    },
+    { label: "Programare", href: "/#programare" },
+  ],
+  verify: [
+    "Reperele de 1,5 mm față de dintele vecin și de 2 mm până la nerv sunt din ciornă, fără sursă verificată. Au rămas în tabel ca repere orientative.",
+    "Corectat față de ciornă: adâncimea „3 până la 4 mm sub marginea gingiei” atribuită lui Buser 2004 nu apare în rezumat și a fost scoasă. De confirmat valoarea din textul integral, dacă medicul vrea o cifră.",
+    "Corectat față de ciornă: studiul Araújo și Lindhe din 2005 este pe câini. Cifrele pentru om vin din revizuirea din 2012.",
+    "Corectat față de ciornă: studiul Thoma din 2018 nu a găsit mai puține complicații la implanturile scurte. Afirmația despre aliajul titan-zirconiu nu apare în meta-analiza din 2018 și a fost scoasă.",
+    "Legăturile din ciornă către articolele #7, #12 și #15 nu au fost puse: articolele nu există încă.",
+    "Dacă Drafta dental face planificare digitală cu ghid chirurgical imprimat 3D. Articolul presupune că da.",
+    "Aviz medical: articolul nu a fost revizuit de un medic. Autorul din ciornă era un loc gol, „Dr. Nume Prenume”. Articolul a fost atribuit lui Dr. Andrei Drafta.",
+  ],
+};
+
 export const posts: Post[] = [
+  faraAditie,
+  osInsuficient,
   implantImediat,
   durataImplant,
   fateteCeramiceCompozit,
