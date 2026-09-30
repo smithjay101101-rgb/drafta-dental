@@ -1624,25 +1624,3 @@ export const posts: Post[] = [
 export function getPost(slug: string) {
   return posts.find((p) => p.slug === slug);
 }
-
-export function readingMinutes(post: Post) {
-  const words = [
-    post.answer,
-    ...post.keyTakeaways,
-    ...post.sections.flatMap((s) =>
-      s.blocks.flatMap((b) =>
-        b.kind === "p"
-          ? [b.text]
-          : b.kind === "ul" || b.kind === "takeaway"
-            ? b.items
-            : b.kind === "table"
-              ? [...b.head, ...b.rows.flat()]
-              : [],
-      ),
-    ),
-    ...post.faq.flatMap((f) => [f.q, f.a]),
-  ]
-    .join(" ")
-    .split(/\s+/).length;
-  return Math.max(1, Math.round(words / 200));
-}

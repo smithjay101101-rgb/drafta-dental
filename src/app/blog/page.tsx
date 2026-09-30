@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { posts, readingMinutes } from "@/content/blog";
+import { posts } from "@/content/blog";
 import { authors } from "@/content/authors";
 import { practice } from "@/content/site";
 
@@ -98,8 +98,7 @@ export default function BlogIndex() {
                       {p.answer}
                     </p>
                     <p className="mt-4 text-[14px] text-text-label">
-                      {a.name} · <time dateTime={p.dateModified}>{dateRo(p.dateModified)}</time> ·{" "}
-                      {readingMinutes(p)} min
+                      {a.name} · <time dateTime={p.dateModified}>{dateRo(p.dateModified)}</time>
                       </p>
                     </div>
                   </article>

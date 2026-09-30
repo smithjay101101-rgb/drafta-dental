@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { Blocks } from "@/components/blog/PostBody";
-import { getPost, posts, readingMinutes } from "@/content/blog";
+import { getPost, posts } from "@/content/blog";
 import { authors } from "@/content/authors";
 import { practice } from "@/content/site";
 
@@ -159,8 +159,6 @@ export default async function PostPage({
               Actualizat:{" "}
               <time dateTime={post.dateModified}>{dateRo(post.dateModified)}</time>
             </span>
-            <span aria-hidden="true">·</span>
-            <span>{readingMinutes(post)} min de citit</span>
           </p>
 
           <div className="mt-8">
