@@ -39,6 +39,9 @@ o față ajunge descentrată într-un portret pătrat, se reglează la fel, din
 
 Fotografiile serviciilor sunt stock, până la fotografii reale din cabinet.
 
+Preferința clientului: obiecte și prim-planuri pe subiect (modele, dinți, lucrări),
+nu pacienți în scaun.
+
 Sursa: [Unsplash](https://unsplash.com), sub [licența Unsplash](https://unsplash.com/license)
 (utilizare gratuită, comercială inclusă, fără atribuire obligatorie). Niciuna nu
 este Unsplash+ / premium. Au fost alese după imagine, nu după descrierea din
@@ -46,14 +49,13 @@ căutare, și fără ecusoane cu nume lizibile (ar părea personalul cabinetului
 
 | Fișier | Serviciu | Unsplash |
 |---|---|---|
-| `igienizare.jpg` | Nefolosit din 3 oct. 2026, înlocuit de `igienizare-zambet.jpg` | `8BkF0sTC6Uo` |
 | `albire.jpg` | Albire dentară | `RCQnbyQsnUg` |
 | `fatete-compozit.jpg` | Fațete de compozit | `oJFXtJPV9Pg` |
 | `fatete-ceramice.jpg` | Fațete ceramice | `glPVwPr1FKo` |
 | `coroane.jpg` | Coroane dentare | `1nJzcrGGktY` |
 | `punti.jpg` | Punți dentare | `jlFav1Chpds` |
-| `inlay-onlay.jpg` | Inlay-uri și onlay-uri | `joILn6p_oeM` |
-| `tratament-canal.jpg` | Tratament de canal | `z8BIWPwV3zo` |
+| `inlay-onlay.jpg` | Nefolosit din 3 oct. 2026, înlocuit de `inlay-onlay-modele.jpg` | `joILn6p_oeM` |
+| `tratament-canal.jpg` | Nefolosit din 3 oct. 2026, înlocuit de `tratament-canal-model.jpg` | `z8BIWPwV3zo` |
 | `implanturi.jpg` | Implanturi dentare | `W9YEY6G8LVM` |
 | `blog-fatete-ceramice-compozit.jpg` | Articol: fațete ceramice sau compozit | `WvVW7mRaZE8` |
 | `blog-implanturi-bimaxilar.jpg` | Articol: implanturi pe ambele arcade | `eHwRLpfHSKY` |
@@ -68,7 +70,9 @@ criterii de alegere ca mai sus. Adresa fotografiei: `pexels.com/photo/<id>`.
 | `blog-implant-imediat-cbct.jpg` | Articol: implant imediat sau după vindecare (în text) | `4297519` |
 | `blog-durata-implant.jpg` | Articol: cât durează un implant (principală) | `4687905` |
 | `blog-durata-implant-interventie.jpg` | Articol: cât durează un implant (în text) | `3952008` |
-| `igienizare-zambet.jpg` | Consultație și igienizare (și cardul „Îngrijire completă”) | `6627574` |
+| `igienizare-periaj.jpg` | Consultație și igienizare | `9951394` |
+| `inlay-onlay-modele.jpg` | Inlay-uri și onlay-uri | `6627601` |
+| `tratament-canal-model.jpg` | Tratament de canal | `4971514` |
 | `blog-os-insuficient.jpg` | Articol: implant când osul este insuficient (principală, decupată) | `6502041` |
 | `blog-os-insuficient-interventie.jpg` | Articol: implant când osul este insuficient (în text) | `12745979` |
 | `blog-implant-fara-aditie.jpg` | Articol: implant fără adiție de os (principală) | `6627715` |

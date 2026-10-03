@@ -93,8 +93,8 @@ export const serviceList: readonly Service[] = [
       },
     ],
     priceFrom: 300,
-    image: "/photos/igienizare-zambet.jpg",
-    imageAlt: "Pacientă zâmbind în oglindă, pe scaunul stomatologic, după igienizare",
+    image: "/photos/igienizare-periaj.jpg",
+    imageAlt: "Periuță de dinți pe un model dentar transparent, ținut în mâini cu mănuși",
   },
   {
     slug: "albire-dentara",
@@ -259,8 +259,8 @@ export const serviceList: readonly Service[] = [
       },
     ],
     priceFrom: 1200,
-    image: "/photos/inlay-onlay.jpg",
-    imageAlt: "Medic stomatolog examinând o pacientă, cu scanarea dinților pe monitor",
+    image: "/photos/inlay-onlay-modele.jpg",
+    imageAlt: "Modele din ghips ale arcadelor, cu o restaurare marcată pe un dinte",
   },
   {
     slug: "tratament-de-canal",
@@ -283,8 +283,8 @@ export const serviceList: readonly Service[] = [
       },
     ],
     priceFrom: 800,
-    image: "/photos/tratament-canal.jpg",
-    imageAlt: "Medic stomatolog tratând o pacientă în scaunul dentar",
+    image: "/photos/tratament-canal-model.jpg",
+    imageAlt: "Model de dinte în secțiune, cu carie ajunsă la nerv, arătată cu o sondă",
   },
   {
     slug: "implanturi-dentare",
