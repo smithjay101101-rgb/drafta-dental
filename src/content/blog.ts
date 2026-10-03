@@ -1677,6 +1677,10 @@ const faraAditie: Post = {
       label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
       href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
     },
+    {
+      label: "Ce este implantul dentar ghidat digital și cum se realizează?",
+      href: "/blog/implant-dentar-ghidat-digital",
+    },
     { label: "Programare", href: "/#programare" },
   ],
   verify: [
@@ -1690,7 +1694,349 @@ const faraAditie: Post = {
   ],
 };
 
+/**
+ * Scris de Dr. Andrei Drafta (3 octombrie 2026), adus la structura blogului.
+ * Citările sunt verificate în sursele primare; corecturile sunt în `verify`.
+ * Ambele fotografii sunt de pe Wikimedia Commons, CC BY-SA: autorul și licența
+ * trebuie să rămână în legendă.
+ */
+const ghidatDigital: Post = {
+  slug: "implant-dentar-ghidat-digital",
+  track: "retrieval",
+  image: "/photos/ghid-chirurgical-implant-printat-3d.jpg",
+  imageAlt: "Ghid chirurgical printat 3D, așezat pe un model dentar, pentru inserarea ghidată a unui implant",
+  imageCaption: "foto: ghid chirurgical printat 3D, cu manșoane metalice (Svonf, CC BY-SA 3.0, Wikimedia Commons)",
+  title: "Ce este implantul dentar ghidat digital și cum se realizează?",
+  metaTitle: "Implant dentar ghidat digital: ce este și cum se face",
+  metaDescription:
+    "Medicul planifică implantul pe CBCT și îl inserează printr-un ghid chirurgical. Vezi cât de precisă e metoda, etapele și limitele ei.",
+  answer:
+    "La implantul ghidat digital, medicul planifică pe calculator poziția, adâncimea și înclinarea implantului, pe baza unei tomografii 3D (CBCT) și a unei scanări a dinților. Planul se transferă apoi în gură printr-un ghid chirurgical printat 3D, prin care trec frezele și implantul. Metoda este mai precisă decât inserarea liberă: complet ghidat, abaterea medie la vârful implantului a fost sub 1 mm, față de peste 2 mm cu mâna liberă.",
+  authorId: "andrei-drafta",
+  datePublished: "2026-10-03",
+  dateModified: "2026-10-03",
+  categories: ["Implant dentar", "Chirurgie dentară"],
+  keyTakeaways: [
+    "Pe 55 de studii, chirurgia complet ghidată a avut abateri medii de 0,72 mm la intrarea implantului, 0,88 mm la vârf și 2,57°, față de 1,56 mm, 2,22 mm și 7,46° la inserarea liberă (International Journal of Implant Dentistry, 2025).",
+    "Pe 20 de studii clinice și 2.238 de implanturi, ghidul static a avut o abatere medie de 1,2 mm la intrare, 1,4 mm la vârf și 3,5°, cu precizie mai bună la pacienții care mai au dinți (Clinical Oral Implants Research, 2018).",
+    "Pentru că abaterile la vârf ajung la 1 până la 2 mm, se recomandă o marjă de siguranță de 2 mm față de nerv și de alte structuri sensibile (International Journal of Implant Dentistry, 2025).",
+    "Implanturile puse ghidat au avut o supraviețuire medie de 97,3 la sută după cel puțin 12 luni, pe 1.941 de implanturi (International Journal of Oral & Maxillofacial Implants, 2014).",
+    "Chirurgia ghidată se poate face cu incizie sau fără, iar ghidurile sprijinite pe dinți, pe gingie sau pe mini-implanturi au fost mai precise decât cele sprijinite pe os (consensul ITI, 2013).",
+    "Consensul ITI din 2018 nu a găsit un avantaj demonstrat al ghidului static față de chirurgia convențională la durere, cost și complicații din timpul intervenției (Clinical Oral Implants Research, 2018).",
+  ],
+  sections: [
+    {
+      id: "ce-inseamna",
+      heading: "Ce înseamnă implant dentar ghidat digital?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Înseamnă că poziția, adâncimea și înclinarea implantului se stabilesc pe calculator înainte de intervenție. În timpul operației, medicul folosește un ghid chirurgical care conduce frezele pe traseul planificat. Pentru pacient, diferența apare mai ales în pregătire: cele mai multe decizii se iau înainte de ziua intervenției.",
+        },
+        {
+          kind: "p",
+          text: "Chirurgia ghidată statică folosește un ghid care reproduce poziția virtuală a implantului din datele tomografiei. Odată fabricat, ghidul static nu permite modificarea poziției implantului în timpul intervenției.",
+        },
+        {
+          kind: "p",
+          text: "Există și o variantă dinamică, numită navigație dinamică: o cameră urmărește freza în timp real, iar medicul vede pe ecran poziția ei față de plan. La inserarea liberă, medicul se orientează după radiografii și după reperele din gură, fără ghid.",
+        },
+      ],
+    },
+    {
+      id: "precizie",
+      heading: "Cât de precisă este chirurgia ghidată față de inserarea liberă?",
+      blocks: [
+        {
+          kind: "p",
+          text: "În medie, chirurgia ghidată este mai precisă decât inserarea liberă, iar varianta complet ghidată are cele mai mici abateri. Abaterea înseamnă diferența dintre poziția planificată pe calculator și poziția reală a implantului în os, măsurată la intrarea implantului, la vârful lui și ca unghi.",
+        },
+        {
+          kind: "table",
+          caption: "Abaterea medie față de plan, după metodă. Meta-analiză pe 55 de studii (International Journal of Implant Dentistry, 2025)",
+          head: ["Metodă", "Ce conduce freza", "La intrare", "La vârf", "Unghi"],
+          rows: [
+            ["Inserare liberă", "Repere clinice și radiografii, fără ghid", "1,56 mm", "2,22 mm", "7,46°"],
+            ["Parțial ghidat", "Doar prima freză, freza pilot, trece prin ghid", "1,13 mm", "1,43 mm", "5,94°"],
+            ["Complet ghidat, ghid static", "Toate frezele și implantul trec prin ghid", "0,72 mm", "0,88 mm", "2,57°"],
+            ["Navigație dinamică", "O cameră urmărește freza în timp real", "1,01 mm", "1,36 mm", "3,67°"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Diferențele dintre inserarea liberă și metodele asistate de calculator au fost semnificative, iar ghidul complet a fost semnificativ mai precis decât navigația dinamică la intrarea implantului (International Journal of Implant Dentistry, 2025).",
+        },
+        {
+          kind: "p",
+          text: "Consensul ITI din 2018 a analizat 20 de studii clinice cu ghid static, pe 2.238 de implanturi la 471 de pacienți, și a raportat abateri medii de 1,2 mm la intrare, 1,4 mm la vârf și 3,5° ca unghi. Precizia a fost mai bună la pacienții care mai au dinți pe arcadă decât la cei fără dinți (Clinical Oral Implants Research, 2018).",
+        },
+        {
+          kind: "p",
+          text: "Abaterile la vârf ajung la 1 până la 2 mm. De aceea, ambele analize recomandă o marjă de siguranță de cel puțin 2 mm în planificare, față de structurile sensibile, cum este nervul mandibular.",
+        },
+        {
+          kind: "takeaway",
+          items: [
+            "Complet ghidat, abaterea medie la vârf a fost sub 1 mm, față de peste 2 mm la inserarea liberă.",
+            "Nicio metodă nu este perfectă, de aceea planul păstrează 2 mm de siguranță față de nerv.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "cbct-scanare",
+      heading: "Ce rol au CBCT-ul și scanarea intraorală?",
+      blocks: [
+        {
+          kind: "p",
+          text: "CBCT-ul arată osul, iar scanarea intraorală arată dinții și gingia, iar planificarea are nevoie de amândouă. CBCT, adică tomografia computerizată cu fascicul conic, este o radiografie 3D a maxilarelor. Pe ea se măsoară înălțimea și lățimea osului și se vede poziția nervului mandibular și a sinusului maxilar.",
+        },
+        {
+          kind: "p",
+          text: "Scanarea intraorală înlocuiește amprenta clasică: o cameră mică trece peste dinți și obține un model 3D al arcadei, vizibil imediat pe ecran. Programul de planificare suprapune apoi CBCT-ul și scanarea, folosind dinții ca repere comune. Medicul verifică suprapunerea, pentru că o aliniere greșită s-ar transmite în ghid. De obicei, CBCT-ul și scanarea se fac în aceeași vizită.",
+        },
+      ],
+    },
+    {
+      id: "planificare",
+      heading: "Cum se face planificarea virtuală a implantului?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Planificarea pornește de la dintele final. Întâi se proiectează coroana pe calculator, apoi implantul se așază în os sub ea. Consensul ITI cere ca chirurgia ghidată să fie condusă protetic, adică poziția implantului urmează lucrarea finală (Clinical Oral Implants Research, 2018).",
+        },
+        {
+          kind: "figure",
+          src: "/photos/planificare-virtuala-implant-cbct.jpg",
+          alt: "Planificare virtuală a unui implant dentar pe imagini CBCT, cu reconstrucție 3D și secțiuni prin os",
+          caption: "foto: planificarea implantului pe secțiunile CBCT (Svonf, CC BY-SA 3.0, Wikimedia Commons)",
+          aspect: "1024 / 543",
+        },
+        {
+          kind: "p",
+          text: "În programul de planificare se aleg lungimea și diametrul implantului și se măsoară distanța față de nerv, sinus și rădăcinile vecine. Tot acolo se verifică dacă osul permite poziția dorită. Dacă osul lipsește, planul arată de la început unde este nevoie de adiție osoasă, adică de adăugare de os sau de material de grefă. Planul se poate arăta pacientului pe ecran, la consultație.",
+        },
+      ],
+    },
+    {
+      id: "ghid",
+      heading: "Ce este ghidul chirurgical și cum se fabrică?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Ghidul chirurgical este o placă printată 3D după planul virtual, cu manșoane metalice prin care trec frezele. Se așază pe dinți, pe gingie sau pe mini-implanturi temporare. Manșoanele limitează direcția și adâncimea frezelor, astfel încât locul implantului urmează planul.",
+        },
+        {
+          kind: "p",
+          text: "Ghidurile sprijinite pe dinți, pe gingie sau pe mini-implanturi au fost mai precise decât cele sprijinite direct pe os, iar consensul ITI recomandă doar primele (consensul ITI, 2013). La pacienții cu dinți, ghidul se sprijină de obicei pe dinții vecini. La pacienții fără dinți, ghidul stă pe gingie și se poate fixa cu mici știfturi.",
+        },
+        {
+          kind: "p",
+          text: "Ghidul se fabrică fie în cabinet, cu o imprimantă 3D, fie într-un laborator dentar.",
+        },
+      ],
+    },
+    {
+      id: "interventie",
+      heading: "Cum decurge intervenția ghidată?",
+      blocks: [
+        {
+          kind: "ul",
+          items: [
+            "Se face anestezia locală a zonei.",
+            "Ghidul se așază în gură și se verifică dacă stă stabil pe dinți sau pe gingie.",
+            "Locul implantului se pregătește cu freze de diametru crescător, trecute prin manșoane.",
+            "Implantul se inserează tot prin ghid, apoi ghidul se îndepărtează și zona se închide.",
+          ],
+        },
+        {
+          kind: "p",
+          text: "Inserarea implantului prin ghid contează: după pregătirea locului prin ghid, implantul pus tot prin ghid a fost mai precis decât cel pus cu mâna liberă (consensul ITI, 2013).",
+        },
+        {
+          kind: "p",
+          text: "Ghidul ajută judecata clinică a medicului, fără să o înlocuiască. Potrivirea greșită și sprijinul insuficient sunt cauze practice de eroare. Dacă ghidul nu stă corect, medicul poate modifica planul sau poate continua fără ghid. Durata intervenției depinde de numărul de implanturi.",
+        },
+        {
+          kind: "p",
+          text: "Chirurgia ghidată se poate combina cu diferite protocoale de încărcare, la pacienți cu unul sau mai mulți dinți lipsă și la cei fără dinți (consensul ITI, 2013). Asta include o coroană provizorie în primele zile, dacă implantul are stabilitate suficientă.",
+        },
+      ],
+    },
+    {
+      id: "incizie",
+      heading: "Implantul ghidat digital înseamnă intervenție fără incizie?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Nu întotdeauna. Ghidul se poate folosi fără incizie, tehnică numită flapless, sau cu ridicarea unui lambou, adică a unei porțiuni de gingie, pentru a vedea osul (consensul ITI, 2013).",
+        },
+        {
+          kind: "p",
+          text: "Alegerea depinde de mucoasa keratinizată, adică de gingia fermă și atașată din jurul dinților. Consensul ITI din 2018 cere ca înainte de planificare să se evalueze cantitatea și calitatea acestei gingii. Dacă este nevoie de adiție osoasă, intervenția se face de regulă cu incizie.",
+        },
+        {
+          kind: "p",
+          text: "Tehnica fără incizie are un beneficiu documentat la pacienții fără dinți: durerea după intervenție poate fi mai mică decât la intervenția cu lambou (Clinical Oral Implants Research, 2018).",
+        },
+      ],
+    },
+    {
+      id: "limite",
+      heading: "Pentru cine este potrivită chirurgia ghidată și care sunt limitele ei?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Consensul ITI din 2018 nu vede o contraindicație pentru folosirea ghidului static în locul chirurgiei convenționale și îl recomandă ca instrument suplimentar de diagnostic, planificare și chirurgie. Ghidul se alege mai ales când poziția implantului are puțină marjă, de exemplu lângă nerv sau lângă sinus, ori când se pun mai multe implanturi.",
+        },
+        {
+          kind: "p",
+          text: "Metoda are și limite clare:",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Deschiderea gurii. Ghidul și frezele cer spațiu vertical între arcade, iar în zona molarilor o deschidere redusă poate face ghidul greu de folosit (Bioengineering, 2024).",
+            "Răcirea și vizibilitatea. Manșoanele închise îngreunează răcirea osului cu ser fiziologic și reduc vizibilitatea. Manșoanele deschise lateral rezolvă o parte din problemă, cu o precizie comparabilă când manșonul stă aproape de os (Clinical Oral Implants Research, 2022).",
+            "Arcadele fără dinți. Precizia medie este mai mică decât la pacienții care mai au dinți.",
+            "Complicațiile din timpul tratamentului. Într-o revizuire pe 14 studii, în 36,4 la sută din cazuri au apărut complicații în timpul intervenției sau la lucrare, printre care fracturarea ghidului, schimbarea planului din lipsă de stabilitate sau nevoia unei adiții suplimentare (International Journal of Oral & Maxillofacial Implants, 2014).",
+            "Durere, cost și complicații. Consensul ITI nu a găsit un avantaj demonstrat față de chirurgia convențională la aceste criterii, iar efectul asupra timpului și costului rămâne neclar (Clinical Oral Implants Research, 2018).",
+          ],
+        },
+      ],
+    },
+    {
+      id: "cand-la-medic",
+      heading: "Când trebuie mers la medic?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Dacă lipsește un dinte sau un dinte trebuie extras, se programează o consultație de implantologie. La prima vizită sunt utile radiografiile vechi și lista completă a medicamentelor.",
+        },
+        {
+          kind: "p",
+          text: "După inserarea implantului, medicul trebuie contactat dacă:",
+        },
+        {
+          kind: "ul",
+          items: [
+            "durerea crește după primele zile, în loc să scadă;",
+            "umflătura se mărește sau apare febra;",
+            "sângerarea nu se oprește la apăsarea cu o compresă;",
+            "buza sau bărbia rămân amorțite după ce trece efectul anesteziei;",
+            "implantul sau lucrarea provizorie se mișcă.",
+          ],
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Este mai precisă chirurgia ghidată decât implantul pus cu mâna liberă?",
+      a: "Da, în medie. O meta-analiză pe 55 de studii a găsit la chirurgia complet ghidată abateri medii de 0,72 mm la intrare și 2,57° ca înclinare, față de 1,56 mm și 7,46° la inserarea liberă. Precizia depinde și de tipul ghidului și de numărul de dinți rămași.",
+    },
+    {
+      q: "Implantul ghidat digital înseamnă întotdeauna fără tăietură?",
+      a: "Nu. Ghidul se poate folosi fără incizie sau cu ridicarea gingiei, în funcție de os și de cantitatea de gingie fermă din zonă. Consensul ITI cere evaluarea gingiei fixe înainte de planificarea unei intervenții fără incizie.",
+    },
+    {
+      q: "Este potrivită chirurgia ghidată pentru orice pacient?",
+      a: "Consensul ITI nu vede o contraindicație pentru folosirea ghidului în locul chirurgiei convenționale. Limitele apar mai ales la deschiderea redusă a gurii în zona molarilor și la arcadele fără dinți, unde precizia medie este mai mică.",
+    },
+    {
+      q: "Doare mai puțin un implant ghidat digital?",
+      a: "Consensul ITI din 2018 nu a găsit un avantaj demonstrat al chirurgiei ghidate la durere și disconfort, comparativ cu chirurgia convențională. Excepția este tehnica fără incizie la pacienții fără dinți, unde durerea după intervenție poate fi mai mică.",
+    },
+    {
+      q: "Implantul inserat ghidat rezistă la fel de bine ca unul inserat clasic?",
+      a: "Datele de până acum sunt bune: implanturile puse ghidat au avut o supraviețuire medie de 97,3 la sută după cel puțin 12 luni, pe 1.941 de implanturi. Datele pe termen lung sunt încă puține.",
+    },
+    {
+      q: "Se poate face implant ghidat pe toată arcada?",
+      a: "Da. Chirurgia ghidată se poate folosi la pacienții cu unul sau mai mulți dinți lipsă și la cei fără dinți, cu diferite protocoale de încărcare. La arcadele fără dinți, precizia medie este mai mică decât la pacienții care mai au dinți.",
+    },
+  ],
+  sources: [
+    {
+      id: "ijid-2025",
+      label: "Inserare liberă față de inserare asistată de calculator: revizuire sistematică și meta-analiză, partea 1, precizia poziției implantului",
+      publisher: "International Journal of Implant Dentistry",
+      year: "2025",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12048383/",
+    },
+    {
+      id: "coir-2018-tahmaseb",
+      label: "Precizia chirurgiei de implant asistate static de calculator: revizuire sistematică și meta-analiză pentru consensul ITI",
+      publisher: "Clinical Oral Implants Research",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13346",
+    },
+    {
+      id: "coir-2018-joda",
+      label: "Chirurgia de implant asistată static de calculator: durere, cost și complicații, revizuire sistematică pentru consensul ITI",
+      publisher: "Clinical Oral Implants Research",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13136",
+    },
+    {
+      id: "iti-2013",
+      label: "Chirurgia de implant ghidată pe calculator: declarațiile de consens ITI",
+      publisher: "ITI Academy",
+      year: "2013",
+      url: "https://academy.iti.org/academy/consensus-database/consensus-statement/-/consensus/computer-guided-implant-surgery/1213",
+    },
+    {
+      id: "jomi-2014-tahmaseb",
+      label: "Aplicațiile tehnologiei computerizate în chirurgia implantară: revizuire sistematică",
+      publisher: "International Journal of Oral & Maxillofacial Implants",
+      year: "2014",
+      url: "https://doi.org/10.11607/jomi.2014suppl.g1.2",
+    },
+    {
+      id: "bioeng-2024",
+      label: "Eficiența unui ghid chirurgical digital nou în spațiu redus între arcade",
+      publisher: "Bioengineering",
+      year: "2024",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11674003/",
+    },
+    {
+      id: "coir-2022",
+      label: "Precizia inserării ghidate cu manșoane deschise și închise: studiu in vitro",
+      publisher: "Clinical Oral Implants Research",
+      year: "2022",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9302989/",
+    },
+  ],
+  related: [
+    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    {
+      label: "Implant dentar fără adiție de os: când este posibil?",
+      href: "/blog/implant-dentar-fara-aditie-de-os",
+    },
+    {
+      label: "Se poate pune implant dacă nu mai este suficient os?",
+      href: "/blog/implant-dentar-fara-os-suficient",
+    },
+    {
+      label: "Implant dentar imediat sau după vindecarea extracției: care este diferența?",
+      href: "/blog/implant-dentar-imediat-sau-dupa-vindecare",
+    },
+    { label: "Programare", href: "/#programare" },
+  ],
+  verify: [
+    "Abaterea la vârf: rezumatul lui Tahmaseb 2018 dă 1,4 mm, iar declarația de consens ITI dă 1,5 mm. În articol a rămas 1,4 mm, cu sursa articolului.",
+    "Supraviețuirea de 97,3 la sută vine din consensul ITI din 2013 (Tahmaseb 2014), nu din cel din 2018. Ciorna o atribuia consensului fără an. „Comparabilă cu implanturile convenționale” a fost înlocuit cu „date pe termen lung încă puține”, cum spun autorii.",
+    "Adăugat din aceeași sursă: complicații în 36,4 la sută din cazuri, inclusiv fracturarea ghidului.",
+    "Fără sursă găsită, păstrate fără atribuire: fixarea ghidului cu știfturi la arcadele fără dinți, incizia când e nevoie de adiție, alegerea ghidului lângă nerv sau sinus. Afirmația „flapless poate plasa implantul în afara gingiei fixe” a fost redusă la ce spune consensul: evaluarea gingiei înainte de planificare.",
+    "Marcajele [CHECK] din ciornă (CBCT și scanare în aceeași vizită, ghid fabricat în cabinet sau în laborator, planul arătat pe ecran) au rămas ca practică a cabinetului.",
+    "Fotografiile sunt CC BY-SA de pe Wikimedia Commons: autorul și licența trebuie păstrate în legendă. Captura de software arată marca implantului (BIOMET 3i), nu date de pacient.",
+    "Legăturile din ciornă către /blog/implant-dentar-fara-taietura și /blog/analize-inainte-de-implant-dentar nu au fost puse: articolele nu există încă.",
+    "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
+  ],
+};
+
 export const posts: Post[] = [
+  ghidatDigital,
   faraAditie,
   osInsuficient,
   implantImediat,

@@ -79,6 +79,19 @@ dinților, fără nume, dată de naștere sau dată a examinării. La fel
 `blog-os-insuficient.jpg` (interfața programului, fără date de pacient) și
 `blog-implant-fara-aditie-radiografie.jpg` (doar radiografia, pe tabletă).
 
+## Wikimedia Commons (CC BY-SA)
+
+Licența cere ca **autorul și licența să apară lângă fotografie**. Sunt trecute
+în `imageCaption` și în legenda blocului `figure`; nu se scot de acolo.
+
+| Fișier | Folosit în | Fișier pe Commons | Autor, licență |
+|---|---|---|---|
+| `ghid-chirurgical-implant-printat-3d.jpg` | Articol: implant ghidat digital (principală) | `Navigierte Impllantologie Bohrschablone 3D gedruckt.jpg` | Svonf, CC BY-SA 3.0 |
+| `planificare-virtuala-implant-cbct.jpg` | Articol: implant ghidat digital (în text) | `Navigierte Implantologie I. Quadrant Planung.png` | Svonf, CC BY-SA 3.0 |
+
+Captura de planificare arată marca implantului și numărul dintelui, fără date
+de pacient.
+
 `aligneri.jpg` și `urgente.jpg` nu mai sunt folosite: alignerii și urgențele nu
 apar printre serviciile de pe site-ul cabinetului.
 

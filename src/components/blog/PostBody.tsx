@@ -53,7 +53,7 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
                 src={b.src}
                 alt={b.alt}
                 sizes="(max-width: 800px) 100vw, 760px"
-                aspect="3 / 2"
+                aspect={b.aspect ?? "3 / 2"}
                 radius="22px"
               />
               <figcaption className="mt-2.5 text-[13px] text-text-label">

@@ -12,7 +12,14 @@ export type Block =
   | { kind: "table"; caption: string; head: string[]; rows: string[][] }
   | { kind: "takeaway"; items: string[] }
   /** A doua fotografie a articolului, în corpul textului. Aceleași reguli ca `image`. */
-  | { kind: "figure"; src: string; alt: string; caption: string };
+  | {
+      kind: "figure";
+      src: string;
+      alt: string;
+      caption: string;
+      /** Implicit "3 / 2". Pentru capturi de ecran, raportul real, ca să nu fie decupate. */
+      aspect?: string;
+    };
 
 export type Section = {
   id: string;
