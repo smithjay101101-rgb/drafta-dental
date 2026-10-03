@@ -33,11 +33,6 @@ export const metadata: Metadata = {
       "Cabinet stomatologic de familie în Strada Justinian 10, București. Programează-te online sau la telefon.",
     // TODO: imagine OG reală (1200×630) după ce există fotografii.
   },
-  robots: {
-    // TODO: scoateți blocarea după ce datele-exemplu sunt înlocuite.
-    index: false,
-    follow: false,
-  },
 };
 
 export const viewport: Viewport = {

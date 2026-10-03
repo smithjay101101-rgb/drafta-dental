@@ -2,9 +2,8 @@ import type { MetadataRoute } from "next";
 import { practice } from "@/content/site";
 
 /**
- * Crawlerele de AI sunt permise explicit. Meta `robots: noindex` din
- * layout.tsx rămâne însă activ cât timp pagina are date-exemplu, deci
- * indexarea nu se produce oricum. [CHECK] Se scoate noindex la lansare.
+ * Crawlerele de AI sunt permise explicit. Site-ul este indexabil din
+ * 3 octombrie 2026, când a fost scos `noindex` din layout.tsx.
  */
 const aiBots = [
   "GPTBot",
