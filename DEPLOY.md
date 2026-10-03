@@ -52,7 +52,7 @@ Recomandat: **Vercel**, un proiect nou, legat de acest repo.
 3. **Root Directory: `./`** (implicit). Aplicația Next stă în rădăcina
    repo-ului tocmai ca să nu fie nevoie de nicio setare.
 4. Rezultă o origine proprie: un subdomeniu `*.vercel.app`.
-5. La lansare, domeniul clientului (`draftadental.ro`) se leagă de acest proiect
+5. La lansare, domeniul clientului (`dentaldrafta.ro`) se leagă de acest proiect
    și devine originea finală.
 
 ### Protecția implicită
@@ -77,48 +77,53 @@ resursele statice primesc automat prefixul.
 așa cât timp pagina are date-exemplu (vezi `web/README.md`, secțiunea „Ce
 lipsește până la lansare").
 
-## Domeniul draftadental.ro
+## Domeniul dentaldrafta.ro
 
-Domeniul e înregistrat la CYBER_FOLKS, pe nameserverele lor
-(`ns1`–`ns4.cyberfolks.ro`). **Nameserverele rămân acolo** — schimbăm doar două
-înregistrări DNS. Așa nu se atinge nimic altceva din zonă.
+Domeniul e înregistrat la CYBER_FOLKS, dar **nameserverele sunt la Vercel**:
+`ns1.vercel-dns.com` și `ns2.vercel-dns.com` (setate în panoul Cyber_Folks, la
+*Nameservere proprii*; câmpurile 3–5 rămân goale). Toată zona DNS se
+administrează deci din Vercel, nu din Cyber_Folks. Cyber_Folks ține doar
+înregistrarea domeniului și reînnoirea lui.
 
-Site-ul rulează mai departe pe Vercel. Cyber_Folks ține doar domeniul.
+Pe Vercel, ambele adrese sunt în proiectul `drafta-dental`, contul `nick-95aa`:
 
-### Cele două înregistrări de adăugat
+| Domeniu               | Rol                                      |
+|-----------------------|------------------------------------------|
+| `www.dentaldrafta.ro` | Adresa canonică, servește site-ul        |
+| `dentaldrafta.ro`     | Redirect 308 spre `www.dentaldrafta.ro`  |
 
-În panoul Cyber_Folks: *Domeniile mele* → rotița de lângă `draftadental.ro` →
-**Administrare zonă DNS**.
-
-| Tip   | Nume / Host | Valoare                              | TTL     |
-|-------|-------------|--------------------------------------|---------|
-| A     | `@`         | `216.198.79.1`                       | implicit |
-| CNAME | `www`       | `55c40d676d7703e5.vercel-dns-017.com.` | implicit |
-
-Punctul final din valoarea CNAME se păstrează dacă panoul îl acceptă.
+Un domeniu nou trebuie **și** adăugat în proiectul Vercel
+(*Settings → Domains*), nu doar trecut pe nameserverele Vercel. Fără asta,
+nameserverele Vercel răspund `REFUSED` și site-ul nu se deschide.
 
 ### Cine e canonic
 
-`www.draftadental.ro` e adresa canonică — coincide cu `practice.url` din
-`src/content/site.ts`, deci toate `canonical`, sitemap-ul, RSS-ul și JSON-LD-ul
-arată spre ea. Apexul `draftadental.ro` face redirect 308 spre `www`.
+`www.dentaldrafta.ro` e adresa canonică — coincide cu `practice.url` din
+`src/content/site.ts`, deci toate `canonical`, sitemap-ul, RSS-ul, `llms.txt` și
+JSON-LD-ul arată spre ea.
 
-Motivul pentru care `www` e canonic și nu apexul: `www` merge prin CNAME, pe care
-Vercel îl poate muta singur dacă își schimbă infrastructura. Apexul are nevoie de
-un IP fix, care se poate învechi.
+### Vechiul domeniu, draftadental.ro
+
+Primul domeniu al site-ului. A rămas în proiect, pe nameserverele Vercel, cu
+redirect 308 spre `www.dentaldrafta.ro`, ca linkurile vechi să ajungă pe site-ul
+nou. Se poate lăsa să expire după ce redirectul a stat câteva luni.
 
 ### SSL
 
 Nu se cumpără nimic. Vercel emite certificatul Let's Encrypt automat, în câteva
-minute după ce DNS-ul se propagă. X-ul roșu de lângă domeniu în panoul
-Cyber_Folks se referă la SSL-ul *lor* de hosting, care nu ne interesează.
+minute după ce DNS-ul se propagă.
 
 ### Verificare
 
 ```sh
-dig +short www.draftadental.ro          # trebuie să dea CNAME-ul Vercel
-curl -sI https://www.draftadental.ro | head -1   # HTTP/2 200
+dig +short NS dentaldrafta.ro                       # ns1/ns2.vercel-dns.com
+curl -sI https://www.dentaldrafta.ro | head -1     # HTTP/2 200
+curl -sI https://dentaldrafta.ro | grep -i location # https://www.dentaldrafta.ro/
 ```
+
+Dacă `dig` nu dă nimic imediat după schimbare: registrul .ro publică zona în
+loturi, iar resolverele păstrează un timp răspunsul negativ. Se verifică direct
+la Google: `dig +short www.dentaldrafta.ro @8.8.8.8`.
 
 ### Înainte de lansarea reală
 

@@ -27,7 +27,7 @@ export const practice = {
   },
   /** Real, de pe site-ul Wix al cabinetului. */
   hours: "Luni – vineri: 10:00 – 19:00 · Sâmbătă: 10:00 – 14:00",
-  url: "https://www.draftadental.ro",
+  url: "https://www.dentaldrafta.ro",
 } as const;
 
 export const nav = [
