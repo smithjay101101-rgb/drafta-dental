@@ -46,7 +46,7 @@ căutare, și fără ecusoane cu nume lizibile (ar părea personalul cabinetului
 
 | Fișier | Serviciu | Unsplash |
 |---|---|---|
-| `igienizare.jpg` | Consultație și igienizare | `8BkF0sTC6Uo` |
+| `igienizare.jpg` | Nefolosit din 3 oct. 2026, înlocuit de `igienizare-zambet.jpg` | `8BkF0sTC6Uo` |
 | `albire.jpg` | Albire dentară | `RCQnbyQsnUg` |
 | `fatete-compozit.jpg` | Fațete de compozit | `oJFXtJPV9Pg` |
 | `fatete-ceramice.jpg` | Fațete ceramice | `glPVwPr1FKo` |
@@ -68,6 +68,7 @@ criterii de alegere ca mai sus. Adresa fotografiei: `pexels.com/photo/<id>`.
 | `blog-implant-imediat-cbct.jpg` | Articol: implant imediat sau după vindecare (în text) | `4297519` |
 | `blog-durata-implant.jpg` | Articol: cât durează un implant (principală) | `4687905` |
 | `blog-durata-implant-interventie.jpg` | Articol: cât durează un implant (în text) | `3952008` |
+| `igienizare-zambet.jpg` | Consultație și igienizare (și cardul „Îngrijire completă”) | `6627574` |
 | `blog-os-insuficient.jpg` | Articol: implant când osul este insuficient (principală, decupată) | `6502041` |
 | `blog-os-insuficient-interventie.jpg` | Articol: implant când osul este insuficient (în text) | `12745979` |
 | `blog-implant-fara-aditie.jpg` | Articol: implant fără adiție de os (principală) | `6627715` |

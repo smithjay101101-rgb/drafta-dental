@@ -93,8 +93,8 @@ export const serviceList: readonly Service[] = [
       },
     ],
     priceFrom: 300,
-    image: "/photos/igienizare.jpg",
-    imageAlt: "Examinare dentară cu oglindă și sondă",
+    image: "/photos/igienizare-zambet.jpg",
+    imageAlt: "Pacientă zâmbind în oglindă, pe scaunul stomatologic, după igienizare",
   },
   {
     slug: "albire-dentara",
