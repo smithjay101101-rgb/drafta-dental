@@ -533,9 +533,9 @@ const fateteCeramiceCompozit: Post = {
 };
 
 /**
- * ⚠️ Nu a trecut prin avizul unui medic. Nu se publică fără revizuire medicală.
- * Cifrele sunt verificate în rezumatele și textele integrale ale surselor
- * primare. Lista de [VERIFY] este în câmpul `verify`.
+ * Scris de Dr. Andrei Drafta (versiunea din 3 octombrie 2026), adus la
+ * structura blogului. Citările sunt verificate în sursele primare; unde ciorna
+ * atribuia ceva greșit, corectura e în `verify`.
  */
 const implantImediat: Post = {
   slug: "implant-dentar-imediat-sau-dupa-vindecare",
@@ -546,110 +546,120 @@ const implantImediat: Post = {
   title: "Implant dentar imediat sau după vindecarea extracției: care este diferența?",
   metaTitle: "Implant dentar imediat sau după vindecare: diferența",
   metaDescription:
-    "Implant în ziua extracției sau după vindecare: ce spun studiile despre risc, gingie și os, cine poate primi implant imediat și cât durează.",
+    "Implant dentar imediat sau după vindecare? Cum diferă protocoalele, când se poate pune în ziua extracției și cât durează până la dintele final.",
   answer:
-    "Implantul imediat se inserează în aceeași ședință cu extracția. Implantul după vindecare se pune după 4 până la 8 săptămâni, după 12 până la 16 săptămâni sau după mai mult de 6 luni, în funcție de cât s-a refăcut zona. Varianta imediată scurtează tratamentul și evită o a doua intervenție, dar are un risc ceva mai mare de pierdere timpurie a implantului și de retragere a gingiei, deci se alege doar când osul, gingia și absența infecției acute o permit.",
+    "La implantul imediat, extracția și inserarea implantului se fac în aceeași ședință, direct în alveola dintelui scos. La implantul după vindecare, medicul așteaptă 4 până la 8 săptămâni, 12 până la 16 săptămâni sau peste 6 luni, în funcție de cât s-au refăcut gingia și osul. Supraviețuirea implantului este de peste 95 la sută în majoritatea studiilor, pentru ambele variante. Diferența principală este estetică: în zona frontală, gingia se retrage mai des după implantul imediat.",
   authorId: "andrei-drafta",
   datePublished: "2026-09-26",
-  dateModified: "2026-09-26",
+  dateModified: "2026-10-03",
   categories: ["Implant dentar", "Chirurgie dentară"],
   keyTakeaways: [
-    "Consensul ITI împarte momentul inserării în patru tipuri: în ziua extracției, după 4 până la 8 săptămâni, după 12 până la 16 săptămâni și după mai mult de 6 luni (Clinical Implant Dentistry and Related Research, 2026).",
-    "Într-o meta-analiză pe 473 de implanturi unitare, supraviețuirea a fost de 94,9 la sută pentru implantul imediat și de 98,9 la sută pentru cel pus la cel puțin 3 luni după extracție. Toate pierderile au fost timpurii (Journal of Clinical Periodontology, 2019).",
-    "Pe 163 de publicații și peste 56.000 de implanturi, riscul de eșec a fost mai mare în alveola proaspătă decât în osul vindecat, diferența fiind semnificativă la maxilar, dar nu și la mandibulă (Materials, 2021).",
-    "În zona frontală, retragerea gingiei cu peste 1 mm a apărut în 9 până la 41 la sută din cazurile cu implant imediat, cu o mediană de 26 la sută, față de niciun caz în cele două studii cu inserare precoce (International Journal of Oral & Maxillofacial Implants, 2014).",
-    "După extracție, creasta osoasă pierde 29 până la 63 la sută din lățime și 11 până la 22 la sută din înălțime în 6 luni, cel mai repede în primele 3 până la 6 luni (Clinical Oral Implants Research, 2012).",
-    "O infecție în jurul dintelui extras nu exclude automat implantul imediat: pe 2.281 de alveole, supraviețuirea nu a diferit semnificativ între alveolele infectate, curățate temeinic, și cele neinfectate (Journal of Oral & Maxillofacial Research, 2020).",
+    "Clasificarea ITI (International Team for Implantology) numește implantul pus în ziua extracției „Tipul 1”. Implantul după vindecare se pune la 4 până la 8 săptămâni, la 12 până la 16 săptămâni sau după peste 6 luni (Clinical Implant Dentistry and Related Research, 2026).",
+    "Majoritatea studiilor raportează o supraviețuire a implanturilor de peste 95 la sută, cu valori similare pentru implantul imediat și pentru cel pus la 4 până la 8 săptămâni (International Journal of Oral & Maxillofacial Implants, 2009).",
+    "În zona frontală superioară, gingia se retrage cu peste 1 mm în 9 până la 41 la sută din cazurile cu implant imediat, cu o mediană de 26 la sută, la 1 până la 3 ani (International Journal of Oral & Maxillofacial Implants, 2014).",
+    "Implantul imediat cere pereți osoși intacți, un perete spre buză de cel puțin 1 mm, gingie groasă, lipsa unei infecții acute și os suficient pentru fixare (Clinical Oral Implants Research, 2018).",
+    "Un spațiu de cel puțin 2 mm între implant și peretele osos dinspre buză crește supraviețuirea implantului imediat, iar o infecție cronică la vârful rădăcinii nu îl contraindică (Clinical Oral Implants Research, 2023).",
+    "După extracție, creasta osoasă pierde în 6 luni între 29 și 63 la sută din lățime și între 11 și 22 la sută din înălțime (Clinical Oral Implants Research, 2012).",
   ],
   sections: [
     {
-      id: "ce-inseamna",
-      heading: "Ce înseamnă implant imediat și ce înseamnă implant după vindecare?",
+      id: "diferenta",
+      heading: "Care este diferența dintre implantul imediat și implantul după vindecare?",
       blocks: [
         {
           kind: "p",
-          text: "Diferența ține de momentul în care se inserează implantul față de extracție. Consensul Internațional de Implantologie (ITI) folosește patru tipuri, iar clasificarea este aceeași în toate studiile citate mai jos.",
+          text: "Diferența ține de momentul în care medicul inserează implantul față de extracție. La implantul imediat, dintele se scoate și implantul se pune în aceeași ședință. La implantul după vindecare, medicul așteaptă între 4 săptămâni și peste 6 luni, timp în care gingia și osul se refac parțial sau complet.",
+        },
+        {
+          kind: "p",
+          text: "Specialiștii ITI au împărțit aceste momente în patru tipuri. Criteriul este ce s-a vindecat în alveolă, adică în lăcașul din os în care stătea rădăcina dintelui.",
         },
         {
           kind: "table",
           caption: "Momentul inserării implantului după extracție, după clasificarea ITI",
-          head: ["Tip", "Când se pune implantul", "Ce s-a vindecat până atunci"],
+          head: ["Protocol", "Momentul inserării", "Starea alveolei", "Avantaj principal", "Limită principală"],
           rows: [
-            ["Tip 1, imediat", "În aceeași ședință cu extracția", "Nimic, implantul intră în alveola proaspătă"],
-            ["Tip 2, precoce", "După 4 până la 8 săptămâni", "Gingia s-a închis peste alveolă"],
-            ["Tip 3, precoce", "După 12 până la 16 săptămâni", "Osul s-a refăcut parțial în alveolă"],
-            ["Tip 4, tardiv", "După mai mult de 6 luni", "Osul s-a vindecat complet"],
+            ["Tipul 1: implant imediat", "În ziua extracției", "Alveolă proaspătă, fără gingie care să o acopere", "O singură intervenție pentru extracție și implant", "Risc mai mare de retragere a gingiei în zona frontală"],
+            ["Tipul 2: implant precoce", "La 4 până la 8 săptămâni", "Gingia acoperă alveola, osul nu s-a format încă", "Gingie suficientă pentru închiderea plăgii", "Necesită frecvent adiție osoasă în aceeași ședință"],
+            ["Tipul 3: implant precoce", "La 12 până la 16 săptămâni", "Os nou format parțial în alveolă", "Stabilitatea implantului se obține mai ușor", "Tratament mai lung decât la tipurile 1 și 2"],
+            ["Tipul 4: implant tardiv", "După peste 6 luni", "Os și gingie vindecate", "Zonă stabilă, ușor de evaluat", "Cea mai mare pierdere de os și cel mai lung tratament"],
           ],
         },
         {
           kind: "p",
-          text: "Clasificarea se combină cu momentul în care implantul primește dintele: încărcare imediată în prima săptămână, precoce între o săptămână și două luni, convențională după mai mult de două luni. Un „tip 1A” înseamnă deci implant pus în ziua extracției și dinte provizoriu în aceeași săptămână (Clinical Implant Dentistry and Related Research, 2026).",
+          text: "Un rezultat estetic bun se poate obține indiferent de momentul inserării. Alegerea depinde de starea osului și a gingiei din jurul dintelui care urmează să fie scos, iar medicul o evaluează înainte de extracție.",
         },
       ],
     },
     {
-      id: "risc",
-      heading: "Este mai riscant implantul imediat?",
+      id: "implant-imediat",
+      heading: "Ce înseamnă implant dentar imediat?",
       blocks: [
         {
           kind: "p",
-          text: "Puțin mai riscant, iar diferența apare la început. O revizuire sistematică și meta-analiză a comparat implantul unitar imediat cu cel pus la cel puțin 3 luni după extracție, pe 473 de implanturi urmărite între 1 și 8 ani. Supraviețuirea a fost de 94,9 la sută pentru implantul imediat și de 98,9 la sută pentru cel amânat. Toate pierderile au fost timpurii, adică în perioada de integrare în os (Journal of Clinical Periodontology, 2019).",
+          text: "Implantul dentar imediat înseamnă că medicul extrage dintele și inserează implantul în alveolă în cadrul aceleiași intervenții. Pentru pacient, asta înseamnă o singură ședință chirurgicală în loc de două.",
         },
         {
           kind: "p",
-          text: "Aceeași revizuire a observat o tendință de supraviețuire mai mică la implantul imediat atunci când nu s-au administrat antibiotice după intervenție. Aspectul estetic al gingiei, măsurat cu un scor standard, a ieșit însă similar în cele două grupe.",
+          text: "Implantul dentar este un șurub, de obicei din titan sau dintr-un aliaj de titan, care înlocuiește rădăcina dintelui. După inserare, osul crește pe suprafața implantului și îl fixează. Procesul se numește osteointegrare.",
         },
         {
           kind: "p",
-          text: "O meta-analiză mult mai largă, pe 163 de publicații, 17.278 de implanturi în alveole proaspete și 38.738 în os vindecat, a ajuns la aceeași concluzie: riscul de eșec este mai mare în alveola proaspătă. Diferența a fost semnificativă la maxilar, dar nu și la mandibulă, iar pierderea de os din jurul implantului nu a diferit semnificativ între grupe (Materials, 2021).",
+          text: "Alveola unui dinte extras are forma rădăcinii și este mai largă decât implantul. Medicul poziționează implantul spre palat sau spre limbă și lasă un spațiu față de peretele osos dinspre buză. Consensul ITI din 2023 arată că un spațiu de cel puțin 2 mm crește supraviețuirea implantului imediat (Clinical Oral Implants Research, 2023). Spațiul rămas se poate umple cu material de adiție osoasă, adică granule care susțin formarea de os nou.",
         },
         {
           kind: "p",
-          text: "Cea mai recentă revizuire ITI arată de ce cifrele nu trebuie citite izolat: pentru implantul imediat cu dinte provizoriu în prima săptămână, supraviețuirea cumulată a fost de 98 la sută, iar protocolul este considerat validat științific. Studiile din care vine această cifră au selectat însă pacienții strict, cu perete osos intact și stabilitate bună la inserare (Clinical Implant Dentistry and Related Research, 2026).",
+          text: "Implantul imediat nu aduce automat și un dinte nou în aceeași zi. Momentul în care se atașează coroana pe implant este o decizie separată. ITI numește încărcare imediată atașarea lucrării în prima săptămână după inserare și încărcare convențională atașarea după mai mult de 2 luni de vindecare (Clinical Implant Dentistry and Related Research, 2026).",
+        },
+      ],
+    },
+    {
+      id: "dupa-vindecare",
+      heading: "Ce înseamnă implant după vindecarea extracției?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Implantul după vindecare înseamnă că dintele se extrage, zona se lasă să se vindece, iar implantul se inserează într-o a doua intervenție. Pauza durează între 4 săptămâni și peste 6 luni, în funcție de vindecarea pe care o urmărește medicul.",
+        },
+        {
+          kind: "p",
+          text: "La 4 până la 8 săptămâni, adică tipul 2, gingia a acoperit alveola, dar osul nou nu s-a format încă în cantitate semnificativă. În zona frontală, acest moment se alege mai ales când peretele osos dinspre buză are sub 1 mm sau lipsește, cu condiția să existe os suficient spre palat și spre vârful rădăcinii.",
+        },
+        {
+          kind: "p",
+          text: "Implantul de tipul 2 se combină frecvent cu o adiție osoasă pe fața dinspre buză a crestei, ca să refacă volumul pierdut. În cele două studii despre această tehnică, peretele osos din față a rămas vizibil pe tomografia 3D în peste 90 la sută din cazuri (International Journal of Oral & Maxillofacial Implants, 2014).",
+        },
+        {
+          kind: "p",
+          text: "La 12 până la 16 săptămâni, adică tipul 3, alveola are deja os nou format parțial. Stabilitatea primară, adică fixarea mecanică a implantului imediat după inserare, se obține mai ușor. În schimb, tratamentul durează mai mult decât la tipurile 1 și 2.",
+        },
+        {
+          kind: "p",
+          text: "După peste 6 luni, adică tipul 4, osul și gingia s-au vindecat, dar pereții alveolei s-au resorbit cel mai mult. În primele 6 luni după extracție, creasta pierde între 29 și 63 la sută din lățime și între 11 și 22 la sută din înălțime, cel mai repede în primele 3 până la 6 luni (Clinical Oral Implants Research, 2012). Dacă pierderea e mare, medicul poate recomanda o adiție osoasă înaintea implantului.",
         },
         {
           kind: "takeaway",
           items: [
-            "Riscul suplimentar al implantului imediat este mic și apare în primele luni, nu după ani.",
-            "Rezultatele bune ale implantului imediat vin din selecția cazurilor. Nu orice extracție se potrivește.",
+            "Așteptarea mai lungă aduce os mai stabil în alveolă, dar o creastă mai îngustă și mai joasă.",
           ],
         },
       ],
     },
     {
-      id: "gingie-os",
-      heading: "Ce se întâmplă cu gingia și cu osul în fiecare variantă?",
+      id: "aceeasi-sedinta",
+      heading: "Când poate medicul insera implantul în aceeași ședință cu extracția?",
       blocks: [
         {
           kind: "p",
-          text: "Aici este diferența care contează cel mai mult la dinții din față. O revizuire sistematică pe implanturi puse după extracția dinților frontali superiori și a premolarilor a găsit la implantul imediat o retragere a gingiei de pe fața văzută cu peste 1 mm în 9 până la 41 la sută din cazuri, cu o mediană de 26 la sută, la 1 până la 3 ani. În cele două studii cu inserare precoce, de tip 2 și 3, nu a existat niciun caz de acest fel (International Journal of Oral & Maxillofacial Implants, 2014).",
-        },
-        {
-          kind: "p",
-          text: "În două studii cu implant imediat și adiție de os, peretele osos din față nu mai era vizibil pe tomografie în 36 și, respectiv, 57 la sută din cazuri, iar tocmai acolo gingia se retrăsese mai mult. Studiile mai noi au pus condiții stricte pentru implantul imediat, cum ar fi gingia groasă și peretele osos intact, tocmai pentru a reduce acest risc.",
-        },
-        {
-          kind: "p",
-          text: "Nici așteptarea nu este fără cost. După extracție, creasta osoasă se retrage: în 6 luni pierde 29 până la 63 la sută din lățime și 11 până la 22 la sută din înălțime, cel mai repede în primele 3 până la 6 luni (Clinical Oral Implants Research, 2012). De aceea, inserarea precoce, la câteva săptămâni, păstrează o parte din avantajele ambelor variante: gingia s-a închis, iar osul nu a apucat să se retragă mult.",
-        },
-      ],
-    },
-    {
-      id: "orice-extractie",
-      heading: "Se poate pune implant imediat după orice extracție?",
-      blocks: [
-        {
-          kind: "p",
-          text: "Nu. Decizia se ia pe tomografia computerizată cu fascicul conic (CBCT) și se confirmă în timpul intervenției, după ce dintele a fost scos. Studiile care stau la baza protocolului imediat au cerut, de regulă, următoarele condiții:",
+          text: "Când alveola îndeplinește condițiile recomandate de ITI pentru implantul imediat cu dinte provizoriu (Clinical Oral Implants Research, 2018):",
         },
         {
           kind: "ul",
           items: [
-            "Peretele osos din față al alveolei este intact după extracție, fără lipsă de os sau fisuri.",
-            "Există suficient os dincolo de vârful rădăcinii și pe partea dinspre cerul gurii, încât implantul să se fixeze stabil.",
-            "Implantul se fixează ferm la inserare. În studiile analizate, pragul cerut a variat de regulă între 25 și 45 N cm (Clinical Implant Dentistry and Related Research, 2026).",
-            "Gingia este groasă și nu există boală parodontală activă.",
-            "Nu este nevoie de adiție de os sau de grefă de gingie înainte de implant.",
+            "Pereții alveolei sunt intacți, iar peretele osos dinspre buză are cel puțin 1 mm grosime.",
+            "Gingia este groasă, adică un fenotip gingival gros, care se retrage mai greu.",
+            "Zona nu are o infecție acută.",
+            "Există os suficient spre vârful rădăcinii și spre palat, ca implantul să stea în poziția corectă și să fie stabil.",
           ],
         },
         {
@@ -660,41 +670,62 @@ const implantImediat: Post = {
         },
         {
           kind: "p",
-          text: "Dacă una dintre condiții lipsește, varianta sigură este inserarea precoce sau tardivă. Consensul ITI din 2023 consideră implantul imediat cu dinte provizoriu predictibil în zona frontală superioară „în condiții favorabile”, cu mențiunea că pot apărea complicații chirurgicale, tehnice și biologice (Clinical Oral Implants Research, 2023).",
+          text: "Medicul verifică aceste condiții examinând gingia și pe o radiografie 3D numită CBCT, adică tomografie computerizată cu fascicul conic. Unele detalii apar abia în timpul extracției: dacă peretele dinspre buză se fracturează când dintele este scos, medicul poate decide pe loc să amâne implantul.",
+        },
+        {
+          kind: "p",
+          text: "Condițiile nu sunt absolute. Consensul ITI din 2023 precizează că, la o gingie subțire sau la un perete osos sub 1 mm, implantul imediat poate fi totuși luat în considerare, cu o evaluare atentă a defectului (Clinical Oral Implants Research, 2023).",
+        },
+      ],
+    },
+    {
+      id: "avantaje-riscuri",
+      heading: "Care sunt avantajele și riscurile implantului imediat?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Principalul avantaj este numărul mai mic de intervenții, fiindcă extracția și implantul se fac într-o singură ședință. Principalul risc este estetic: gingia se poate retrage în dreptul implantului din zona frontală.",
+        },
+        {
+          kind: "p",
+          text: "Supraviețuirea implantului, adică faptul că implantul rămâne fixat în os, diferă puțin între protocoale. O analiză pe 91 de studii a găsit rate de peste 95 la sută în majoritatea lor, cu valori similare pentru tipul 1 și tipul 2 (International Journal of Oral & Maxillofacial Implants, 2009). O meta-analiză mai recentă, pe 11 studii randomizate, a găsit totuși mai puține eșecuri la implantul amânat (Oral, 2024). Rezultatele variază între studii, iar selecția cazului contează.",
+        },
+        {
+          kind: "p",
+          text: "Riscul estetic are o documentație mai clară. După implantul imediat în zona frontală superioară, gingia se retrage cu peste 1 mm în 9 până la 41 la sută din cazuri, cu o mediană de 26 la sută, în primii 1 până la 3 ani. În cele două studii cu implant precoce, de tipul 2 și 3, nu a apărut niciun caz de acest fel (International Journal of Oral & Maxillofacial Implants, 2014). Retragerea este asociată cu trei factori (International Journal of Oral & Maxillofacial Implants, 2009):",
+        },
+        {
+          kind: "ul",
+          items: [
+            "un perete osos dinspre buză subțire sau deteriorat;",
+            "implantul poziționat prea aproape de buză;",
+            "gingia subțire.",
+          ],
+        },
+        {
+          kind: "p",
+          text: "Remodelarea osului continuă și după implantul imediat. Implantul nu oprește resorbția crestei, iar medicul ține cont de asta când planifică poziția implantului și eventuala adiție osoasă.",
+        },
+        {
+          kind: "takeaway",
+          items: [
+            "Implantul imediat scurtează tratamentul și reduce numărul de intervenții.",
+            "Riscul lui principal este retragerea gingiei în zona frontală, nu pierderea implantului.",
+          ],
         },
       ],
     },
     {
       id: "infectie",
-      heading: "Ce se întâmplă dacă dintele extras are infecție?",
+      heading: "Ce se întâmplă dacă dintele extras are o infecție?",
       blocks: [
         {
           kind: "p",
-          text: "Infecția din jurul rădăcinii nu exclude automat implantul imediat. O revizuire sistematică pe 9 studii și 2.281 de alveole nu a găsit o diferență semnificativă de supraviețuire între implanturile puse în alveole infectate și cele puse în alveole neinfectate. Nici nivelul osului, nici adâncimea pungilor nu au diferit semnificativ (Journal of Oral & Maxillofacial Research, 2020).",
+          text: "Infecția acută, cu umflătură, puroi sau durere intensă, exclude de regulă implantul imediat (Clinical Oral Implants Research, 2018). O infecție cronică la vârful rădăcinii nu îl contraindică, dacă osul rămas permite fixarea stabilă a implantului (Clinical Oral Implants Research, 2023). Infecția cronică apare ca o leziune pe radiografie și dă adesea puține simptome.",
         },
         {
           kind: "p",
-          text: "Condiția este curățarea temeinică a alveolei înainte de inserare. O altă revizuire, pe cinci studii clinice, a ajuns la aceeași concluzie și recomandă atenție la lățimea gingiei fixe în zona estetică (Acta Odontologica Scandinavica, 2018). O infecție acută, cu puroi sau umflătură, se tratează de regulă mai întâi, iar implantul se amână.",
-        },
-      ],
-    },
-    {
-      id: "comparatie",
-      heading: "Care este diferența, pe scurt?",
-      blocks: [
-        {
-          kind: "table",
-          caption: "Implant imediat față de implant după vindecarea extracției",
-          head: ["Criteriu", "Imediat (tip 1)", "După vindecare (tip 2 până la 4)"],
-          rows: [
-            ["Intervenții chirurgicale", "Una: extracția și implantul odată", "Două: extracția, apoi implantul"],
-            ["Supraviețuire, implant unitar", "94,9 la sută", "98,9 la sută, la cel puțin 3 luni după extracție"],
-            ["Când apar pierderile", "Timpuriu, în faza de integrare", "Timpuriu, în faza de integrare"],
-            ["Retragerea gingiei cu peste 1 mm, zona frontală", "9 până la 41 la sută din cazuri", "Niciun caz în studiile cu inserare precoce"],
-            ["Dinte provizoriu fix în prima săptămână", "Posibil, dacă stabilitatea permite", "Posibil și după vindecare, dacă stabilitatea permite"],
-            ["Condiții de os și gingie", "Stricte", "Mai puțin stricte"],
-            ["Durata totală", "Cea mai scurtă", "Mai lungă cu intervalul de vindecare, între 4 săptămâni și peste 6 luni"],
-          ],
+          text: "Medicul decide în funcție de extinderea infecției și de cantitatea de os rămasă după extracție. Dacă infecția a distrus o parte din peretele osos, varianta obișnuită este extracția, vindecarea și implantul la 4 până la 8 săptămâni sau mai târziu.",
         },
       ],
     },
@@ -704,11 +735,68 @@ const implantImediat: Post = {
       blocks: [
         {
           kind: "p",
-          text: "Cu implant imediat se câștigă tot intervalul de vindecare a alveolei, adică între 4 săptămâni și peste 6 luni. După inserare, implantul are nevoie oricum de timp să se integreze în os înainte de lucrarea definitivă, iar dacă stabilitatea permite, pacientul poartă între timp un dinte provizoriu fix.",
+          text: "Durata totală depinde de momentul în care se inserează implantul și de momentul în care se atașează coroana. ITI consideră convențională încărcarea după mai mult de 2 luni de vindecare (Clinical Implant Dentistry and Related Research, 2026). În practică, vindecarea implantului durează de regulă 3 până la 6 luni. La implantul imediat, această perioadă începe chiar din ziua extracției, deci dintele definitiv vine mai repede.",
+        },
+        {
+          kind: "table",
+          caption: "Durata orientativă până la coroana definitivă. Estimări clinice ale cabinetului, nu rezultate de studiu",
+          head: ["Protocol", "De la extracție la implant", "Vindecarea implantului", "Total până la coroana definitivă"],
+          rows: [
+            ["Tipul 1: imediat", "0, aceeași ședință", "3 până la 6 luni", "Aproximativ 3 până la 6 luni"],
+            ["Tipul 2: precoce", "4 până la 8 săptămâni", "3 până la 6 luni", "Aproximativ 4 până la 8 luni"],
+            ["Tipul 3: precoce", "12 până la 16 săptămâni", "3 până la 6 luni", "Aproximativ 6 până la 10 luni"],
+            ["Tipul 4: tardiv", "Peste 6 luni", "3 până la 6 luni", "8 luni sau mai mult"],
+          ],
         },
         {
           kind: "p",
-          text: "Calendarul complet, pe etape și pe scenarii, este explicat separat în articolul despre cât durează un implant dentar de la extracție până la coroana definitivă.",
+          text: "Adiția osoasă, calitatea osului și timpul de lucru al laboratorului pot prelungi tratamentul. În perioada de vindecare, pacientul primește de obicei o soluție provizorie. Dacă implantul are o stabilitate primară suficientă, medicul poate atașa o coroană provizorie în prima săptămână. Altfel, pacientul poartă o lucrare provizorie care nu apasă pe implant.",
+        },
+        {
+          kind: "p",
+          text: "Toate etapele, de la extracție la coroană, sunt explicate în articolul despre cât durează un implant dentar.",
+        },
+      ],
+    },
+    {
+      id: "alegere",
+      heading: "Cum alege medicul protocolul potrivit?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Medicul alege protocolul după starea osului și a gingiei, evaluate la consultația dinaintea extracției, și după poziția dintelui. Criteriile generale de sănătate sunt aceleași pentru orice pacient cu implant, indiferent de momentul inserării.",
+        },
+        {
+          kind: "p",
+          text: "Zona contează. În zona frontală, riscul de retragere a gingiei cântărește mai mult, pentru că marginea gingiei se vede la zâmbet. La molari, rădăcinile multiple lasă o alveolă largă, iar medicul urmărește în primul rând stabilitatea implantului.",
+        },
+        {
+          kind: "p",
+          text: "Planificarea pornește de la tomografia CBCT și, în multe cazuri, de la o scanare digitală a dinților. Medicul are nevoie și de istoricul medical, inclusiv de lista completă a medicamentelor. Apoi pacientul și medicul discută variantele posibile: numărul de intervenții, durata totală și riscurile fiecărui protocol în cazul respectiv.",
+        },
+      ],
+    },
+    {
+      id: "cand-la-medic",
+      heading: "Când trebuie mers la medic?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Dacă un dinte este fracturat sau medicul a spus că trebuie scos, consultația de implantologie se programează înaintea extracției. Implantul imediat se poate face doar în ședința extracției, deci evaluarea trebuie să aibă loc înainte.",
+        },
+        {
+          kind: "p",
+          text: "După extracție sau după implant, medicul trebuie contactat dacă:",
+        },
+        {
+          kind: "ul",
+          items: [
+            "durerea crește după primele zile, în loc să scadă;",
+            "umflătura se mărește sau apare febra;",
+            "apare puroi sau un gust neplăcut care persistă;",
+            "sângerarea nu se oprește la apăsarea cu o compresă;",
+            "implantul sau lucrarea provizorie se mișcă.",
+          ],
         },
       ],
     },
@@ -716,68 +804,50 @@ const implantImediat: Post = {
   faq: [
     {
       q: "Se poate pune implant imediat după orice extracție?",
-      a: "Nu. Este nevoie de un perete osos intact în fața alveolei, de os suficient dincolo de vârful rădăcinii pentru o fixare stabilă, de gingie sănătoasă și de absența unei infecții acute. Decizia se ia pe tomografie și se confirmă în timpul intervenției.",
+      a: "Nu. Implantul imediat cere pereți osoși intacți, un perete dinspre buză de cel puțin 1 mm, gingie groasă, lipsa unei infecții acute și os suficient pentru fixarea implantului. Medicul verifică aceste condiții pe tomografia 3D și la examinarea clinică.",
     },
     {
-      q: "Este mai riscant implantul imediat?",
-      a: "Puțin. Într-o meta-analiză pe 473 de implanturi unitare, supraviețuirea a fost de 94,9 la sută pentru implantul imediat, față de 98,9 la sută pentru cel pus la cel puțin 3 luni după extracție. Pierderile au fost toate timpurii. În zona frontală, riscul de retragere a gingiei este și el mai mare.",
+      q: "Este mai riscant implantul imediat decât implantul pus după vindecare?",
+      a: "Supraviețuirea este similară în majoritatea studiilor, peste 95 la sută, deși o meta-analiză pe studii randomizate a găsit mai puține eșecuri la implantul amânat. Riscul mai mare la implantul imediat este estetic: în zona frontală superioară, gingia se retrage cu peste 1 mm în 9 până la 41 la sută din cazuri, cu o mediană de 26 la sută.",
     },
     {
-      q: "Cât durează până la dintele definitiv?",
-      a: "Cu implant imediat se câștigă intervalul de vindecare a alveolei, între 4 săptămâni și peste 6 luni. Implantul trebuie apoi să se integreze în os înainte de lucrarea definitivă, iar dacă stabilitatea permite, pacientul poartă între timp un dinte provizoriu fix.",
+      q: "Cât durează până la dintele definitiv cu implant imediat?",
+      a: "În practică, vindecarea implantului durează 3 până la 6 luni, iar la implantul imediat această perioadă începe din ziua extracției. Dacă implantul are stabilitate suficientă, medicul poate atașa o coroană provizorie în prima săptămână.",
     },
     {
-      q: "Primesc un dinte provizoriu în ziua extracției?",
-      a: "Este posibil dacă implantul se fixează suficient de stabil la inserare. Pentru implantul imediat cu dinte provizoriu în prima săptămână, cea mai recentă revizuire ITI raportează o supraviețuire cumulată de 98 la sută, la pacienți selectați strict.",
+      q: "Primesc dinte provizoriu în aceeași zi cu implantul imediat?",
+      a: "Depinde de stabilitatea implantului. Coroana provizorie se atașează pe implant doar dacă implantul are o stabilitate primară suficientă. Altfel, se poartă o lucrare provizorie care nu apasă pe implant în timpul vindecării.",
     },
     {
       q: "Se poate pune implant imediat dacă dintele are infecție?",
-      a: "Uneori, da. Pe 2.281 de alveole, supraviețuirea nu a diferit semnificativ între alveolele infectate, curățate temeinic înainte de inserare, și cele neinfectate. O infecție acută, cu puroi sau umflătură, se tratează de regulă mai întâi.",
+      a: "Infecția acută exclude de regulă implantul imediat. Conform consensului ITI din 2023, infecția cronică de la vârful rădăcinii nu este o contraindicație, dacă osul rămas permite fixarea stabilă a implantului.",
     },
     {
-      q: "Dacă aștept, se pierde os?",
-      a: "Da. În primele 6 luni după extracție, creasta pierde 29 până la 63 la sută din lățime și 11 până la 22 la sută din înălțime, cel mai repede în primele 3 până la 6 luni. De aceea, o așteptare lungă poate face necesară adiția de os.",
-    },
-    {
-      q: "Doare mai mult implantul imediat?",
-      a: "Intervenția se face sub anestezie locală. Pentru că extracția și implantul se fac într-o singură ședință, pacientul trece o singură dată prin perioada de disconfort de după intervenție, în loc de două ori.",
+      q: "Pierd os dacă aștept vindecarea înainte de implant?",
+      a: "Da. În primele 6 luni după extracție, creasta osoasă pierde între 29 și 63 la sută din lățime și între 11 și 22 la sută din înălțime, cel mai repede în primele 3 până la 6 luni. De aceea, când condițiile o permit, un implant pus mai devreme găsește mai mult os.",
     },
   ],
   sources: [
     {
-      id: "cidrr-2026",
-      label: "Stadiul actual al dovezilor pentru protocoalele de inserare și încărcare a implanturilor la pacienții parțial edentați: revizuire sistematică",
-      publisher: "Clinical Implant Dentistry and Related Research",
-      year: "2026",
-      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12828728/",
-    },
-    {
-      id: "jcp-2019",
-      label: "Implantul imediat față de implantul amânat pentru înlocuirea unui singur dinte: revizuire sistematică și meta-analiză",
-      publisher: "Journal of Clinical Periodontology",
-      year: "2019",
-      url: "https://doi.org/10.1111/jcpe.13054",
-    },
-    {
-      id: "materials-2021",
-      label: "Implanturi în alveole proaspete față de os vindecat: revizuire sistematică și meta-analiză pe 163 de publicații",
-      publisher: "Materials",
-      year: "2021",
-      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8708389/",
+      id: "jomi-2009",
+      label: "Rezultatele clinice și estetice ale implanturilor puse după extracție: revizuire pe 91 de studii",
+      publisher: "International Journal of Oral & Maxillofacial Implants",
+      year: "2009",
+      url: "https://pubmed.ncbi.nlm.nih.gov/19885446/",
     },
     {
       id: "jomi-2014",
-      label: "Rezultatele estetice ale implantului imediat și ale celui precoce în zona frontală superioară: revizuire sistematică",
+      label: "Rezultatele estetice ale implantului imediat și ale celui precoce în zona frontală superioară: revizuire sistematică pentru consensul ITI",
       publisher: "International Journal of Oral & Maxillofacial Implants",
       year: "2014",
       url: "https://doi.org/10.11607/jomi.2014suppl.g3.3",
     },
     {
-      id: "coir-2012",
-      label: "Modificările dimensionale ale osului și gingiei după extracție la om: revizuire sistematică",
+      id: "coir-2018",
+      label: "Raportul de consens ITI, grupul 2: protocoale de inserare și încărcare, cu condițiile pentru implantul imediat",
       publisher: "Clinical Oral Implants Research",
-      year: "2012",
-      url: "https://doi.org/10.1111/j.1600-0501.2011.02375.x",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13298",
     },
     {
       id: "coir-2023",
@@ -787,18 +857,25 @@ const implantImediat: Post = {
       url: "https://doi.org/10.1111/clr.14137",
     },
     {
-      id: "jomr-2020",
-      label: "Implant imediat în alveole infectate față de alveole neinfectate: revizuire sistematică și meta-analiză",
-      publisher: "Journal of Oral & Maxillofacial Research",
-      year: "2020",
-      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7393932/",
+      id: "oral-2024",
+      label: "Supraviețuirea și pierderea de os la implanturile imediate față de cele amânate: meta-analiză pe 11 studii randomizate",
+      publisher: "Oral",
+      year: "2024",
+      url: "https://doi.org/10.3390/oral4030027",
     },
     {
-      id: "aos-2018",
-      label: "Implant imediat în alveole infectate și neinfectate: revizuire sistematică și meta-analiză",
-      publisher: "Acta Odontologica Scandinavica",
-      year: "2018",
-      url: "https://doi.org/10.1080/00016357.2018.1453084",
+      id: "cidrr-2026",
+      label: "Stadiul actual al dovezilor pentru protocoalele de inserare și încărcare a implanturilor la pacienții parțial edentați: revizuire sistematică",
+      publisher: "Clinical Implant Dentistry and Related Research",
+      year: "2026",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12828728/",
+    },
+    {
+      id: "coir-2012",
+      label: "Modificările dimensionale ale osului și gingiei după extracție la om: revizuire sistematică",
+      publisher: "Clinical Oral Implants Research",
+      year: "2012",
+      url: "https://doi.org/10.1111/j.1600-0501.2011.02375.x",
     },
   ],
   related: [
@@ -808,21 +885,22 @@ const implantImediat: Post = {
       href: "/blog/cat-dureaza-un-implant-dentar",
     },
     {
-      label: "Implant dentar fără adiție de os: când este posibil?",
-      href: "/blog/implant-dentar-fara-aditie-de-os",
+      label: "Se poate pune implant dacă nu mai este suficient os?",
+      href: "/blog/implant-dentar-fara-os-suficient",
     },
     {
-      label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
-      href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
+      label: "Implant dentar fără adiție de os: când este posibil?",
+      href: "/blog/implant-dentar-fara-aditie-de-os",
     },
     { label: "Programare", href: "/#programare" },
   ],
   verify: [
-    "Dacă Drafta dental face implant imediat și în ce situații. Articolul presupune că da, cu selecția de cazuri descrisă.",
-    "Dacă cabinetul face tomografie CBCT pe loc sau trimite pacientul la un centru de imagistică.",
-    "Protocolul de antibiotic folosit în cabinet după implantul imediat. Articolul menționează doar tendința din meta-analiza din 2019.",
-    "Ideea nr. 5 din lista de subiecte („Implant imediat după extracție: când se poate și când nu?”) se suprapune mult cu acest articol. De decis dacă devine articol separat sau se unește cu acesta.",
-    "Aviz medical: articolul nu a fost revizuit de un medic.",
+    "Corectat față de ciornă: ITI definește încărcarea convențională ca „după mai mult de 2 luni”, nu „3-6 luni”. Intervalul de 3-6 luni a rămas ca practică a cabinetului, la fel tabelul de durate.",
+    "Corectat față de ciornă: retragerea gingiei din revizuirea din 2014 este „peste 1 mm”, nu „cel puțin 1 mm”.",
+    "Adăugat din consensul ITI 2023: la gingie subțire sau perete sub 1 mm, implantul imediat „poate fi totuși luat în considerare”. Ciorna prezenta condițiile ca stricte.",
+    "Fără sursă verificată, păstrate fără atribuire: folosirea tipului 2 când peretele dinspre buză are sub 1 mm (ciorna o atribuia echipei Buser), „8 luni sau mai mult” pentru tipul 4 și faptul că implantul imediat nu oprește resorbția crestei.",
+    "Scos din ciornă: „recomandările bazate pe consensul ITI preferă inserarea în primele 4 luni”. Nu apare în sursele găsite; răspunsul din întrebările frecvente se sprijină acum pe datele de resorbție.",
+    "Legătura din ciornă către /blog/implant-imediat-dupa-extractie nu a fost pusă: articolul nu există. Ideea nr. 5 se suprapune mult cu acesta.",
     "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
   ],
 };
