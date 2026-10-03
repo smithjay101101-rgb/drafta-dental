@@ -104,9 +104,14 @@ JSON-LD-ul arată spre ea.
 
 ### Vechiul domeniu, draftadental.ro
 
-Primul domeniu al site-ului. A rămas în proiect, pe nameserverele Vercel, cu
-redirect 308 spre `www.dentaldrafta.ro`, ca linkurile vechi să ajungă pe site-ul
-nou. Se poate lăsa să expire după ce redirectul a stat câteva luni.
+Primul domeniu al site-ului. A fost scos din proiectul Vercel pe 3 octombrie
+2026, deci nu mai servește și nu mai redirecționează nimic (răspunde 404).
+Un singur domeniu rămâne activ: `dentaldrafta.ro`.
+
+În contul Vercel figurează încă, pentru că folosește nameserverele Vercel, iar
+Vercel nu șterge un domeniu în situația asta. Se scoate complet punând în
+Cyber_Folks nameserverele lor înapoi (`ns1`–`ns4.cyberfolks.ro`) sau lăsându-l
+să expire.
 
 ### SSL
 
