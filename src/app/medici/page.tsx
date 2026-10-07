@@ -7,7 +7,7 @@ import { doctors } from "@/content/doctors";
 import { practice } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Medicii cabinetului",
+  title: "Medicii cabinetului | Drafta dental",
   description:
     "Doi medici stomatologi la Drafta dental, amândoi absolvenți de Carol Davila. Vedeți cine se ocupă de fiecare tip de tratament.",
   alternates: { canonical: "/medici" },

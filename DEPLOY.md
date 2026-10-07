@@ -135,3 +135,30 @@ la Google: `dig +short www.dentaldrafta.ro @8.8.8.8`.
 `src/app/layout.tsx` are încă `robots: { index: false, follow: false }`. Site-ul
 va fi viu pe domeniu, dar invizibil în Google — intenționat, cât timp mai există
 fotografii de stoc și articol-machetă. Se scoate când conținutul e final.
+
+## IndexNow (Bing, Yandex, Seznam, Naver)
+
+Cheia este fișierul `public/4e30073e3d2bbdbdf2234bb97c304098.txt`, servit la
+`https://www.dentaldrafta.ro/4e30073e3d2bbdbdf2234bb97c304098.txt`. Nu se șterge: Bing verifică prin el că
+notificările vin de la proprietarul site-ului.
+
+După un articol nou sau o pagină modificată, notificarea se trimite așa:
+
+```sh
+curl -s -X POST https://api.indexnow.org/indexnow \
+  -H "Content-Type: application/json; charset=utf-8" \
+  -d '{"host":"www.dentaldrafta.ro","key":"4e30073e3d2bbdbdf2234bb97c304098","keyLocation":"https://www.dentaldrafta.ro/4e30073e3d2bbdbdf2234bb97c304098.txt","urlList":["https://www.dentaldrafta.ro/blog/ARTICOL-NOU"]}'
+```
+
+Răspuns 200 sau 202 înseamnă primit. Google nu folosește IndexNow; pentru Google
+se cere indexarea din Search Console.
+
+## Obligații legale afișate pe site
+
+- **Pictograma ANPC SAL** în subsolul fiecărei pagini, cu link la
+  https://reclamatiisal.anpc.ro (Ordinul ANPC 449/2022, modificat prin 270/2026).
+  Detalii în `public/anpc/README.md`.
+- **Identificarea furnizorului** (Legea 365/2002, art. 5): denumire, CUI, adresă,
+  tot în subsol. Datele sunt în `src/content/legal.ts`, verificate în registrul ANAF.
+- **Politica de confidențialitate** (`/confidentialitate`) și **termenii**
+  (`/termeni`), cu textul în `src/content/legal.ts`.

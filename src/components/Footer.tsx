@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Lockup } from "./Lockup";
 import { footer, practice } from "@/content/site";
+import { legalEntity } from "@/content/legal";
 
 export function Footer() {
   return (
@@ -70,6 +72,28 @@ export function Footer() {
               </Link>
             ))}
           </p>
+        </div>
+
+        {/* Legea 365/2002 art. 5 (identificarea furnizorului) și Ordinul ANPC
+            449/2022, modificat prin 270/2026 (pictograma SAL). Vezi public/anpc. */}
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6 text-[13px] text-text-label">
+          <p className="m-0">
+            {legalEntity.name} · CUI {legalEntity.cui} · {legalEntity.address}
+          </p>
+          <a
+            href="https://reclamatiisal.anpc.ro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Image
+              src="/anpc/sal-pictograma.png"
+              alt="ANPC – Soluționarea alternativă a litigiilor"
+              width={201}
+              height={50}
+              unoptimized
+            />
+          </a>
         </div>
       </div>
     </footer>
