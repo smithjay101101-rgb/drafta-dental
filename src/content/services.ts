@@ -4,7 +4,7 @@
  *
  * Textele sunt ale cabinetului. Modificări față de original:
  *   • greșeli evidente corectate („durereos", „o cuspid fracturat"), iar
- *     „Dental Drafta" a devenit „Drafta dental";
+ *     „Dental Drafta" a devenit „Dental Drafta";
  *   • liniile de pauză din text înlocuite cu virgulă sau două puncte;
  *   • unde Wix repeta același paragraf la două întrebări (Coroane, Tratament
  *     de canal), răspunsul apare o singură dată;
@@ -165,7 +165,7 @@ export const serviceList: readonly Service[] = [
     faq: [
       {
         q: "Ce sunt fațetele ceramice?",
-        a: "Fațetele ceramice sunt acoperiri subțiri, realizate la comandă, care se aplică pe dinți pentru a ascunde ciobiturile, petele, decolorările și alte imperfecțiuni. La Drafta dental ne asigurăm că vei primi fațete personalizate, adaptate perfect nevoilor tale.",
+        a: "Fațetele ceramice sunt acoperiri subțiri, realizate la comandă, care se aplică pe dinți pentru a ascunde ciobiturile, petele, decolorările și alte imperfecțiuni. La Dental Drafta ne asigurăm că vei primi fațete personalizate, adaptate perfect nevoilor tale.",
       },
       {
         q: "Pentru cine sunt potrivite fațetele ceramice?",
@@ -326,5 +326,5 @@ export function priceLabel(s: Service) {
 }
 
 export function serviceDescription(s: Service) {
-  return `${s.short} Preț ${priceLabel(s)}, la Drafta dental, Strada Justinian 10, București.`;
+  return `${s.short} Preț ${priceLabel(s)}, la Dental Drafta, Strada Justinian 10, București.`;
 }

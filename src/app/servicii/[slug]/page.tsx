@@ -25,7 +25,7 @@ export async function generateMetadata({
   const s = getService(slug);
   if (!s) return {};
   return {
-    title: `${s.title}, ${priceLabel(s)} | Drafta dental`,
+    title: `${s.title}, ${priceLabel(s)} | Dental Drafta`,
     description: serviceDescription(s),
     alternates: { canonical: `/servicii/${s.slug}` },
   };

@@ -1,6 +1,6 @@
-# Drafta dental — site
+# Dental Drafta — site
 
-Homepage-ul cabinetului Drafta dental, construit după bundle-ul de design din
+Homepage-ul cabinetului Dental Drafta, construit după bundle-ul de design din
 `../design_handoff_drafta_homepage/`.
 
 ## Stack

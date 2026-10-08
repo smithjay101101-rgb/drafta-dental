@@ -253,7 +253,7 @@ const implanturiBimaxilar: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
     {
       label: "Implant dentar imediat sau după vindecarea extracției: care este diferența?",
       href: "/blog/implant-dentar-imediat-sau-dupa-vindecare",
@@ -271,8 +271,8 @@ const implanturiBimaxilar: Post = {
   ],
   verify: [
     "Procentul concret cu care intervenția simultană reduce costul total față de două intervenții separate. Nu se publică o cifră neverificată.",
-    "Intervalul orar real al unei intervenții bimaxilare la Drafta dental.",
-    "Dacă Drafta dental realizează efectiv reabilitări bimaxilare pe implanturi și cu ce protocoale. Întregul articol presupune că da.",
+    "Intervalul orar real al unei intervenții bimaxilare la Dental Drafta.",
+    "Dacă Dental Drafta realizează efectiv reabilitări bimaxilare pe implanturi și cu ce protocoale. Întregul articol presupune că da.",
     "Rata de succes pe termen lung citată frecvent ca 98 pana la 99 la sută la 25 de ani apare doar pe site-uri de clinică, fără sursă primară. A fost lăsată în afara articolului.",
     "Aviz medical: articolul nu a fost revizuit de un medic. Conținut demo.",
     "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
@@ -418,7 +418,7 @@ const fateteCeramiceCompozit: Post = {
             ["Problema cea mai frecventă", "Fractura, apoi desprinderea", "Fractura, pierderea retenției, colorarea"],
             ["Comportament la pete", "Stabil în timp", "Pierde luciul, se colorează marginal"],
             ["Reparație", "De regulă se înlocuiește fațeta", "Se repară direct în cabinet"],
-            ["Preț de pornire la Drafta dental", "1700 lei pe dinte", "650 lei pe dinte"],
+            ["Preț de pornire la Dental Drafta", "1700 lei pe dinte", "650 lei pe dinte"],
           ],
         },
       ],
@@ -443,7 +443,7 @@ const fateteCeramiceCompozit: Post = {
         },
         {
           kind: "p",
-          text: "Ambele variante sunt disponibile la Drafta dental, iar prețurile de pornire sunt afișate pe paginile fiecărui tratament. Costul exact se stabilește după consultație, în funcție de numărul de dinți și de starea lor.",
+          text: "Ambele variante sunt disponibile la Dental Drafta, iar prețurile de pornire sunt afișate pe paginile fiecărui tratament. Costul exact se stabilește după consultație, în funcție de numărul de dinți și de starea lor.",
         },
       ],
     },
@@ -455,7 +455,7 @@ const fateteCeramiceCompozit: Post = {
     },
     {
       q: "Care este diferența de preț?",
-      a: "La Drafta dental, fațetele de compozit pornesc de la 650 lei pe dinte, iar cele ceramice de la 1700 lei pe dinte. Prețul exact se stabilește după consultație, în funcție de numărul de dinți și de situația clinică.",
+      a: "La Dental Drafta, fațetele de compozit pornesc de la 650 lei pe dinte, iar cele ceramice de la 1700 lei pe dinte. Prețul exact se stabilește după consultație, în funcție de numărul de dinți și de situația clinică.",
     },
     {
       q: "Se șlefuiește dintele în ambele cazuri?",
@@ -513,8 +513,8 @@ const fateteCeramiceCompozit: Post = {
     },
   ],
   related: [
-    { label: "Fațete ceramice la Drafta dental", href: "/servicii/fatete-ceramice" },
-    { label: "Fațete de compozit la Drafta dental", href: "/servicii/fatete-de-compozit" },
+    { label: "Fațete ceramice la Dental Drafta", href: "/servicii/fatete-ceramice" },
+    { label: "Fațete de compozit la Dental Drafta", href: "/servicii/fatete-de-compozit" },
     {
       label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
       href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
@@ -523,7 +523,7 @@ const fateteCeramiceCompozit: Post = {
   ],
   verify: [
     "Ce sisteme ceramice folosește cabinetul. Studiul din 2021 arată diferențe semnificative între ceramicile feldspatice și celelalte, iar articolul nu numește niciun material anume.",
-    "Dacă se fac fațete fără șlefuire la Drafta dental și în ce situații.",
+    "Dacă se fac fațete fără șlefuire la Dental Drafta și în ce situații.",
     "Dacă prețurile de pornire includ proba, simularea digitală și lucrarea provizorie.",
     "Numărul real de ședințe pentru fiecare variantă, în cabinet.",
     "Intervalele de viață citate pe paginile de servicii (5 până la 7 ani pentru compozit, 10 până la 15 ani pentru ceramică) provin din textele cabinetului. În articol s-au folosit ratele de supraviețuire din studii, nu aceste intervale.",
@@ -879,7 +879,7 @@ const implantImediat: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
     {
       label: "Cât durează un implant dentar de la extracție până la coroana definitivă?",
       href: "/blog/cat-dureaza-un-implant-dentar",
@@ -1143,7 +1143,7 @@ const durataImplant: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
     {
       label: "Implant dentar imediat sau după vindecarea extracției: care este diferența?",
       href: "/blog/implant-dentar-imediat-sau-dupa-vindecare",
@@ -1157,9 +1157,9 @@ const durataImplant: Post = {
   verify: [
     "Tabelul de scenarii adună intervalele din definițiile ITI. Nu este măsurat într-un studiu și trebuie confirmat de medic ca reflectând practica cabinetului.",
     "Cât durează realizarea coroanei în laboratorul cu care lucrează cabinetul. Articolul nu dă o cifră.",
-    "Numărul real de ședințe la Drafta dental, de la consultație la coroană.",
+    "Numărul real de ședințe la Dental Drafta, de la consultație la coroană.",
     "Ce soluție provizorie mobilă oferă cabinetul când dintele provizoriu fix nu este posibil.",
-    "Dacă se folosesc implanturi scurte la Drafta dental ca alternativă la ridicarea de sinus.",
+    "Dacă se folosesc implanturi scurte la Dental Drafta ca alternativă la ridicarea de sinus.",
     "Cifra de 85 la sută pentru fumători vine din ITI Academy, aceeași sursă ca în articolul despre ambele arcade, nu dintr-un studiu primar.",
     "Aviz medical: articolul nu a fost revizuit de un medic.",
     "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
@@ -1406,7 +1406,7 @@ const osInsuficient: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
     {
       label: "Implant dentar fără adiție de os: când este posibil?",
       href: "/blog/implant-dentar-fara-aditie-de-os",
@@ -1427,7 +1427,7 @@ const osInsuficient: Post = {
     "Corectat față de ciornă: studiul Thoma din 2018 nu a găsit mai puține complicații la implanturile scurte, ci complicații biologice și tehnice fără diferență semnificativă.",
     "Recomandarea EAO a fost formulată după rezumat (principiul justificării și al dozei minime). Textul integral al ghidului nu a fost citit.",
     "Legăturile din ciornă către articolele #7, #12, #14 și #15 nu au fost puse: articolele nu există încă. De adăugat când apar.",
-    "Dacă Drafta dental face sinus lift, adiție osoasă și implanturi zigomatice, și cu ce materiale de adiție.",
+    "Dacă Dental Drafta face sinus lift, adiție osoasă și implanturi zigomatice, și cu ce materiale de adiție.",
     "Aviz medical: articolul nu a fost revizuit de un medic. Autorul din ciornă era un loc gol, „Dr. Nume Prenume”. Articolul a fost atribuit lui Dr. Andrei Drafta.",
   ],
 };
@@ -1664,7 +1664,7 @@ const faraAditie: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
     {
       label: "Se poate pune implant dacă nu mai este suficient os?",
       href: "/blog/implant-dentar-fara-os-suficient",
@@ -1689,7 +1689,7 @@ const faraAditie: Post = {
     "Corectat față de ciornă: studiul Araújo și Lindhe din 2005 este pe câini. Cifrele pentru om vin din revizuirea din 2012.",
     "Corectat față de ciornă: studiul Thoma din 2018 nu a găsit mai puține complicații la implanturile scurte. Afirmația despre aliajul titan-zirconiu nu apare în meta-analiza din 2018 și a fost scoasă.",
     "Legăturile din ciornă către articolele #7, #12 și #15 nu au fost puse: articolele nu există încă.",
-    "Dacă Drafta dental face planificare digitală cu ghid chirurgical imprimat 3D. Articolul presupune că da.",
+    "Dacă Dental Drafta face planificare digitală cu ghid chirurgical imprimat 3D. Articolul presupune că da.",
     "Aviz medical: articolul nu a fost revizuit de un medic. Autorul din ciornă era un loc gol, „Dr. Nume Prenume”. Articolul a fost atribuit lui Dr. Andrei Drafta.",
   ],
 };
@@ -2008,7 +2008,7 @@ const ghidatDigital: Post = {
     },
   ],
   related: [
-    { label: "Implanturi la Drafta dental", href: "/servicii/implanturi-dentare" },
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
     {
       label: "Implant dentar fără adiție de os: când este posibil?",
       href: "/blog/implant-dentar-fara-aditie-de-os",

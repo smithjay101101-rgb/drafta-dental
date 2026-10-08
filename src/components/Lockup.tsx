@@ -6,11 +6,12 @@ import { LogoMark } from "./Logo";
 
 /**
  * Lockup-ul de marcă: marca plus numele scris cu text real, nu cu contururi.
- * „Drafta" în Urbanist 900, „dental" în Figtree 500 cu tracking larg.
+ * „Dental" în Urbanist 900, „drafta" în Figtree 500 cu tracking larg,
+ * ca să se citească „Dental Drafta", la fel ca domeniul dentaldrafta.ro.
  *
  * Proporțiile vin din lockup-ul de referință și se păstrează la orice mărime,
  * relativ la latura mărcii (M):
- *   „Drafta" = 0,6 M · „dental" = 0,25 M · spațiul marcă–text = 0,275 M
+ *   „Dental" = 0,6 M · „drafta" = 0,25 M · spațiul marcă–text = 0,275 M
  *
  *   Header ≥480px: M 48 → 29px / 12px / 13px
  *   Header <480px: M 40 → 24px / 10px / 11px
@@ -18,7 +19,7 @@ import { LogoMark } from "./Logo";
  *                  strângem spațiul de 8px dintre butoane
  *   Footer:        M 44 → 26px / 11px / 12px
  *
- * „dental" e 500, nu 400: la 10–12px, greutatea normală cu tracking larg se
+ * „drafta" e 500, nu 400: la 10–12px, greutatea normală cu tracking larg se
  * randează subțire și neclar. Link-ul are cel puțin 44px înălțime (țintă de
  * atingere).
  *
@@ -49,7 +50,7 @@ export function Lockup({
     <Link
       href={href}
       onClick={onClick}
-      aria-label="Drafta dental, mergi la pagina de start"
+      aria-label="Dental Drafta, mergi la pagina de start"
       className={`flex min-h-11 w-fit flex-none items-center text-indigo ${
         header ? "gap-2.5 min-[400px]:gap-[11px] min-[480px]:gap-[13px]" : "gap-3"
       }`}
@@ -65,7 +66,7 @@ export function Lockup({
             header ? "text-[23px] min-[400px]:text-[24px] min-[480px]:text-[29px]" : "text-[26px]"
           }`}
         >
-          Drafta
+          Dental
         </span>
         <span
           className={`font-sans font-medium tracking-[0.4em] ${
@@ -74,7 +75,7 @@ export function Lockup({
               : "mt-1 text-[11px]"
           }`}
         >
-          dental
+          drafta
         </span>
       </span>
     </Link>

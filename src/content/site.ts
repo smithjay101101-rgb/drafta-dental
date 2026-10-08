@@ -10,7 +10,7 @@ import { doctors } from "./doctors";
  */
 
 export const practice = {
-  name: "Drafta dental",
+  name: "Dental Drafta",
   /** Real, de pe site-ul Wix al cabinetului. */
   phone: "0787 585 555",
   phoneHref: "tel:+40787585555",
@@ -47,7 +47,7 @@ export const hero = {
   ctaPrimary: "Programează-te",
   imageCaption: "foto stock lată: interiorul cabinetului",
   image: "/photos/cabinet-principal.jpg",
-  imageAlt: "Medic stomatolog stând de vorbă cu o pacientă în cabinetul Drafta dental",
+  imageAlt: "Medic stomatolog stând de vorbă cu o pacientă în cabinetul Dental Drafta",
 } as const;
 
 export const about = {
@@ -121,7 +121,7 @@ export const faq = {
   title: "Întrebări frecvente",
   items: [
     {
-      q: "Unde se află cabinetul Drafta dental?",
+      q: "Unde se află cabinetul Dental Drafta?",
       a: "Pe Strada Justinian nr. 10, Sector 2, București. Aflat în centrul Bucureștiului, cabinetul nostru poate fi accesat foarte ușor prin stația de metrou Ștefan cel Mare / Piața Romană sau cu alte forme de transport în comun.",
     },
     {
@@ -188,5 +188,5 @@ export const footer = {
     { label: "Confidențialitate", href: "/confidentialitate" },
     { label: "Termeni", href: "/termeni" },
   ],
-  copyright: "© 2026 Drafta dental · București",
+  copyright: "© 2026 Dental Drafta · București",
 } as const;

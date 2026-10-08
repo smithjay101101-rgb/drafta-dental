@@ -12,9 +12,9 @@ import {
 import { practice, services } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Servicii și prețuri | Drafta dental",
+  title: "Servicii și prețuri | Dental Drafta",
   description:
-    "Consultație și igienizare, albire dentară, fațete de compozit și ceramice, coroane, punți, inlay-uri, tratamente de canal și implanturi dentare, cu prețurile de pornire. Drafta dental, Strada Justinian 10, București.",
+    "Consultație și igienizare, albire dentară, fațete de compozit și ceramice, coroane, punți, inlay-uri, tratamente de canal și implanturi dentare, cu prețurile de pornire. Dental Drafta, Strada Justinian 10, București.",
   alternates: { canonical: "/servicii" },
 };
 
@@ -64,7 +64,7 @@ export default function ServicesPage() {
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Servicii Drafta dental",
+    name: "Servicii Dental Drafta",
     itemListElement: groups
       .flatMap((g) => g.items)
       .map((s, i) => ({

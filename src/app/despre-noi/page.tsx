@@ -6,9 +6,9 @@ import { doctors } from "@/content/doctors";
 import { about, practice } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Despre cabinet | Drafta dental",
+  title: "Despre cabinet | Dental Drafta",
   description:
-    "Drafta dental este un cabinet stomatologic de familie din București, cu o poveste care începe în anul 2000: aparatură modernă și un ambient prietenos, unde nu ești tratat ca o simplă cifră.",
+    "Dental Drafta este un cabinet stomatologic de familie din București, cu o poveste care începe în anul 2000: aparatură modernă și un ambient prietenos, unde nu ești tratat ca o simplă cifră.",
   alternates: { canonical: "/despre-noi" },
 };
 
@@ -52,7 +52,7 @@ export default function DespreNoi() {
             </ol>
           </nav>
 
-          <h1 className="h2 mt-4">Povestea Drafta dental</h1>
+          <h1 className="h2 mt-4">Povestea Dental Drafta</h1>
 
           <p className="mt-6 text-[19px]/[1.65]">
             Un cabinet de familie, a cărui poveste datează din anul 2000, cu prima
@@ -73,7 +73,7 @@ export default function DespreNoi() {
             </h2>
             <ul className="mt-4 flex list-none flex-col gap-3 p-0">
               {[
-                "Drafta dental este un cabinet de familie, a cărui poveste începe în anul 2000.",
+                "Dental Drafta este un cabinet de familie, a cărui poveste începe în anul 2000.",
                 "Îmbinăm performanța cu empatia, într-o atmosferă prietenoasă, deschisă și fără stres.",
                 "Cabinetul este dotat cu aparatură modernă, de la lasere stomatologice la scanare 3D.",
                 "Aici nu ești tratat ca o simplă cifră.",

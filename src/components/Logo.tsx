@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 
 /**
- * Marca Drafta dental: contur cu colțuri rotunjite sus și semicerc jos, cu
+ * Marca Dental Drafta: contur cu colțuri rotunjite sus și semicerc jos, cu
  * „zâmbetul" bleu în interior. Geometria e construită analitic (raze derivate
  * din latura mărcii), nu trasată, deci curbele rămân exacte la orice mărime.
  *

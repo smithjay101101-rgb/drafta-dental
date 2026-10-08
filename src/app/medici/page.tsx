@@ -7,9 +7,9 @@ import { doctors } from "@/content/doctors";
 import { practice } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Medicii cabinetului | Drafta dental",
+  title: "Medicii cabinetului | Dental Drafta",
   description:
-    "Doi medici stomatologi la Drafta dental, amândoi absolvenți de Carol Davila. Vedeți cine se ocupă de fiecare tip de tratament.",
+    "Doi medici stomatologi la Dental Drafta, amândoi absolvenți de Carol Davila. Vedeți cine se ocupă de fiecare tip de tratament.",
   alternates: { canonical: "/medici" },
 };
 
@@ -19,7 +19,7 @@ export default function MediciIndex() {
     "@graph": [
       {
         "@type": "ItemList",
-        name: "Medicii cabinetului Drafta dental",
+        name: "Medicii cabinetului Dental Drafta",
         itemListElement: doctors.map((d, i) => ({
           "@type": "ListItem",
           position: i + 1,
@@ -55,7 +55,7 @@ export default function MediciIndex() {
             </ol>
           </nav>
 
-          <h1 className="h2 mt-6">Cine sunt medicii de la Drafta dental?</h1>
+          <h1 className="h2 mt-6">Cine sunt medicii de la Dental Drafta?</h1>
           <p className="mt-6 text-[19px]/[1.65]">
             Doi medici stomatologi, amândoi absolvenți ai Facultății de Medicină
             Dentară din cadrul UMF Carol Davila. Dr. Sergiu Drafta este

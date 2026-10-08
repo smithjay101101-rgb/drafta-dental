@@ -20,15 +20,15 @@ const figtree = Figtree({
 
 export const metadata: Metadata = {
   metadataBase: new URL(practice.url),
-  title: "Drafta dental: cabinet stomatologic în București",
+  title: "Dental Drafta: cabinet stomatologic în București",
   description:
-    "Drafta dental, cabinet stomatologic de familie din centrul Bucureștiului, din anul 2000. Stomatologia regândită: igienizare, albire, fațete, coroane, punți și implanturi.",
+    "Dental Drafta, cabinet stomatologic de familie din centrul Bucureștiului, din anul 2000. Stomatologia regândită: igienizare, albire, fațete, coroane, punți și implanturi.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "ro_RO",
     siteName: practice.name,
-    title: "Drafta dental: cabinet stomatologic în București",
+    title: "Dental Drafta: cabinet stomatologic în București",
     description:
       "Cabinet stomatologic de familie în Strada Justinian 10, București. Programează-te online sau la telefon.",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "/og-drafta-dental.jpg",
         width: 1200,
         height: 630,
-        alt: "Cabinetul Drafta dental din Strada Justinian 10, București",
+        alt: "Cabinetul Dental Drafta din Strada Justinian 10, București",
       },
     ],
   },

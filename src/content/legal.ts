@@ -40,9 +40,9 @@ const operator = `${legalEntity.name}, CUI ${legalEntity.cui}, cu sediul în ${l
 export const privacy: LegalDoc = {
   slug: "confidentialitate",
   title: "Politica de confidențialitate",
-  metaTitle: "Politica de confidențialitate | Drafta dental",
+  metaTitle: "Politica de confidențialitate | Dental Drafta",
   metaDescription:
-    "Cum prelucrează Drafta dental datele personale ale vizitatorilor site-ului și ale pacienților, conform GDPR: ce date, de ce, cât timp și ce drepturi aveți.",
+    "Cum prelucrează Dental Drafta datele personale ale vizitatorilor site-ului și ale pacienților, conform GDPR: ce date, de ce, cât timp și ce drepturi aveți.",
   intro:
     "Această politică explică ce date personale prelucrăm, în ce scop, pe ce temei legal și ce drepturi aveți, conform Regulamentului (UE) 2016/679 (GDPR) și legislației române privind protecția datelor.",
   sections: [
@@ -150,9 +150,9 @@ export const privacy: LegalDoc = {
 export const terms: LegalDoc = {
   slug: "termeni",
   title: "Termeni și condiții",
-  metaTitle: "Termeni și condiții | Drafta dental",
+  metaTitle: "Termeni și condiții | Dental Drafta",
   metaDescription:
-    "Termenii de folosire a site-ului Drafta dental: informații medicale, prețuri, programări, proprietate intelectuală și soluționarea reclamațiilor.",
+    "Termenii de folosire a site-ului Dental Drafta: informații medicale, prețuri, programări, proprietate intelectuală și soluționarea reclamațiilor.",
   intro:
     "Folosind acest site, sunteți de acord cu termenii de mai jos. Vă rugăm să îi citiți împreună cu politica de confidențialitate.",
   sections: [
@@ -196,7 +196,7 @@ export const terms: LegalDoc = {
       id: "proprietate",
       heading: "Proprietatea intelectuală",
       paragraphs: [
-        "Textele, numele și logo-ul Drafta dental aparțin cabinetului. Pot fi citate cu menționarea sursei și cu link către pagina originală, dar nu pot fi reproduse integral sau folosite comercial fără acord scris.",
+        "Textele, numele și logo-ul Dental Drafta aparțin cabinetului. Pot fi citate cu menționarea sursei și cu link către pagina originală, dar nu pot fi reproduse integral sau folosite comercial fără acord scris.",
         "Unele fotografii sunt preluate din biblioteci cu licență liberă (Unsplash, Pexels, Wikimedia Commons) și se folosesc conform licențelor lor; autorul și licența sunt menționate acolo unde licența o cere.",
       ],
     },

@@ -8,9 +8,9 @@ import { authors } from "@/content/authors";
 import { practice } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Blog: implanturi, fațete și tratamente dentare | Drafta dental",
+  title: "Blog: implanturi, fațete și tratamente dentare | Dental Drafta",
   description:
-    "Răspunsuri la întrebările pe care le primim în cabinet: implanturi, aligneri, albire, urgențe. Scrise de medicii Drafta dental.",
+    "Răspunsuri la întrebările pe care le primim în cabinet: implanturi, aligneri, albire, urgențe. Scrise de medicii Dental Drafta.",
   alternates: { canonical: "/blog" },
 };
 
