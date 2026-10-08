@@ -97,6 +97,13 @@ Licența cere ca **autorul și licența să apară lângă fotografie**. Sunt tr
 Captura de planificare arată marca implantului și numărul dintelui, fără date
 de pacient.
 
+| Fișier | Folosit în | Pexels |
+|---|---|---|
+| `all-on-4-model-implanturi.jpg` | Articol: All-on-4 sau All-on-6 (principală, decupată) | `6812500` |
+| `all-on-6-lucrare-arcada.jpg` | Articol: All-on-4 sau All-on-6 (în text, decupată) | `20216277` |
+| `fatete-dinti-inchisi-cheie-culori.jpg` | Articol: fațete pentru dinți pătați (principală, decupată) | `6812496` |
+| `fatete-dinti-inchisi-alegerea-nuantei.jpg` | Articol: fațete pentru dinți pătați (în text, decupată) | `5355904` |
+
 `aligneri.jpg` și `urgente.jpg` nu mai sunt folosite: alignerii și urgențele nu
 apar printre serviciile de pe site-ul cabinetului.
 

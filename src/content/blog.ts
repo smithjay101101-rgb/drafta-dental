@@ -267,6 +267,10 @@ const implanturiBimaxilar: Post = {
       href: "/blog/fatete-ceramice-sau-compozit",
     },
     { label: "Medicii cabinetului", href: "/despre-noi" },
+    {
+      label: "All-on-4 sau All-on-6: ce înseamnă și cum diferă?",
+      href: "/blog/all-on-4-vs-all-on-6",
+    },
     { label: "Programare online", href: "/#programare" },
   ],
   verify: [
@@ -518,6 +522,10 @@ const fateteCeramiceCompozit: Post = {
     {
       label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
       href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
+    },
+    {
+      label: "Fațetele pot corecta culoarea dinților foarte închiși?",
+      href: "/blog/fatete-pentru-dinti-patati",
     },
     { label: "Programare", href: "/#programare" },
   ],
@@ -2035,7 +2043,539 @@ const ghidatDigital: Post = {
   ],
 };
 
+/**
+ * Subiectul nr. 3 din foaia editorială. Citările sunt verificate în rezumatele
+ * surselor primare și în declarațiile de consens ITI. Lista de [VERIFY] este
+ * în câmpul `verify`.
+ */
+const allOn4vs6: Post = {
+  slug: "all-on-4-vs-all-on-6",
+  track: "retrieval",
+  image: "/photos/all-on-4-model-implanturi.jpg",
+  imageAlt: "Model dentar transparent cu implanturi inserate în os, sub dinți",
+  imageCaption: "foto: model transparent cu implanturi, pentru explicarea lucrărilor pe arcadă",
+  title: "All-on-4 sau All-on-6: ce înseamnă și cum diferă?",
+  metaTitle: "All-on-4 vs All-on-6: ce înseamnă și cum diferă",
+  metaDescription:
+    "All-on-4 și All-on-6 explicate: câte implanturi, cum se distribuie, ce spun studiile despre rezistență și complicații și cum se alege soluția.",
+  answer:
+    "Amândouă înlocuiesc toți dinții unei arcade cu o lucrare fixă, prinsă pe implanturi. La All-on-4, lucrarea stă pe patru implanturi, iar cele din spate sunt înclinate ca să ocolească sinusul sau nervul, de multe ori fără adiție de os. La All-on-6 sunt șase implanturi, deci mai multe puncte de sprijin. Studiile arată o supraviețuire similară a implanturilor, așa că alegerea depinde de os, de arcadă, de mușcătură și de buget, nu de o regulă de tipul „mai multe e mereu mai bine”.",
+  authorId: "andrei-drafta",
+  datePublished: "2026-10-08",
+  dateModified: "2026-10-08",
+  categories: ["Implant dentar", "Protetică dentară", "Chirurgie dentară"],
+  keyTakeaways: [
+    "Consensul ITI recomandă cel puțin patru implanturi distribuite corespunzător pentru o lucrare fixă dintr-o singură bucată pe toată arcada (Clinical Oral Implants Research, 2018).",
+    "Pe 93 de studii, cu o urmărire mediană de 8 ani, supraviețuirea implanturilor și a lucrărilor nu a diferit semnificativ între mai puțin de cinci și cinci sau mai multe implanturi pe arcadă (Clinical Oral Implants Research, 2018).",
+    "O meta-analiză pe 55 de studii a găsit, la peste 5 ani, o supraviețuire de 98,1 la sută pentru All-on-4 și de 97,5 la sută pentru All-on-6, cu o pierdere de os de 1,28 mm, respectiv 0,94 mm (International Journal of Oral and Maxillofacial Surgery, 2026).",
+    "Într-un studiu randomizat pe maxilar, la 5 ani, patru implanturi nu au fost inferioare celor șase, dar au avut mai multe complicații tehnice, 16,6 la sută față de 0, și un cost mai mic (Clinical Oral Implants Research, 2025).",
+    "Implanturile înclinate nu au eșuat mai des decât cele drepte, dar au pierdut puțin mai mult os pe termen lung, în medie 0,18 mm (International Journal of Oral & Maxillofacial Implants, 2024).",
+    "Pe 245 de pacienți urmăriți până la 10 ani, All-on-4 la mandibulă a avut o supraviețuire a implanturilor de 94,8 la sută și a lucrărilor de 99,2 la sută (Journal of the American Dental Association, 2011).",
+  ],
+  sections: [
+    {
+      id: "ce-inseamna",
+      heading: "Ce înseamnă All-on-4 și All-on-6?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Sunt două variante ale aceluiași principiu: o arcadă întreagă de dinți, fixă, susținută de implanturi. Lucrarea se prinde cu șuruburi pe implanturi, nu se scoate acasă și nu acoperă cerul gurii, ca o proteză mobilă.",
+        },
+        {
+          kind: "p",
+          text: "All-on-4 este numele unui protocol cu patru implanturi: două drepte în zona din față și două înclinate în zona din spate. All-on-6 este denumirea folosită pentru varianta cu șase implanturi, de obicei mai drepte și distribuite pe toată arcada. Numele sunt comerciale; în literatura de specialitate se vorbește despre lucrări fixe pe patru sau pe șase implanturi.",
+        },
+      ],
+    },
+    {
+      id: "diferente",
+      heading: "Cum diferă numărul și distribuția implanturilor?",
+      blocks: [
+        {
+          kind: "table",
+          caption: "All-on-4 față de All-on-6, pe criteriile care contează pentru pacient",
+          head: ["Criteriu", "All-on-4", "All-on-6"],
+          rows: [
+            ["Număr de implanturi pe arcadă", "4", "6"],
+            ["Poziția implanturilor", "Două drepte în față, două înclinate în spate", "Distribuite pe toată arcada, de obicei mai drepte"],
+            ["Nevoia de adiție osoasă", "Mai rar, pentru că implanturile înclinate folosesc osul existent", "Mai des, dacă osul din spate nu permite șase implanturi"],
+            ["Supraviețuire la peste 5 ani", "98,1 la sută", "97,5 la sută"],
+            ["Pierdere de os la 5 ani", "1,28 mm", "0,94 mm"],
+            ["Dacă se pierde un implant", "Lucrarea rămâne pe trei, de regulă trebuie refăcută", "Rămân cinci puncte de sprijin"],
+            ["Lucrare din mai multe bucăți", "Nu", "Posibilă"],
+            ["Cost", "Mai mic", "Mai mare, pentru că sunt mai multe implanturi"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Datele de supraviețuire și de pierdere de os din tabel vin dintr-o meta-analiză pe 55 de studii, ale cărei autori atrag atenția că studiile diferă mult între ele, deci cifrele se citesc cu prudență (International Journal of Oral and Maxillofacial Surgery, 2026).",
+        },
+      ],
+    },
+    {
+      id: "rezistenta",
+      heading: "Care dintre ele rezistă mai mult?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Diferența de rezistență este mică. Revizuirea care stă la baza consensului ITI a analizat 93 de studii, cu o urmărire între 1 și 15 ani, și nu a găsit o diferență semnificativă de supraviețuire a implanturilor sau a lucrărilor între mai puțin de cinci și cinci sau mai multe implanturi pe arcadă (Clinical Oral Implants Research, 2018).",
+        },
+        {
+          kind: "p",
+          text: "Un studiu randomizat multicentric pe maxilar a comparat direct cele două variante, la 47 de pacienți cu 233 de implanturi. La 5 ani, supraviețuirea a fost de 100 la sută cu patru implanturi și de 99,3 la sută cu șase, fără diferență de pierdere de os. Grupul cu patru implanturi a avut însă complicații tehnice în 16,6 la sută din cazuri, față de niciunul în grupul cu șase, iar costul a fost mai mic cu patru (Clinical Oral Implants Research, 2025).",
+        },
+        {
+          kind: "p",
+          text: "Pe termen lung, All-on-4 la mandibulă are una dintre cele mai lungi urmăriri: pe 245 de pacienți și 980 de implanturi, supraviețuirea implanturilor a fost de 94,8 la sută, iar a lucrărilor de 99,2 la sută, la până la 10 ani (Journal of the American Dental Association, 2011).",
+        },
+        {
+          kind: "takeaway",
+          items: [
+            "Mai multe implanturi nu înseamnă automat o lucrare care rezistă mai mult.",
+            "Diferența dintre cele două se vede mai ales la complicațiile tehnice și la cost, nu la supraviețuirea implanturilor.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "os",
+      heading: "Ce rol are volumul osos?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Volumul osos decide de multe ori între cele două. După pierderea dinților, osul se retrage, iar în spate apar două obstacole: sinusul maxilar sus și nervul mandibular jos. Implanturile înclinate din All-on-4 ocolesc aceste zone și folosesc osul din față, care se păstrează de obicei mai bine.",
+        },
+        {
+          kind: "p",
+          text: "Consensul ITI enumeră implanturile înclinate printre opțiunile care reduc cât de invazivă este intervenția, alături de implanturile scurte sau înguste. Adiția de os este recomandată atunci când planul protetic cere mai multe implanturi sau o distribuție mai bună (consensul ITI, 2018).",
+        },
+        {
+          kind: "p",
+          text: "Implanturile înclinate nu eșuează mai des decât cele drepte. O revizuire a meta-analizelor publicate nu a găsit diferență de eșec, dar a găsit o pierdere de os puțin mai mare pe termen lung, în medie 0,18 mm (International Journal of Oral & Maxillofacial Implants, 2024).",
+        },
+      ],
+    },
+    {
+      id: "biomecanica",
+      heading: "Ce se schimbă la lucrarea protetică?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Cu cât implanturile sunt mai puține, cu atât fiecare preia mai multă forță, iar lucrarea are de obicei o porțiune în consolă în spate, adică dinți care nu au implant dedesubt. De aici vin, în parte, complicațiile tehnice mai frecvente la patru implanturi: șuruburi slăbite, fisuri sau fracturi ale dinților din lucrare.",
+        },
+        {
+          kind: "figure",
+          src: "/photos/all-on-6-lucrare-arcada.jpg",
+          alt: "Lucrare dentară pe toată arcada, pe un model din ghips, în laboratorul de tehnică dentară",
+          caption: "foto: lucrare pe toată arcada, în laborator, înainte de montare",
+        },
+        {
+          kind: "p",
+          text: "Consensul ITI cere ca, la alegerea numărului de implanturi, să se țină cont de ce s-ar întâmpla dacă un implant s-ar pierde mai târziu. Cu șase implanturi, lucrarea se poate face și din mai multe bucăți, iar pierderea unui implant lasă mai mult sprijin (consensul ITI, 2018).",
+        },
+        {
+          kind: "p",
+          text: "Materialul contează și el. Meta-analiza din 2026 notează că lucrările din zirconiu pot reduce complicațiile mecanice (International Journal of Oral and Maxillofacial Surgery, 2026).",
+        },
+      ],
+    },
+    {
+      id: "imediat",
+      heading: "Se pot face dinți ficși imediat?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Da, la ambele variante, dacă implanturile se fixează suficient de stabil la inserare. Pe 62 de studii și peste 13.000 de implanturi la pacienți fără dinți, încărcarea imediată cu o lucrare fixă a avut o supraviețuire a implanturilor între 90,1 și 100 la sută, la o urmărire de 1 până la 10 ani, cu condiția selectării atente a cazurilor (International Journal of Oral & Maxillofacial Implants, 2014).",
+        },
+        {
+          kind: "p",
+          text: "Lucrarea montată în prima zi este de regulă una provizorie. Lucrarea definitivă se face după integrarea implanturilor în os. Când ambele arcade se tratează odată, cele două lucrări provizorii se reglează una față de cealaltă, cum este explicat în articolul despre implanturile pe ambele arcade.",
+        },
+      ],
+    },
+    {
+      id: "alegere",
+      heading: "Cum se alege soluția?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Pornind de la lucrarea finală, nu de la numărul de implanturi. Consensul ITI cere ca planul protetic să fie stabilit înaintea celui chirurgical (consensul ITI, 2018). Câteva repere care apar constant în discuție:",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Osul disponibil, măsurat pe tomografie: dacă în spate nu este os pentru șase implanturi fără adiție, All-on-4 cu implanturi înclinate evită o intervenție în plus.",
+            "Arcada: la maxilar, osul este mai puțin dens, iar mulți medici preferă mai multe implanturi; la mandibulă, patru implanturi sunt frecvent suficiente.",
+            "Mușcătura: o forță mare de masticație sau scrâșnitul dinților cer mai mult sprijin și un material rezistent.",
+            "Siguranța pe termen lung: cu șase implanturi, pierderea unuia afectează mai puțin lucrarea.",
+            "Bugetul: patru implanturi costă mai puțin la început și, în studiul randomizat, și în total.",
+          ],
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Mai multe implanturi înseamnă automat mai bine?",
+      a: "Nu. Pe 93 de studii, supraviețuirea nu a diferit semnificativ între mai puțin de cinci și cinci sau mai multe implanturi pe arcadă. Șase implanturi aduc mai mult sprijin și mai puține complicații tehnice, dar cer mai mult os și costă mai mult.",
+    },
+    {
+      q: "Se pot face dinți ficși imediat?",
+      a: "Da, la ambele variante, dacă implanturile sunt suficient de stabile la inserare. Încărcarea imediată a avut o supraviețuire a implanturilor între 90,1 și 100 la sută în studiile analizate. Lucrarea din prima zi este provizorie; cea definitivă vine după integrarea implanturilor.",
+    },
+    {
+      q: "Cum se alege soluția?",
+      a: "Pornind de la lucrarea finală și de la osul disponibil, măsurat pe tomografie. Contează și arcada, mușcătura, riscul de a pierde un implant pe termen lung și bugetul.",
+    },
+    {
+      q: "Cât rezistă o lucrare All-on-4?",
+      a: "Pe 245 de pacienți urmăriți până la 10 ani, supraviețuirea implanturilor a fost de 94,8 la sută, iar a lucrărilor de 99,2 la sută. Cu igienă bună și controale regulate, lucrarea poate funcționa mulți ani.",
+    },
+    {
+      q: "Se poate face All-on-4 fără adiție de os?",
+      a: "De multe ori da. Implanturile din spate se înclină ca să ocolească sinusul sau nervul și să folosească osul existent. Decizia se ia pe tomografie, după ce se măsoară osul.",
+    },
+    {
+      q: "Care costă mai mult?",
+      a: "All-on-6, pentru că are mai multe implanturi și piese protetice. În studiul randomizat pe maxilar, costul a fost mai mic cu patru implanturi atât la început, cât și în total. Prețul exact se stabilește după consultație.",
+    },
+  ],
+  sources: [
+    {
+      id: "coir-2018-iti",
+      label: "Raportul de consens ITI, grupul 2: protetica și implantologia, cu recomandările privind numărul de implanturi",
+      publisher: "Clinical Oral Implants Research",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13298",
+    },
+    {
+      id: "coir-2018-polido",
+      label: "Numărul de implanturi pentru lucrări fixe pe toată arcada: revizuire sistematică și meta-analiză",
+      publisher: "Clinical Oral Implants Research",
+      year: "2018",
+      url: "https://doi.org/10.1111/clr.13312",
+    },
+    {
+      id: "ijoms-2026",
+      label: "Lucrări fixe All-on-4 și All-on-6 la pacienții fără dinți: revizuire sistematică și meta-analiză",
+      publisher: "International Journal of Oral and Maxillofacial Surgery",
+      year: "2026",
+      url: "https://doi.org/10.1016/j.ijom.2026.04.002",
+    },
+    {
+      id: "coir-2025",
+      label: "Lucrări fixe pe maxilar pe patru față de șase implanturi: rezultatele la 5 ani ale unui studiu randomizat multicentric",
+      publisher: "Clinical Oral Implants Research",
+      year: "2025",
+      url: "https://doi.org/10.1111/clr.14383",
+    },
+    {
+      id: "jomi-2024",
+      label: "Eșecul și pierderea de os la implanturile înclinate față de cele drepte: revizuire a meta-analizelor",
+      publisher: "International Journal of Oral & Maxillofacial Implants",
+      year: "2024",
+      url: "https://doi.org/10.11607/jomi.10885",
+    },
+    {
+      id: "jada-2011",
+      label: "Supraviețuirea implanturilor All-on-4 la mandibulă, cu urmărire de până la 10 ani",
+      publisher: "Journal of the American Dental Association",
+      year: "2011",
+      url: "https://doi.org/10.14219/jada.archive.2011.0170",
+    },
+    {
+      id: "jomi-2014-loading",
+      label: "Protocoalele de încărcare a implanturilor la pacienții fără dinți cu lucrări fixe: revizuire sistematică și meta-analiză",
+      publisher: "International Journal of Oral & Maxillofacial Implants",
+      year: "2014",
+      url: "https://doi.org/10.11607/jomi.2014suppl.g4.3",
+    },
+    {
+      id: "iti-2018-numar",
+      label: "Numărul de implanturi pentru lucrări fixe pe toată arcada: declarațiile de consens ITI",
+      publisher: "ITI Academy",
+      year: "2018",
+      url: "https://academy.iti.org/academy/consensus-database/consensus-statement/-/consensus/number-of-implants-placed-for-complete-arch-fixed-prostheses/1701",
+    },
+  ],
+  related: [
+    { label: "Implanturi la Dental Drafta", href: "/servicii/implanturi-dentare" },
+    {
+      label: "Se pot pune implanturi pe ambele arcade în aceeași ședință?",
+      href: "/blog/implanturi-ambele-arcade-aceeasi-sedinta",
+    },
+    {
+      label: "Se poate pune implant dacă nu mai este suficient os?",
+      href: "/blog/implant-dentar-fara-os-suficient",
+    },
+    {
+      label: "Ce este implantul dentar ghidat digital și cum se realizează?",
+      href: "/blog/implant-dentar-ghidat-digital",
+    },
+    { label: "Programare", href: "/#programare" },
+  ],
+  verify: [
+    "Dacă Dental Drafta face lucrări All-on-4 și All-on-6, cu ce sisteme de implant și din ce material sunt lucrările definitive.",
+    "„All-on-4” este marcă Nobel Biocare. Articolul o folosește ca denumire uzuală, fără a recomanda un producător.",
+    "Rândurile „Dacă se pierde un implant”, „Lucrare din mai multe bucăți” și „Nevoia de adiție osoasă” din tabel sunt deduse din recomandările ITI și din principiul tehnicii, nu cifre de studiu.",
+    "Prețul orientativ pentru o arcadă completă la cabinet nu apare în articol.",
+    "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
+  ],
+};
+
+/**
+ * Subiectul nr. 4 din foaia editorială. Citările sunt verificate în rezumatele
+ * surselor primare. Studiul despre grosimea ceramicii este de laborator, iar
+ * articolul o spune. Lista de [VERIFY] este în câmpul `verify`.
+ */
+const fateteDintiPatati: Post = {
+  slug: "fatete-pentru-dinti-patati",
+  track: "retrieval",
+  image: "/photos/fatete-dinti-inchisi-cheie-culori.jpg",
+  imageAlt: "Cheie de culori dentară, cu mostre de la nuanțe foarte deschise la nuanțe închise",
+  imageCaption: "foto: cheia de culori, de la nuanțe deschise la nuanțe închise",
+  title: "Fațetele pot corecta culoarea dinților foarte închiși?",
+  metaTitle: "Fațete pentru dinți pătați sau închiși la culoare",
+  metaDescription:
+    "Pot fațetele acoperi dinții foarte închiși la culoare? Cauzele petelor, albirea înainte, dinții devitali și cât de groasă trebuie să fie ceramica.",
+  answer:
+    "Da, în cele mai multe cazuri, dar cu cât dintele este mai închis, cu atât fațeta are mai mult de ascuns. Ceramica trebuie atunci să fie mai opacă sau mai groasă, iar uneori se face o albire înainte, ca diferența de acoperit să fie mai mică. Într-un studiu de laborator, o fațetă din ceramică de 0,4 până la 0,5 mm, opacă și cimentată cu un ciment de culoarea dintelui, a ascuns complet o dentină închisă. La pigmentări foarte puternice, o coroană poate fi alegerea mai bună.",
+  authorId: "andrei-drafta",
+  datePublished: "2026-10-08",
+  dateModified: "2026-10-08",
+  categories: ["Estetică dentară", "Fațete dentare"],
+  keyTakeaways: [
+    "Într-un studiu de laborator, ceramica de disilicat de litiu a ascuns complet o dentină închisă la culoare de la 0,4 până la 0,5 mm grosime, cu un material opac și un ciment de culoarea dintelui (Journal of Esthetic and Restorative Dentistry, 2024).",
+    "Cu o ceramică translucidă și un ciment transparent, diferența de culoare se mai vedea chiar la 0,7 până la 0,8 mm (Journal of Esthetic and Restorative Dentistry, 2024).",
+    "Ochiul observă diferențe mici de culoare: pragul de la care jumătate dintre observatori văd o diferență este ΔE00 0,8, iar cel de la care jumătate o consideră inacceptabilă este 1,8 (Journal of Esthetic and Restorative Dentistry, 2015).",
+    "Albirea scade aderența adezivilor la smalț și dentină, dar efectul dispare după două până la trei săptămâni (Operative Dentistry, 2021).",
+    "Albirea internă schimbă semnificativ nuanța dinților devitali, adică a celor cu tratament de canal (Journal of Endodontics, 2022).",
+    "Faptul că dintele are sau nu tratament de canal nu a schimbat semnificativ supraviețuirea fațetelor ceramice; contează cât smalț rămâne pentru lipire (Journal of Esthetic and Restorative Dentistry, 2025).",
+  ],
+  sections: [
+    {
+      id: "cauze",
+      heading: "De ce se închid dinții la culoare?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Cauza contează, pentru că de ea depinde dacă pata se scoate, se albește sau trebuie acoperită. Medicii despart două tipuri de pigmentare.",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Pete de suprafață, venite din cafea, ceai, vin roșu sau fumat. Se îndepărtează de regulă prin igienizare și albire, fără fațete.",
+            "Pigmentări din interiorul dintelui: după tratamente cu tetraciclină în copilărie, din fluoroză, după un traumatism sau un tratament de canal, ori odată cu vârsta. Acestea nu pleacă la periaj, iar albirea le reduce doar în parte.",
+          ],
+        },
+        {
+          kind: "p",
+          text: "Fațetele intră în discuție mai ales la a doua categorie, când albirea singură nu ajunge sau când se schimbă și forma dinților.",
+        },
+      ],
+    },
+    {
+      id: "orice-culoare",
+      heading: "Pot fațetele acoperi orice culoare?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Aproape orice culoare, dar nu cu orice fațetă. O fațetă subțire și translucidă lasă să se vadă dintele de dedesubt, ceea ce e un avantaj la un dinte sănătos și o problemă la unul închis la culoare. Pentru a ascunde o culoare închisă, ceramica trebuie să fie mai opacă, mai groasă sau amândouă.",
+        },
+        {
+          kind: "p",
+          text: "Ochiul este exigent. Un studiu pe 175 de observatori a stabilit că o diferență de culoare de ΔE00 0,8 este observată de jumătate dintre ei, iar una de 1,8 este considerată inacceptabilă de jumătate (Journal of Esthetic and Restorative Dentistry, 2015). De aceea, între o fațetă care „acoperă” și una care acoperă fără să se vadă diferența sunt zecimi de milimetru.",
+        },
+        {
+          kind: "p",
+          text: "La pigmentări foarte puternice, fațeta ar trebui să fie atât de groasă și de opacă încât ar cere o șlefuire mare și ar arăta artificial. Atunci, o coroană sau o combinație de albire și fațetă sunt de obicei soluții mai bune.",
+        },
+      ],
+    },
+    {
+      id: "grosime",
+      heading: "Cât de groasă trebuie să fie ceramica?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Un studiu de laborator pe dentină naturală și dentină închisă la culoare a căutat grosimea minimă de la care observatorii nu mai vedeau diferența, pentru ceramică de disilicat de litiu (Journal of Esthetic and Restorative Dentistry, 2024).",
+        },
+        {
+          kind: "table",
+          caption: "Grosimea de la care ceramica a ascuns dentina închisă la culoare, într-un studiu de laborator",
+          head: ["Ceramica", "Cimentul", "Grosimea care a ascuns culoarea"],
+          rows: [
+            ["Opacă", "De culoarea dintelui", "0,5 mm, fără diferențe vizibile peste această grosime"],
+            ["Opacă", "Transparent", "0,4 mm, dar cu diferențe încă vizibile la unele grosimi mai mari"],
+            ["Translucidă", "De culoarea dintelui", "0,4 mm, cu diferențe încă vizibile la 0,5 și 0,8 mm"],
+            ["Translucidă", "Transparent", "0,6 mm, cu diferențe încă vizibile la 0,7 și 0,8 mm"],
+          ],
+        },
+        {
+          kind: "p",
+          text: "Concluzia autorilor: ascunderea se poate obține de la 0,4 până la 0,5 mm, cu un material opac și un ciment de culoarea dintelui. Studiul a folosit dentină bovină colorată, nu dinți de pacienți, deci la un dinte foarte închis în gură pot fi necesare valori mai mari.",
+        },
+        {
+          kind: "takeaway",
+          items: [
+            "Opacitatea ceramicii și culoarea cimentului contează aproape la fel de mult ca grosimea.",
+            "Cu cât dintele e mai închis, cu atât crește nevoia de spațiu, deci de șlefuire.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "albire",
+      heading: "Trebuie albire înainte de fațete?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Adesea da, pentru că reduce diferența pe care fațeta trebuie să o ascundă. Un dinte mai deschis permite o fațetă mai subțire și mai translucidă, deci mai puțină șlefuire și un aspect mai natural.",
+        },
+        {
+          kind: "p",
+          text: "Ordinea și pauza contează. Albirea scade aderența adezivilor la smalț și dentină, iar o meta-analiză pe 52 de studii de laborator a arătat că efectul nu mai apare după două până la trei săptămâni (Operative Dentistry, 2021). De aceea, fațetele se cimentează de regulă la cel puțin două săptămâni după albire, timp în care și nuanța dinților se stabilizează.",
+        },
+      ],
+    },
+    {
+      id: "devital",
+      heading: "Un dinte devital poate fi mascat?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Da. Un dinte cu tratament de canal se închide adesea la culoare din interior. Primul pas este de obicei albirea internă: substanța de albire se pune în interiorul dintelui, nu pe suprafață. O meta-analiză a găsit o schimbare semnificativă a nuanței după albirea internă, cu mai multe substanțe folosite frecvent (Journal of Endodontics, 2022).",
+        },
+        {
+          kind: "p",
+          text: "Dacă după albire diferența rămâne, fațeta o poate ascunde. Faptul că dintele are tratament de canal nu a schimbat semnificativ supraviețuirea fațetelor ceramice într-un studiu pe 672 de fațete. Ce a contat a fost cât smalț a rămas pentru lipire: 96,7 la sută supraviețuire pe smalț, față de 93,9 la sută când peste 30 la sută din suprafață era dentină (Journal of Esthetic and Restorative Dentistry, 2025).",
+        },
+      ],
+    },
+    {
+      id: "natural",
+      heading: "Cum se păstrează aspectul natural?",
+      blocks: [
+        {
+          kind: "p",
+          text: "Echilibrul este greu: o fațetă prea opacă ascunde culoarea, dar arată ca un dinte fals, plat și prea alb. O fațetă prea translucidă arată natural, dar lasă să se vadă dintele închis. Soluția se caută caz cu caz.",
+        },
+        {
+          kind: "figure",
+          src: "/photos/fatete-dinti-inchisi-alegerea-nuantei.jpg",
+          alt: "Mâini cu mănuși care țin o cheie de culori dentară, folosită la alegerea nuanței",
+          caption: "foto: alegerea nuanței se face pe cheia de culori, la lumină naturală",
+        },
+        {
+          kind: "ul",
+          items: [
+            "Nuanța se alege pe cheia de culori și pe fotografii, nu doar la lumina din cabinet.",
+            "Un mock-up, adică o probă provizorie a formei, arată rezultatul înainte de șlefuire.",
+            "Se pot combina straturi: un strat interior care ascunde culoarea și unul exterior translucid, care dă naturalețea.",
+            "Proba cu pastă de probă, înainte de cimentare, arată cum influențează cimentul culoarea finală.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "pe-scurt",
+      heading: "Ce se face, în funcție de cauză?",
+      blocks: [
+        {
+          kind: "table",
+          caption: "Abordarea obișnuită, după tipul de pigmentare. Decizia finală se ia la consultație",
+          head: ["Situația", "Primul pas", "Când intră în discuție fațetele"],
+          rows: [
+            ["Pete de suprafață, de la cafea, ceai sau fumat", "Igienizare și albire", "Rar, doar dacă se schimbă și forma"],
+            ["Pigmentare ușoară sau medie în interiorul dintelui", "Albire, apoi evaluare", "Dacă diferența rămâne după albire"],
+            ["Pigmentare puternică, de exemplu după tetraciclină", "Albire, pentru a reduce contrastul", "Fațete opace sau coroane, după caz"],
+            ["Un singur dinte devital, închis la culoare", "Albire internă", "Dacă diferența față de dinții vecini rămâne"],
+          ],
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Fațetele acoperă orice culoare?",
+      a: "Aproape orice culoare, dar cu cât dintele e mai închis, cu atât fațeta trebuie să fie mai opacă și mai groasă. Într-un studiu de laborator, 0,4 până la 0,5 mm de ceramică opacă, cu ciment de culoarea dintelui, au ascuns complet o dentină închisă. La pigmentări foarte puternice, o coroană poate fi alegerea mai bună.",
+    },
+    {
+      q: "Trebuie albire înainte?",
+      a: "Adesea da, pentru că reduce diferența de acoperit și permite o fațetă mai subțire. Fațetele se cimentează de regulă la cel puțin două săptămâni după albire, pentru că albirea scade temporar aderența adezivilor.",
+    },
+    {
+      q: "Un dinte devital poate fi mascat?",
+      a: "Da. Primul pas este de obicei albirea internă, care schimbă semnificativ nuanța dinților cu tratament de canal. Dacă diferența rămâne, o fațetă o poate ascunde, iar tratamentul de canal nu a scăzut semnificativ supraviețuirea fațetelor.",
+    },
+    {
+      q: "Se șlefuiește mai mult la dinții foarte închiși?",
+      a: "De obicei da, pentru că ceramica are nevoie de grosime ca să ascundă culoarea. Albirea înainte poate reduce această nevoie. Cât smalț rămâne contează pentru rezistență, așa că șlefuirea se planifică pe un mock-up.",
+    },
+    {
+      q: "Coroană sau fațetă pentru un dinte foarte închis?",
+      a: "Depinde de cât de închis este și de cât țesut sănătos a rămas. Dacă fațeta ar trebui să fie foarte groasă și opacă, sau dacă dintele este și foarte distrus, coroana este de obicei soluția mai bună.",
+    },
+  ],
+  sources: [
+    {
+      id: "jerd-2024",
+      label: "Capacitatea restaurărilor minim invazive din disilicat de litiu de a ascunde dinții pigmentați: rolul grosimii, translucidității și cimentului",
+      publisher: "Journal of Esthetic and Restorative Dentistry",
+      year: "2024",
+      url: "https://doi.org/10.1111/jerd.13146",
+    },
+    {
+      id: "jerd-2015",
+      label: "Pragurile de diferență de culoare în stomatologie",
+      publisher: "Journal of Esthetic and Restorative Dentistry",
+      year: "2015",
+      url: "https://doi.org/10.1111/jerd.12149",
+    },
+    {
+      id: "opdent-2021",
+      label: "Albirea vitală influențează aderența adezivilor la smalț și dentină: revizuire sistematică și meta-analiză",
+      publisher: "Operative Dentistry",
+      year: "2021",
+      url: "https://doi.org/10.2341/20-035-lit",
+    },
+    {
+      id: "joe-2022",
+      label: "Eficiența substanțelor folosite la albirea internă: revizuire sistematică și meta-analiză",
+      publisher: "Journal of Endodontics",
+      year: "2022",
+      url: "https://doi.org/10.1016/j.joen.2021.10.011",
+    },
+    {
+      id: "jerd-2025",
+      label: "Supraviețuirea fațetelor ceramice în funcție de expunerea dentinei și de vitalitatea dintelui, la 1 până la 15 ani",
+      publisher: "Journal of Esthetic and Restorative Dentistry",
+      year: "2025",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12618969/",
+    },
+  ],
+  related: [
+    { label: "Fațete ceramice la Dental Drafta", href: "/servicii/fatete-ceramice" },
+    { label: "Albire dentară la Dental Drafta", href: "/servicii/albire-dentara" },
+    {
+      label: "Fațete ceramice sau fațete de compozit: care este diferența?",
+      href: "/blog/fatete-ceramice-sau-compozit",
+    },
+    { label: "Programare", href: "/#programare" },
+  ],
+  verify: [
+    "Ce sisteme ceramice și ce cimenturi folosește cabinetul pentru dinții pigmentați.",
+    "Dacă Dental Drafta face albire internă la dinții devitali.",
+    "Intervalul de cel puțin două săptămâni între albire și cimentare este dedus din meta-analiza din 2021, care este pe studii de laborator; de confirmat cu protocolul cabinetului.",
+    "Cauzele pigmentării din prima secțiune sunt cunoștințe generale, fără cifre, deci fără citare.",
+    "Subiectul nr. 2 din foaia editorială (fațete ceramice sau bonding cu compozit) se suprapune cu articolul existent despre fațete ceramice sau de compozit; recomandat să fie integrat acolo, nu publicat separat.",
+    "Credențialele autorului (facultate, an, competențe, număr CMDR) lipsesc din entitatea de autor.",
+  ],
+};
+
 export const posts: Post[] = [
+  allOn4vs6,
+  fateteDintiPatati,
   ghidatDigital,
   faraAditie,
   osInsuficient,
